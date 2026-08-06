@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap');
+
+:root {
+  --night-navy: #090B24;
+  --navy-raised: #101432;
+  --navy-card: #151A42;
+  --electric-blue: #1835FF;
+  --periwinkle: #A9B5FF;
+  --warm-cream: #FFF4DF;
+  --soft-lilac: #DCC8FF;
+  --flirt-coral: #FF6B72;
+  --line: rgba(169, 181, 255, .25);
+  --disp: 'Sora', ui-sans-serif, system-ui, sans-serif;
+  --body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+}
+
+body {
+  background: var(--night-navy);
+  color: var(--warm-cream);
+  font-family: var(--body);
+  line-height: 1.65;
+}
+
+a { color: var(--periwinkle); }
+a:hover { color: var(--warm-cream); }
+:focus-visible { outline-color: var(--soft-lilac); }
+
+header.site {
+  background: rgb(9 11 36 / .94);
+  border-bottom: 1px solid var(--line);
+  padding: .8rem 0;
+}
+
+header .wrap { max-width: 72rem; }
+.brand {
+  background: url('/assets/brand/logo-horizontal-light.png') left center / contain no-repeat;
+  display: block;
+  height: 42px;
+  width: min(13rem, 48vw);
+}
+.brand svg { display: none; }
+header a { color: var(--warm-cream); font-family: var(--body); font-weight: 700; letter-spacing: .02em; text-transform: none; }
+
+main { padding-block: clamp(2.5rem, 6vw, 4.5rem); }
+main > .wrap {
+  background: var(--navy-raised);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: 0 24px 70px rgb(0 0 0 / .18);
+  max-width: 52rem;
+  padding-block: clamp(1.5rem, 4vw, 3rem);
+}
+h1, h2, h3 { color: var(--warm-cream); font-family: var(--disp); }
+h1 { font-size: clamp(2.3rem, 6vw, 4rem); }
+h2 { font-size: clamp(1.45rem, 3.4vw, 2rem); }
+.lede { color: var(--periwinkle); font-size: 1.1rem; }
+.updated { color: var(--periwinkle); }
+p, li { color: var(--warm-cream); }
+
+.callout, .toc {
+  background: var(--navy-card);
+  border-color: var(--line);
+  border-radius: 16px;
+}
+.callout { border-left-color: var(--flirt-coral); }
+.toc h2 { color: var(--soft-lilac); }
+th { background: rgb(24 53 255 / .16); color: var(--warm-cream); }
+th, td { border-bottom-color: var(--line); }
+td { color: var(--periwinkle); }
+code { background: rgb(220 200 255 / .14); color: var(--soft-lilac); }
+
+footer.site {
+  background: #060717;
+  border-top: 1px solid var(--line);
+  color: var(--periwinkle);
+}
+footer a { color: var(--periwinkle); }
+
+@media (max-width: 34rem) {
+  main > .wrap { border-inline: 0; border-radius: 0; }
+}

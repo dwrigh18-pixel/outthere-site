@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Out There: Together | Meet your people before you board</title>
+  <meta name="description" content="Out There: Together is the LGBTQ+ cruise social app. Find your sailing, meet your people and make plans before you board.">
+  <link rel="canonical" href="https://outtheretogether.com/">
+  <meta name="theme-color" content="#090B24">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Out There: Together">
+  <meta property="og:title" content="Meet your people before you board">
+  <meta property="og:description" content="Find your sailing, meet your people and make plans before you board.">
+  <meta property="og:url" content="https://outtheretogether.com/">
+  <meta property="og:image" content="https://outtheretogether.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/brand/app-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/brand/app-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --night-navy: #090B24;
+      --navy-raised: #101432;
+      --navy-card: #151A42;
+      --electric-blue: #1835FF;
+      --electric-blue-hover: #3150ff;
+      --periwinkle: #A9B5FF;
+      --warm-cream: #FFF4DF;
+      --soft-lilac: #DCC8FF;
+      --flirt-coral: #FF6B72;
+      --line: rgba(169, 181, 255, .25);
+      --muted: #A9B5FF;
+      --display: 'Sora', ui-sans-serif, system-ui, sans-serif;
+      --body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+      --max: 72rem;
+      --pad: clamp(1.25rem, 5vw, 3rem);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--night-navy); color: var(--warm-cream);
+      font: 400 16px/1.55 var(--body); -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    img { display: block; max-width: 100%; }
+    :focus-visible { outline: 3px solid var(--soft-lilac); outline-offset: 4px; }
+    .wrap { width: min(100%, var(--max)); margin: 0 auto; padding-inline: var(--pad); }
+
+    .site-header {
+      position: sticky; top: 0; z-index: 10; background: rgb(9 11 36 / .88);
+      border-bottom: 1px solid rgb(169 181 255 / .16); backdrop-filter: blur(18px);
+    }
+    .nav { align-items: center; display: flex; justify-content: space-between; min-height: 76px; gap: .65rem; }
+    .nav-logo { width: min(13rem, 42vw); }
+    .nav > a:last-child { flex: 0 0 auto; white-space: nowrap; }
+    .nav-links { display: none; align-items: center; gap: 1.4rem; color: var(--periwinkle); font-size: .9rem; font-weight: 600; }
+    .nav-links a { text-decoration: none; }
+    .nav-links a:hover { color: var(--warm-cream); }
+    @media (min-width: 52rem) { .nav-links { display: flex; } }
+
+    .button {
+      align-items: center; border: 0; border-radius: 999px; cursor: pointer; display: inline-flex;
+      font: 700 .92rem var(--body); gap: .55rem; justify-content: center; min-height: 48px;
+      padding: .78rem 1.3rem; text-decoration: none; transition: transform .16s ease, background .16s ease;
+    }
+    .button:hover { transform: translateY(-2px); }
+    .button-primary { background: var(--electric-blue); color: var(--warm-cream); }
+    .button-primary:hover { background: var(--electric-blue-hover); }
+    .button-secondary { background: var(--soft-lilac); color: var(--night-navy); }
+    .button-ghost { background: transparent; border: 1px solid var(--line); color: var(--warm-cream); }
+    .button-small { min-height: 40px; padding: .56rem 1rem; font-size: .84rem; }
+    @media (max-width: 31rem) { .button-small { padding-inline: .72rem; font-size: .78rem; } }
+
+    .hero { isolation: isolate; overflow: hidden; position: relative; }
+    .hero::before {
+      background: linear-gradient(90deg, rgb(9 11 36 / .94) 0%, rgb(9 11 36 / .76) 42%, rgb(9 11 36 / .35) 100%), url('/assets/community-hero.jpg') center / cover;
+      content: ''; inset: 0; position: absolute; z-index: -2;
+    }
+    .hero::after {
+      background: radial-gradient(circle at 83% 16%, rgb(24 53 255 / .56), transparent 27%), linear-gradient(0deg, var(--night-navy), transparent 38%);
+      content: ''; inset: 0; position: absolute; z-index: -1;
+    }
+    .hero-grid { display: grid; gap: 3rem; padding-block: clamp(4.5rem, 10vw, 7.75rem) clamp(4rem, 8vw, 6.5rem); }
+    @media (min-width: 60rem) { .hero-grid { grid-template-columns: 1.1fr .9fr; align-items: end; } }
+    .eyebrow { color: var(--periwinkle); font: 700 .8rem var(--body); letter-spacing: .13em; text-transform: uppercase; }
+    h1, h2, h3 { font-family: var(--display); letter-spacing: -.04em; line-height: 1.08; margin: 0; }
+    h1 { font-size: clamp(3rem, 7vw, 5.7rem); max-width: 10ch; }
+    h2 { font-size: clamp(2rem, 4.5vw, 3.6rem); max-width: 15ch; }
+    h3 { font-size: 1.2rem; }
+    .hero-copy { align-items: flex-start; display: flex; flex-direction: column; gap: 1.3rem; }
+    .hero-copy .eyebrow { color: var(--soft-lilac); }
+    .hero-copy p { color: var(--periwinkle); font-size: clamp(1.08rem, 2vw, 1.28rem); max-width: 39rem; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: .7rem; }
+    .hero-note { color: var(--periwinkle); font-size: .85rem; }
+    .pulse { align-items: center; background: rgb(9 11 36 / .68); border: 1px solid rgb(220 200 255 / .35); border-radius: 999px; display: inline-flex; gap: .5rem; padding: .4rem .75rem; font-size: .82rem; font-weight: 700; }
+    .pulse i { background: #63D99A; border-radius: 50%; box-shadow: 0 0 0 5px rgb(99 217 154 / .16); height: 8px; width: 8px; }
+    .hero-card { background: rgb(16 20 50 / .82); border: 1px solid rgb(220 200 255 / .38); border-radius: 24px; box-shadow: 0 24px 70px rgb(0 0 0 / .35); overflow: hidden; padding: 1.2rem; }
+    .hero-card-head { align-items: center; color: var(--periwinkle); display: flex; font-size: .8rem; font-weight: 700; justify-content: space-between; letter-spacing: .08em; text-transform: uppercase; }
+    .hero-card h3 { color: var(--warm-cream); font-size: 1.75rem; margin-top: .8rem; }
+    .trip-meta { color: var(--periwinkle); font-size: .9rem; margin-top: .35rem; }
+    .trip-stats { display: grid; gap: .7rem; grid-template-columns: 1fr 1fr; margin-top: 1.2rem; }
+    .stat { background: var(--navy-card); border: 1px solid var(--line); border-radius: 16px; padding: .8rem; }
+    .stat strong { color: var(--warm-cream); display: block; font: 700 1.7rem/1 var(--display); }
+    .stat span { color: var(--periwinkle); font-size: .78rem; }
+    .avatar-row { display: flex; margin-top: 1.25rem; }
+    .avatar { align-items: center; background: linear-gradient(135deg, var(--soft-lilac), var(--electric-blue)); border: 2px solid var(--navy-raised); border-radius: 50%; color: var(--night-navy); display: flex; font-size: .72rem; font-weight: 800; height: 32px; justify-content: center; margin-right: -8px; width: 32px; }
+    .avatar.more { background: var(--navy-card); color: var(--warm-cream); margin-left: 11px; width: 40px; }
+
+    .intro-band { background: var(--electric-blue); }
+    .intro-grid { display: grid; gap: 1.5rem; padding-block: 2.2rem; }
+    @media (min-width: 48rem) { .intro-grid { align-items: center; grid-template-columns: 1fr 2fr; } }
+    .intro-grid p { color: var(--warm-cream); font-size: 1.05rem; max-width: 50rem; }
+
+    section { padding-block: clamp(4.5rem, 8vw, 7rem); }
+    .section-heading { display: flex; flex-direction: column; gap: .8rem; margin-bottom: 2.3rem; }
+    .section-heading p { color: var(--periwinkle); font-size: 1.05rem; max-width: 45rem; }
+    .features { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+    .feature { background: var(--navy-raised); border: 1px solid var(--line); border-radius: 20px; min-height: 100%; padding: 1.3rem; }
+    .feature-icon { align-items: center; background: var(--electric-blue); border-radius: 14px; color: var(--warm-cream); display: flex; font: 700 1.2rem var(--display); height: 48px; justify-content: center; margin-bottom: 1.2rem; width: 48px; }
+    .feature:nth-child(2) .feature-icon { background: var(--soft-lilac); color: var(--night-navy); }
+    .feature:nth-child(3) .feature-icon { background: var(--flirt-coral); color: var(--night-navy); }
+    .feature p { color: var(--periwinkle); font-size: .94rem; margin: .6rem 0 0; }
+
+    .how { background: var(--navy-raised); border-block: 1px solid var(--line); }
+    .steps { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); }
+    .step { border-top: 2px solid var(--electric-blue); padding-top: 1rem; }
+    .step-number { color: var(--soft-lilac); font: 700 2.8rem/1 var(--display); }
+    .step p { color: var(--periwinkle); font-size: .92rem; margin-top: .6rem; }
+
+    .sailing-prompt { display: grid; gap: 2rem; }
+    @media (min-width: 56rem) { .sailing-prompt { align-items: center; grid-template-columns: 1.05fr .95fr; } }
+    .image-frame { border-radius: 24px; min-height: 290px; overflow: hidden; position: relative; }
+    .image-frame::before { background: linear-gradient(0deg, rgb(9 11 36 / .74), transparent 60%), url('/assets/mediterranean.jpg') center / cover; content: ''; inset: 0; position: absolute; }
+    .image-label { bottom: 1.25rem; left: 1.25rem; position: absolute; }
+    .image-label strong { display: block; font: 700 1.4rem var(--display); }
+    .image-label span { color: var(--periwinkle); font-size: .85rem; }
+    .sailing-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; }
+    .sailing-copy p { color: var(--periwinkle); font-size: 1.06rem; }
+
+    .join { background: linear-gradient(135deg, #1835FF, #2839bd 58%, #171a58); }
+    .join-card { align-items: center; display: flex; flex-direction: column; gap: 1.1rem; margin: 0 auto; max-width: 43rem; text-align: center; }
+    .join h2 { max-width: 13ch; }
+    .join p { color: var(--warm-cream); font-size: 1.05rem; }
+    .signup { display: flex; flex-wrap: wrap; gap: .65rem; justify-content: center; margin-top: .4rem; width: min(100%, 34rem); }
+    .signup input { background: rgb(9 11 36 / .38); border: 1px solid rgb(255 244 223 / .52); border-radius: 999px; color: var(--warm-cream); flex: 1 1 14rem; font: inherit; min-height: 48px; padding: .75rem 1rem; }
+    .signup input::placeholder { color: rgb(255 244 223 / .7); }
+    .signup .button { background: var(--warm-cream); color: var(--night-navy); }
+    .signup-done { color: var(--warm-cream); font-size: .88rem; min-height: 1.4em; }
+    .honeypot { display: none; }
+
+    footer { background: #060717; border-top: 1px solid var(--line); color: var(--periwinkle); padding-block: 2.5rem; }
+    .footer-grid { align-items: start; display: grid; gap: 2rem; grid-template-columns: 1fr; }
+    @media (min-width: 48rem) { .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; } }
+    .footer-logo { width: 13rem; }
+    footer p { font-size: .88rem; max-width: 26rem; }
+    footer h3 { color: var(--warm-cream); font: 700 .78rem var(--body); letter-spacing: .1em; text-transform: uppercase; }
+    footer ul { display: grid; gap: .45rem; list-style: none; margin: .8rem 0 0; padding: 0; }
+    footer a { font-size: .88rem; text-decoration: none; }
+    footer a:hover { color: var(--warm-cream); }
+    .footer-bottom { border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; font-size: .78rem; gap: .8rem 1.4rem; justify-content: space-between; margin-top: 2.2rem; padding-top: 1.25rem; }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .button { transition: none; } .button:hover { transform: none; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="wrap nav" aria-label="Main navigation">
+      <a href="#top" aria-label="Out There: Together home"><img class="nav-logo" src="/assets/brand/logo-horizontal-light.png" alt="Out There: Together"></a>
+      <div class="nav-links"><a href="#how-it-works">How it works</a><a href="#sailings">Find a sailing</a></div>
+      <a class="button button-primary button-small" href="#join">Join the waitlist</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <span class="pulse"><i></i> Built for your next sailing</span>
+          <span class="eyebrow">LGBTQ+ cruise social</span>
+          <h1>Meet your people before you board.</h1>
+          <p>Find your sailing, see who is going and make the plans that turn a great cruise into your cruise.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#join">Join the waitlist <span aria-hidden="true">&rarr;</span></a><a class="button button-ghost" href="#how-it-works">See how it works</a></div>
+          <span class="hero-note">Free to join. Your privacy and safety come first.</span>
+        </div>
+        <aside class="hero-card" aria-label="Example sailing community">
+          <div class="hero-card-head"><span>Your next sailing</span><span>07&ndash;14 Nov</span></div>
+          <h3>Caribbean glow</h3>
+          <p class="trip-meta">Miami &middot; 7 nights &middot; Resilient Lady</p>
+          <div class="trip-stats"><div class="stat"><strong>86</strong><span>people joining</span></div><div class="stat"><strong>14</strong><span>things planned</span></div></div>
+          <div class="avatar-row" aria-label="People joining"><span class="avatar">A</span><span class="avatar">J</span><span class="avatar">M</span><span class="avatar">K</span><span class="avatar more">+82</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="intro-band"><div class="wrap intro-grid"><span class="eyebrow">Your trip. Your people.</span><p>Out There: Together helps LGBTQ+ travellers connect around the sailing itself, from the first &ldquo;I&rsquo;m thinking of going&rdquo; to the last sunset on deck.</p></div></div>
+
+    <section class="wrap" id="how-it-works">
+      <div class="section-heading"><span class="eyebrow">Made for cruise life</span><h2>Less scrolling. More going together.</h2><p>Everything you need to find your crew before sailing and keep the good bits organised once you are on board.</p></div>
+      <div class="features">
+        <article class="feature"><div class="feature-icon">01</div><h3>Find your voyage</h3><p>Browse sailings by line, date, region and ship. Mark one as planning or booked and make yourself visible to fellow travellers.</p></article>
+        <article class="feature"><div class="feature-icon">02</div><h3>Meet your people</h3><p>Get to know shipmates and create a private connection when it feels right. No crowded group-chat energy required.</p></article>
+        <article class="feature"><div class="feature-icon">03</div><h3>Plan something</h3><p>From welcome drinks to a beach day, make plans that your sailing community can discover, join and remember.</p></article>
+      </div>
+    </section>
+
+    <section class="how"><div class="wrap"><div class="section-heading"><span class="eyebrow">A better way to cruise</span><h2>From &ldquo;maybe&rdquo; to first drink.</h2></div><div class="steps"><article class="step"><span class="step-number">01</span><h3>Choose a sailing</h3><p>Search the trips you are interested in and tell the community whether you are planning or booked.</p></article><article class="step"><span class="step-number">02</span><h3>Build your crew</h3><p>See who else is heading your way, find shared interests and start genuine conversations before embarkation day.</p></article><article class="step"><span class="step-number">03</span><h3>Make it memorable</h3><p>Use the day plan to make and join things on board and ashore, all in the rhythm of your actual itinerary.</p></article></div></div></section>
+
+    <section class="wrap" id="sailings"><div class="sailing-prompt"><div class="image-frame"><div class="image-label"><strong>Find your voyage</strong><span>Mediterranean &middot; Caribbean &middot; Northern Europe and more</span></div></div><div class="sailing-copy"><span class="eyebrow">Your next trip starts here</span><h2>Going somewhere good?</h2><p>Use Out There: Together to turn the part before the holiday into part of the holiday too.</p><a class="button button-secondary" href="#join">Be first to know <span aria-hidden="true">&rarr;</span></a></div></div></section>
+
+    <section class="join" id="join"><div class="wrap join-card"><span class="eyebrow">Launching soon</span><h2>Make your next cruise more yours.</h2><p>Join the waitlist for early access and launch news.</p><form class="signup" onsubmit="joinWaitlist(event)"><label class="honeypot" aria-hidden="true">Company <input name="company" tabindex="-1" autocomplete="off"></label><label class="honeypot" for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><button class="button" type="submit">Join the waitlist</button></form><p class="signup-done" aria-live="polite"></p></div></section>
+  </main>
+
+  <footer><div class="wrap"><div class="footer-grid"><div><img class="footer-logo" src="/assets/brand/logo-horizontal-light.png" alt="Out There: Together"><p style="margin-top:1rem">The LGBTQ+ cruise social app for people who want to arrive with people, not just luggage.</p></div><div><h3>Explore</h3><ul><li><a href="#how-it-works">How it works</a></li><li><a href="#sailings">Find a sailing</a></li><li><a href="#join">Join the waitlist</a></li></ul></div><div><h3>Legal</h3><ul><li><a href="/privacy/">Privacy policy</a></li><li><a href="/cookies/">Cookie policy</a></li><li><a href="/delete-account/">Delete your account</a></li><li><a href="mailto:hello@outtheretogether.com">Contact us</a></li></ul></div></div><div class="footer-bottom"><span>&copy; 2026 Out There: Together.</span><span>Out There: Together is a social app, not a travel agent.</span></div></div></footer>
+
+  <script>
+    const WAITLIST_ENDPOINT = 'https://dpfadeuxbniufdonzkvy.supabase.co/functions/v1/waitlist-signup';
+    async function joinWaitlist(event) {
+      event.preventDefault();
+      const form = event.currentTarget;
+      const email = form.elements.email.value.trim();
+      const company = form.elements.company.value;
+      const button = form.querySelector('button');
+      const note = form.parentElement.querySelector('.signup-done');
+      if (!email) return;
+      button.disabled = true; note.textContent = 'Adding you to the list...';
+      try {
+        const response = await fetch(WAITLIST_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email, company }) });
+        const result = await response.json().catch(() => ({}));
+        if (response.ok && result.joined) { form.reset(); note.textContent = 'You are on the list. We will email you when the app opens.'; }
+        else { note.textContent = result.error || 'We could not add you just now. Please try again shortly.'; }
+      } catch { note.textContent = 'We could not reach the waitlist. Please try again shortly.'; }
+      finally { button.disabled = false; }
+    }
+  </script>
+  <script>function loadScript(callback){var head=document.getElementsByTagName('head')[0],script=document.createElement('script');script.type='text/javascript';script.src='https://tracker.metricool.com/resources/be.js';script.onreadystatechange=callback;script.onload=callback;head.appendChild(script)}loadScript(function(){beTracker.t({hash:'cc92ce15d015ab891d6dd799d8574ec9'})});</script>
+</body>
+</html>
