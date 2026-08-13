@@ -147,6 +147,10 @@
     .signup { display: flex; flex-wrap: wrap; gap: .65rem; justify-content: center; margin-top: .4rem; width: min(100%, 34rem); }
     .signup input { background: rgb(9 11 36 / .38); border: 1px solid rgb(255 244 223 / .52); border-radius: 999px; color: var(--warm-cream); flex: 1 1 14rem; font: inherit; min-height: 48px; padding: .75rem 1rem; }
     .signup input::placeholder { color: rgb(255 244 223 / .7); }
+    .sail-date-field { display: flex; flex: 1 1 14rem; flex-direction: column; gap: .3rem; }
+    .sail-date-field .field-label { color: rgb(255 244 223 / .85); font-size: .82rem; text-align: left; }
+    .sail-date { display: flex; gap: .4rem; }
+    .sail-date select { background: rgb(9 11 36 / .38); border: 1px solid rgb(255 244 223 / .52); border-radius: 12px; color: var(--warm-cream); flex: 1 1 0; font: inherit; min-height: 48px; padding: .75rem .5rem; }
     .signup .button { background: var(--warm-cream); color: var(--night-navy); }
     .signup-done { color: var(--warm-cream); font-size: .88rem; min-height: 1.4em; }
     .honeypot { display: none; }
@@ -209,7 +213,7 @@
 
     <section class="wrap" id="sailings"><div class="sailing-prompt"><div class="image-frame"><div class="image-label"><strong>Find your voyage</strong><span>Mediterranean &middot; Caribbean &middot; Northern Europe and more</span></div></div><div class="sailing-copy"><span class="eyebrow">Your next trip starts here</span><h2>Going somewhere good?</h2><p>Use Out There: Together to turn the part before the holiday into part of the holiday too.</p><a class="button button-secondary" href="#join">Be first to know <span aria-hidden="true">&rarr;</span></a></div></div></section>
 
-    <section class="join" id="join"><div class="wrap join-card"><span class="eyebrow">Launching soon</span><h2>Make your next cruise more yours.</h2><p>Join the waitlist for early access and launch news.</p><form class="signup" onsubmit="joinWaitlist(event)"><label class="honeypot" aria-hidden="true">Company <input name="company" tabindex="-1" autocomplete="off"></label><label class="honeypot" for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><button class="button" type="submit">Join the waitlist</button></form><p class="signup-done" aria-live="polite"></p></div></section>
+    <section class="join" id="join"><div class="wrap join-card"><span class="eyebrow">Launching soon</span><h2>Make your next cruise more yours.</h2><p>Join the waitlist for early access and launch news. Tell us about your next cruise and we'll help get you talking to your shipmates before you even board.</p><form class="signup" onsubmit="joinWaitlist(event)"><label class="honeypot" aria-hidden="true">Company <input name="company" tabindex="-1" autocomplete="off"></label><label class="honeypot" for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><input id="name" name="name" type="text" autocomplete="name" placeholder="First name (optional)"><input id="ship" name="ship" type="text" placeholder="Which ship are you sailing on next? (optional)"><div class="sail-date-field"><span class="field-label">When do you sail?</span><div class="sail-date" role="group" aria-label="Sail date: day, month, year (optional)"><select name="sailDay" aria-label="Day"><option value="">Day</option><option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select><select name="sailMonth" aria-label="Month"><option value="">Month</option><option value="01">Jan</option><option value="02">Feb</option><option value="03">Mar</option><option value="04">Apr</option><option value="05">May</option><option value="06">Jun</option><option value="07">Jul</option><option value="08">Aug</option><option value="09">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select><select name="sailYear" aria-label="Year"><option value="">Year</option><option value="2026">2026</option><option value="2027">2027</option><option value="2028">2028</option><option value="2029">2029</option><option value="2030">2030</option></select></div></div><button class="button" type="submit">Join the waitlist</button></form><p class="signup-done" aria-live="polite"></p></div></section>
   </main>
 
   <footer><div class="wrap"><div class="footer-grid"><div><img class="footer-logo" src="/assets/brand/logo-horizontal-light.png" alt="Out There: Together"><p style="margin-top:1rem">The LGBTQ+ cruise social app for people who want to arrive with people, not just luggage.</p></div><div><h3>Explore</h3><ul><li><a href="#how-it-works">How it works</a></li><li><a href="#sailings">Find a sailing</a></li><li><a href="#join">Join the waitlist</a></li></ul></div><div><h3>Legal</h3><ul><li><a href="/privacy/">Privacy policy</a></li><li><a href="/cookies/">Cookie policy</a></li><li><a href="/delete-account/">Delete your account</a></li><li><a href="mailto:hello@outtheretogether.com">Contact us</a></li></ul></div></div><div class="footer-bottom"><span>&copy; 2026 Out There: Together.</span><span>Out There: Together is a social app, not a travel agent.</span></div></div></footer>
@@ -221,12 +225,20 @@
       const form = event.currentTarget;
       const email = form.elements.email.value.trim();
       const company = form.elements.company.value;
+      const name = form.elements.name.value.trim();
+      const ship = form.elements.ship.value.trim();
+      // Picked from dropdowns rather than typed, so DD/MM/YYYY is what lands
+      // in the database rather than a format somebody has to remember.
+      const sailDay = form.elements.sailDay.value;
+      const sailMonth = form.elements.sailMonth.value;
+      const sailYear = form.elements.sailYear.value;
+      const sailingDate = sailDay && sailMonth && sailYear ? `${sailDay}/${sailMonth}/${sailYear}` : '';
       const button = form.querySelector('button');
       const note = form.parentElement.querySelector('.signup-done');
       if (!email) return;
       button.disabled = true; note.textContent = 'Adding you to the list...';
       try {
-        const response = await fetch(WAITLIST_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email, company }) });
+        const response = await fetch(WAITLIST_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email, company, name, nextShipName: ship, nextSailingDate: sailingDate }) });
         const result = await response.json().catch(() => ({}));
         if (response.ok && result.joined) { form.reset(); note.textContent = 'You are on the list. We will email you when the app opens.'; }
         else { note.textContent = result.error || 'We could not add you just now. Please try again shortly.'; }
