@@ -4,27 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Out There: Together | Meet your people before you board</title>
-  <meta name="description" content="Out There: Together is the LGBTQ+ cruise social app. Find your sailing, meet your people and make plans before you board.">
+  <meta name="description" content="Get invited to the beta launch. Find LGBTQ+ travellers on your exact cruise, chat safely before sailing and make plans for onboard and ashore.">
   <link rel="canonical" href="https://outtheretogether.com/">
   <meta name="theme-color" content="#090B24">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Out There: Together">
   <meta property="og:title" content="Meet your people before you board">
-  <meta property="og:description" content="Find your sailing, meet your people and make plans before you board.">
+  <meta property="og:description" content="Get invited to the beta launch. Find LGBTQ+ travellers on your exact cruise, chat safely before sailing and make plans for onboard and ashore.">
   <meta property="og:url" content="https://outtheretogether.com/">
-  <meta property="og:image" content="https://outtheretogether.com/og-image.png?v=20260813">
-  <meta property="og:image:secure_url" content="https://outtheretogether.com/og-image.png?v=20260813">
-  <meta property="og:image:type" content="image/png">
+  <meta property="og:image" content="https://outtheretogether.com/og-image.jpg?v=20260813-2">
+  <meta property="og:image:secure_url" content="https://outtheretogether.com/og-image.jpg?v=20260813-2">
+  <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Out There Together — meet your people before you board">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Meet your people before you board">
-  <meta name="twitter:description" content="Find your sailing, meet your people and make plans before you board.">
-  <meta name="twitter:image" content="https://outtheretogether.com/og-image.png?v=20260813">
+  <meta name="twitter:description" content="Get invited to the beta launch. Find LGBTQ+ travellers on your exact cruise, chat safely before sailing and make plans for onboard and ashore.">
+  <meta name="twitter:image" content="https://outtheretogether.com/og-image.jpg?v=20260813-2">
   <meta name="twitter:image:alt" content="Out There Together — meet your people before you board">
-  <link rel="icon" href="/assets/brand/app-icon.png" type="image/png">
-  <link rel="apple-touch-icon" href="/assets/brand/app-icon.png">
+  <link rel="icon" href="assets/brand/app-icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/brand/app-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -85,7 +85,7 @@
 
     .hero { isolation: isolate; overflow: hidden; position: relative; }
     .hero::before {
-      background: linear-gradient(90deg, rgb(9 11 36 / .94) 0%, rgb(9 11 36 / .76) 42%, rgb(9 11 36 / .35) 100%), url('/assets/community-hero.jpg') center / cover;
+      background: linear-gradient(90deg, rgb(9 11 36 / .94) 0%, rgb(9 11 36 / .76) 42%, rgb(9 11 36 / .35) 100%), url('assets/community-hero.jpg') center / cover;
       content: ''; inset: 0; position: absolute; z-index: -2;
     }
     .hero::after {
@@ -124,6 +124,7 @@
     .intro-grid p { color: var(--warm-cream); font-size: 1.05rem; max-width: 50rem; }
 
     section { padding-block: clamp(4.5rem, 8vw, 7rem); }
+    section[id] { scroll-margin-top: 5.5rem; }
     .section-heading { display: flex; flex-direction: column; gap: .8rem; margin-bottom: 2.3rem; }
     .section-heading p { color: var(--periwinkle); font-size: 1.05rem; max-width: 45rem; }
     .features { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
@@ -133,35 +134,59 @@
     .feature:nth-child(3) .feature-icon { background: var(--flirt-coral); color: var(--night-navy); }
     .feature p { color: var(--periwinkle); font-size: .94rem; margin: .6rem 0 0; }
 
-    .how { background: var(--navy-raised); border-block: 1px solid var(--line); }
-    .steps { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); }
-    .step { border-top: 2px solid var(--electric-blue); padding-top: 1rem; }
-    .step-number { color: var(--soft-lilac); font: 700 2.8rem/1 var(--display); }
-    .step p { color: var(--periwinkle); font-size: .92rem; margin-top: .6rem; }
+    .product-tour { background: var(--navy-raised); border-block: 1px solid var(--line); overflow: hidden; }
+    .product-tour-head { align-items: flex-end; display: flex; gap: 1rem; justify-content: space-between; margin-bottom: 2.3rem; }
+    .product-tour-head .section-heading { margin-bottom: 0; }
+    .product-controls { display: flex; flex: 0 0 auto; gap: .55rem; }
+    .product-control { align-items: center; background: var(--night-navy); border: 1px solid var(--line); border-radius: 50%; color: var(--warm-cream); cursor: pointer; display: inline-flex; font: 700 1.2rem/1 var(--body); height: 44px; justify-content: center; width: 44px; }
+    .product-control:hover { background: var(--navy-card); border-color: var(--periwinkle); }
+    .product-control:focus-visible { outline: 3px solid var(--soft-lilac); outline-offset: 3px; }
+    .product-grid { display: flex; gap: 1rem; margin-right: calc(50% - 50vw); overflow-x: auto; overscroll-behavior-inline: contain; padding: .1rem max(1.25rem, calc(50vw - 50%)) 1rem 0; scroll-padding-inline: 0 1.25rem; scroll-snap-type: x mandatory; scrollbar-color: var(--periwinkle) transparent; scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
+    .product-card { background: var(--night-navy); border: 1px solid var(--line); border-radius: 24px; display: flex; flex: 0 0 min(78vw, 20rem); flex-direction: column; overflow: hidden; scroll-snap-align: start; }
+    .product-shot { aspect-ratio: 390 / 650; background: #FFF4EC; border-bottom: 1px solid var(--line); overflow: hidden; }
+    .product-shot img { height: auto; width: 100%; }
+    .product-copy { flex: 1; padding: 1.25rem; }
+    .product-copy h3 { font-size: 1.35rem; }
+    .product-copy p { color: var(--periwinkle); font-size: .92rem; margin: .55rem 0 0; }
+    .product-note { color: var(--periwinkle); font-size: .82rem; margin: 1rem 0 0; }
+    @media (max-width: 35rem) {
+      .product-tour-head { align-items: flex-start; }
+      .product-controls { margin-top: .1rem; }
+      .product-control { height: 40px; width: 40px; }
+    }
 
-    .sailing-prompt { display: grid; gap: 2rem; }
-    @media (min-width: 56rem) { .sailing-prompt { align-items: center; grid-template-columns: 1.05fr .95fr; } }
-    .image-frame { border-radius: 24px; min-height: 290px; overflow: hidden; position: relative; }
-    .image-frame::before { background: linear-gradient(0deg, rgb(9 11 36 / .74), transparent 60%), url('/assets/mediterranean.jpg') center / cover; content: ''; inset: 0; position: absolute; }
-    .image-label { bottom: 1.25rem; left: 1.25rem; position: absolute; }
-    .image-label strong { display: block; font: 700 1.4rem var(--display); }
-    .image-label span { color: var(--periwinkle); font-size: .85rem; }
-    .sailing-copy { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; }
-    .sailing-copy p { color: var(--periwinkle); font-size: 1.06rem; }
+    .safety-panel { display: grid; gap: 2rem; }
+    @media (min-width: 56rem) { .safety-panel { align-items: center; grid-template-columns: .9fr 1.1fr; } }
+    .safety-image { background: linear-gradient(0deg, rgb(9 11 36 / .76), transparent 65%), url('assets/mediterranean.jpg') center / cover; border-radius: 24px; min-height: 330px; position: relative; }
+    .safety-image-copy { bottom: 1.25rem; left: 1.25rem; position: absolute; right: 1.25rem; }
+    .safety-image-copy strong { display: block; font: 700 1.45rem var(--display); }
+    .safety-image-copy span { color: var(--periwinkle); font-size: .88rem; }
+    .safety-copy { display: flex; flex-direction: column; gap: 1rem; }
+    .safety-copy > p { color: var(--periwinkle); font-size: 1.04rem; margin: 0; }
+    .safety-list { display: grid; gap: .75rem; list-style: none; margin: .35rem 0 0; padding: 0; }
+    .safety-list li { align-items: flex-start; background: var(--navy-raised); border: 1px solid var(--line); border-radius: 16px; display: flex; gap: .8rem; padding: .9rem; }
+    .safety-check { align-items: center; background: var(--soft-lilac); border-radius: 50%; color: var(--night-navy); display: inline-flex; flex: 0 0 auto; font-weight: 800; height: 28px; justify-content: center; width: 28px; }
+    .safety-list strong { display: block; font-family: var(--display); }
+    .safety-list span:last-child { color: var(--periwinkle); display: block; font-size: .88rem; margin-top: .15rem; }
 
     .join { background: linear-gradient(135deg, #1835FF, #2839bd 58%, #171a58); }
     .join-card { align-items: center; display: flex; flex-direction: column; gap: 1.1rem; margin: 0 auto; max-width: 43rem; text-align: center; }
     .join h2 { max-width: 13ch; }
     .join p { color: var(--warm-cream); font-size: 1.05rem; }
-    .signup { display: flex; flex-wrap: wrap; gap: .65rem; justify-content: center; margin-top: .4rem; width: min(100%, 34rem); }
-    .signup input { background: rgb(9 11 36 / .38); border: 1px solid rgb(255 244 223 / .52); border-radius: 999px; color: var(--warm-cream); flex: 1 1 14rem; font: inherit; min-height: 48px; padding: .75rem 1rem; }
+    .signup { display: grid; gap: .65rem; margin-top: .4rem; width: min(100%, 34rem); }
+    .signup .field-label { color: var(--warm-cream); font-size: .86rem; font-weight: 600; text-align: left; }
+    .signup input { background: rgb(9 11 36 / .38); border: 1px solid rgb(255 244 223 / .52); border-radius: 999px; color: var(--warm-cream); font: inherit; min-height: 50px; padding: .75rem 1rem; width: 100%; }
     .signup input::placeholder { color: rgb(255 244 223 / .7); }
-    .sail-date-field { display: flex; flex: 1 1 14rem; flex-direction: column; gap: .3rem; }
-    .sail-date-field .field-label { color: rgb(255 244 223 / .85); font-size: .82rem; text-align: left; }
-    .sail-date { display: flex; gap: .4rem; }
-    .sail-date select { background: rgb(9 11 36 / .38); border: 1px solid rgb(255 244 223 / .52); border-radius: 12px; color: var(--warm-cream); flex: 1 1 0; font: inherit; min-height: 48px; padding: .75rem .5rem; }
     .signup .button { background: var(--warm-cream); color: var(--night-navy); }
     .signup-done { color: var(--warm-cream); font-size: .88rem; min-height: 1.4em; }
+    .signup-done:empty { display: none; }
+    .signup-assurance { font-size: .82rem !important; margin: -.35rem 0 0; }
+    .signup-assurance a { color: var(--warm-cream); }
+    @media (min-width: 36rem) {
+      .signup { grid-template-columns: minmax(0, 1fr) auto; }
+      .signup .field-label { grid-column: 1 / -1; }
+      .signup .button { padding-inline: 1.6rem; }
+    }
     .honeypot { display: none; }
 
     footer { background: #060717; border-top: 1px solid var(--line); color: var(--periwinkle); padding-block: 2.5rem; }
@@ -178,26 +203,26 @@
   </style>
   <!-- Meta Pixel Code: activated only after the visitor accepts marketing cookies. -->
   <script type="text/plain" id="ott-meta-pixel-code" data-cookie-category="marketing">
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1349825137268496');
-  fbq('track', 'PageView');
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1349825137268496');
+fbq('track', 'PageView');
   </script>
   <!-- End Meta Pixel Code -->
-  <script src="/assets/cookie-consent.js?v=20260814-2" defer></script>
+  <script src="assets/cookie-consent.js?v=20260814-3" defer></script>
 </head>
 <body>
   <header class="site-header">
     <nav class="wrap nav" aria-label="Main navigation">
-      <a href="#top" aria-label="Out There: Together home"><img class="nav-logo" src="/assets/brand/logo-horizontal-light.png" alt="Out There: Together"></a>
-      <div class="nav-links"><a href="#how-it-works">How it works</a><a href="#sailings">Find a sailing</a></div>
-      <a class="button button-primary button-small" href="#join">Join the waitlist</a>
+      <a href="#top" aria-label="Out There: Together home"><img class="nav-logo" src="assets/brand/logo-horizontal-light.png" alt="Out There: Together"></a>
+      <div class="nav-links"><a href="#product-tour">See the app</a><a href="#safety">Safety</a></div>
+      <a class="button button-primary button-small" href="#join">Get beta access</a>
     </nav>
   </header>
 
@@ -208,12 +233,12 @@
           <span class="pulse"><i></i> Built for your next sailing</span>
           <span class="eyebrow">LGBTQ+ cruise social</span>
           <h1>Meet your people before you board.</h1>
-          <p>Find your sailing, see who is going and make the plans that turn a great cruise into your cruise.</p>
-          <div class="hero-actions"><a class="button button-primary" href="#join">Join the waitlist <span aria-hidden="true">&rarr;</span></a><a class="button button-ghost" href="#how-it-works">See how it works</a></div>
-          <span class="hero-note">Free to join. Your privacy and safety come first.</span>
+          <p>Get invited to the beta launch. Find LGBTQ+ travellers on your exact cruise, chat safely before sailing and make plans for onboard and ashore.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#join">Get beta access <span aria-hidden="true">&rarr;</span></a><a class="button button-ghost" href="#product-tour">See the app</a></div>
+          <span class="hero-note">Free to join &middot; 18+ &middot; Privacy controls built in</span>
         </div>
         <aside class="hero-card" aria-label="Example sailing community">
-          <div class="hero-card-head"><span>Your next sailing</span><span>07&ndash;14 Nov</span></div>
+          <div class="hero-card-head"><span>Example sailing</span><span>07&ndash;14 Nov</span></div>
           <h3>Caribbean glow</h3>
           <p class="trip-meta">Miami &middot; 7 nights &middot; Resilient Lady</p>
           <div class="trip-stats"><div class="stat"><strong>86</strong><span>people joining</span></div><div class="stat"><strong>14</strong><span>things planned</span></div></div>
@@ -233,38 +258,40 @@
       </div>
     </section>
 
-    <section class="how"><div class="wrap"><div class="section-heading"><span class="eyebrow">A better way to cruise</span><h2>From &ldquo;maybe&rdquo; to first drink.</h2></div><div class="steps"><article class="step"><span class="step-number">01</span><h3>Choose a sailing</h3><p>Search the trips you are interested in and tell the community whether you are planning or booked.</p></article><article class="step"><span class="step-number">02</span><h3>Build your crew</h3><p>See who else is heading your way, find shared interests and start genuine conversations before embarkation day.</p></article><article class="step"><span class="step-number">03</span><h3>Make it memorable</h3><p>Use the day plan to make and join things on board and ashore, all in the rhythm of your actual itinerary.</p></article></div></div></section>
+    <section class="product-tour" id="product-tour"><div class="wrap"><div class="product-tour-head"><div class="section-heading"><span class="eyebrow">The beta in action</span><h2>See what your next sailing could look like.</h2></div><div class="product-controls" aria-label="Product screen controls"><button class="product-control" type="button" aria-label="Previous product screen" aria-controls="product-carousel" onclick="scrollProductTour(-1)">&larr;</button><button class="product-control" type="button" aria-label="Next product screen" aria-controls="product-carousel" onclick="scrollProductTour(1)">&rarr;</button></div></div><div class="product-grid" id="product-carousel" role="region" aria-label="Dark-theme product screens" tabindex="0"><article class="product-card"><div class="product-shot"><img src="assets/product-find-sailing.png" alt="Dark-theme demo app screen showing a search for a Caribbean sailing" loading="lazy" width="390" height="844"></div><div class="product-copy"><h3>Find your sailing</h3><p>Search by ship, cruise line or port and see the voyages already gathering a community.</p></div></article><article class="product-card"><div class="product-shot"><img src="assets/product-heatmap.png" alt="Dark-theme demo app heatmap showing busier sailing dates in September" loading="lazy" width="390" height="844"></div><div class="product-copy"><h3>See when people are sailing</h3><p>Use the heatmap to spot busier dates, then open a day to see its sailings and community.</p></div></article><article class="product-card"><div class="product-shot"><img src="assets/product-shipmates.png" alt="Dark-theme demo app screen showing a sailing hub with shipmates and chat" loading="lazy" width="390" height="844"></div><div class="product-copy"><h3>Meet your shipmates</h3><p>See who is aboard, follow the conversation and keep everything for the voyage together.</p></div></article><article class="product-card"><div class="product-shot"><img src="assets/product-make-plans.png" alt="Dark-theme demo app screen showing shore activities and meetup plans" loading="lazy" width="390" height="844"></div><div class="product-copy"><h3>Make plans together</h3><p>Discover things to do ashore, join a meetup or create a plan for your sailing.</p></div></article></div><p class="product-note">Swipe, scroll or use the arrows to explore. All product images are marked DEMO and contain seeded data only.</p></div></section>
 
-    <section class="wrap" id="sailings"><div class="sailing-prompt"><div class="image-frame"><div class="image-label"><strong>Find your voyage</strong><span>Mediterranean &middot; Caribbean &middot; Northern Europe and more</span></div></div><div class="sailing-copy"><span class="eyebrow">Your next trip starts here</span><h2>Going somewhere good?</h2><p>Use Out There: Together to turn the part before the holiday into part of the holiday too.</p><a class="button button-secondary" href="#join">Be first to know <span aria-hidden="true">&rarr;</span></a></div></div></section>
+    <section class="wrap" id="safety"><div class="safety-panel"><div class="safety-image" role="img" aria-label="Cruise ship sailing through the Mediterranean"><div class="safety-image-copy"><strong>Meet people without giving up control.</strong><span>Safety and privacy are part of the product, not an afterthought.</span></div></div><div class="safety-copy"><span class="eyebrow">Safer by design</span><h2>Your sailing. Your visibility. Your choice.</h2><p>Out There: Together is built for LGBTQ+ adults who want genuine connection with clear boundaries.</p><ul class="safety-list"><li><span class="safety-check" aria-hidden="true">18</span><div><strong>Adults only</strong><span>The community is for people aged 18 and over.</span></div></li><li><span class="safety-check" aria-hidden="true">&#10003;</span><div><strong>You control what is visible</strong><span>Choose how your profile, sailing status and connections appear to shipmates.</span></div></li><li><span class="safety-check" aria-hidden="true">&#10003;</span><div><strong>Safety controls stay close</strong><span>Blocking, reporting and privacy controls are available throughout the app.</span></div></li></ul></div></div></section>
 
-    <section class="join" id="join"><div class="wrap join-card"><span class="eyebrow">Launching soon</span><h2>Make your next cruise more yours.</h2><p>Join the waitlist for early access and launch news. Tell us about your next cruise and we'll help get you talking to your shipmates before you even board.</p><form class="signup" onsubmit="joinWaitlist(event)"><label class="honeypot" aria-hidden="true">Company <input name="company" tabindex="-1" autocomplete="off"></label><label class="honeypot" for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required><input id="name" name="name" type="text" autocomplete="name" placeholder="First name (optional)"><input id="ship" name="ship" type="text" placeholder="Which ship are you sailing on next? (optional)"><div class="sail-date-field"><span class="field-label">When do you sail?</span><div class="sail-date" role="group" aria-label="Sail date: day, month, year (optional)"><select name="sailDay" aria-label="Day"><option value="">Day</option><option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select><select name="sailMonth" aria-label="Month"><option value="">Month</option><option value="01">Jan</option><option value="02">Feb</option><option value="03">Mar</option><option value="04">Apr</option><option value="05">May</option><option value="06">Jun</option><option value="07">Jul</option><option value="08">Aug</option><option value="09">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select><select name="sailYear" aria-label="Year"><option value="">Year</option><option value="2026">2026</option><option value="2027">2027</option><option value="2028">2028</option><option value="2029">2029</option><option value="2030">2030</option></select></div></div><button class="button" type="submit">Join the waitlist</button></form><p class="signup-done" aria-live="polite"></p></div></section>
+    <section class="join" id="join"><div class="wrap join-card"><span class="eyebrow">Beta access</span><h2>Get invited to the beta launch.</h2><p>Find LGBTQ+ travellers on your exact cruise, chat safely before sailing and make plans for onboard and ashore.</p><form class="signup" onsubmit="joinWaitlist(event)"><label class="honeypot" aria-hidden="true">Company <input name="company" tabindex="-1" autocomplete="off"></label><label class="field-label" for="email">Email address</label><input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@example.com" required><button class="button" type="submit">Get beta access</button></form><p class="signup-done" aria-live="polite"></p><p class="signup-assurance">Free to join. We will only email you about beta access and launch updates. <a href="privacy/">Privacy policy</a>.</p></div></section>
   </main>
 
-  <footer><div class="wrap"><div class="footer-grid"><div><img class="footer-logo" src="/assets/brand/logo-horizontal-light.png" alt="Out There: Together"><p style="margin-top:1rem">The LGBTQ+ cruise social app for people who want to arrive with people, not just luggage.</p></div><div><h3>Explore</h3><ul><li><a href="#how-it-works">How it works</a></li><li><a href="#sailings">Find a sailing</a></li><li><a href="#join">Join the waitlist</a></li></ul></div><div><h3>Legal</h3><ul><li><a href="/privacy/">Privacy policy</a></li><li><a href="/cookies/">Cookie policy</a></li><li><a href="/cookies/" data-cookie-settings>Cookie settings</a></li><li><a href="/delete-account/">Delete your account</a></li><li><a href="mailto:hello@outtheretogether.com">Contact us</a></li></ul></div></div><div class="footer-bottom"><span>&copy; 2026 Out There: Together.</span><span>Out There: Together is a social app, not a travel agent.</span></div></div></footer>
+  <footer><div class="wrap"><div class="footer-grid"><div><img class="footer-logo" src="assets/brand/logo-horizontal-light.png" alt="Out There: Together"><p style="margin-top:1rem">The LGBTQ+ cruise social app for people who want to arrive with people, not just luggage.</p></div><div><h3>Explore</h3><ul><li><a href="#product-tour">See the app</a></li><li><a href="#safety">Safety</a></li><li><a href="#join">Get beta access</a></li></ul></div><div><h3>Legal</h3><ul><li><a href="privacy/">Privacy policy</a></li><li><a href="cookies/">Cookie policy</a></li><li><a href="cookies/" data-cookie-settings>Cookie settings</a></li><li><a href="delete-account/">Delete your account</a></li><li><a href="mailto:hello@outtheretogether.com">Contact us</a></li></ul></div></div><div class="footer-bottom"><span>&copy; 2026 Out There: Together.</span><span>Out There: Together is a social app, not a travel agent.</span></div></div></footer>
 
   <script>
     const WAITLIST_ENDPOINT = 'https://dpfadeuxbniufdonzkvy.supabase.co/functions/v1/waitlist-signup';
+    function scrollProductTour(direction) {
+      const carousel = document.getElementById('product-carousel');
+      const card = carousel?.querySelector('.product-card');
+      if (!carousel || !card) return;
+      const gap = Number.parseFloat(getComputedStyle(carousel).gap) || 16;
+      carousel.scrollBy({
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+        left: direction * (card.getBoundingClientRect().width + gap),
+      });
+    }
     async function joinWaitlist(event) {
       event.preventDefault();
       const form = event.currentTarget;
       const email = form.elements.email.value.trim();
       const company = form.elements.company.value;
-      const name = form.elements.name.value.trim();
-      const ship = form.elements.ship.value.trim();
-      // Picked from dropdowns rather than typed, so DD/MM/YYYY is what lands
-      // in the database rather than a format somebody has to remember.
-      const sailDay = form.elements.sailDay.value;
-      const sailMonth = form.elements.sailMonth.value;
-      const sailYear = form.elements.sailYear.value;
-      const sailingDate = sailDay && sailMonth && sailYear ? `${sailDay}/${sailMonth}/${sailYear}` : '';
       const button = form.querySelector('button');
       const note = form.parentElement.querySelector('.signup-done');
       if (!email) return;
       button.disabled = true; note.textContent = 'Adding you to the list...';
       try {
-        const response = await fetch(WAITLIST_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email, company, name, nextShipName: ship, nextSailingDate: sailingDate }) });
+        const response = await fetch(WAITLIST_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ email, company }) });
         const result = await response.json().catch(() => ({}));
-        if (response.ok && result.joined) { form.reset(); note.textContent = 'You are on the list. We will email you when the app opens.'; }
+        if (response.ok && result.joined) { form.reset(); note.textContent = 'You are on the beta list. We will email you when invitations open.'; }
         else { note.textContent = result.error || 'We could not add you just now. Please try again shortly.'; }
       } catch { note.textContent = 'We could not reach the waitlist. Please try again shortly.'; }
       finally { button.disabled = false; }

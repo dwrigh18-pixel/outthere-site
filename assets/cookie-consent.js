@@ -37,20 +37,20 @@
   function showBanner() {
     if (!banner) return;
     banner.hidden = false;
-    var accept = banner.querySelector('[data-cookie-accept]');
-    if (accept) accept.focus();
+    var reject = banner.querySelector('[data-cookie-reject]');
+    if (reject) reject.focus();
   }
 
   function createBanner() {
     var style = document.createElement('style');
-    style.textContent = '.ott-cookie-banner{position:fixed;z-index:1000;right:1rem;bottom:1rem;width:min(100% - 2rem,32rem);padding:1.1rem;background:#101432;color:#FFF4DF;border:1px solid rgba(169,181,255,.45);border-radius:1rem;box-shadow:0 1rem 3rem rgba(0,0,0,.4);font:400 15px/1.5 Inter,system-ui,sans-serif}.ott-cookie-banner[hidden]{display:none}.ott-cookie-banner p{margin:.35rem 0 .9rem}.ott-cookie-banner a{color:#DCC8FF}.ott-cookie-actions{display:flex;flex-wrap:wrap;gap:.65rem}.ott-cookie-button{min-height:2.7rem;padding:.6rem .85rem;border-radius:.6rem;border:1px solid #A9B5FF;background:transparent;color:#FFF4DF;font:600 .9rem Inter,system-ui,sans-serif;cursor:pointer}.ott-cookie-button--accept{border-color:#FF6B72;background:#FF6B72;color:#090B24}.ott-cookie-button:focus-visible{outline:3px solid #DCC8FF;outline-offset:3px}';
+    style.textContent = '.ott-cookie-banner{position:fixed;z-index:1000;left:50%;bottom:.75rem;transform:translateX(-50%);display:flex;align-items:center;justify-content:space-between;gap:1rem;width:min(calc(100% - 1.5rem),72rem);padding:.75rem .85rem;background:#101432;color:#FFF4DF;border:1px solid rgba(169,181,255,.45);border-radius:.8rem;box-shadow:0 .75rem 2.5rem rgba(0,0,0,.4);font:400 13px/1.4 Inter,system-ui,sans-serif}.ott-cookie-banner[hidden]{display:none}.ott-cookie-banner p{margin:0}.ott-cookie-banner strong{display:block;margin-bottom:.1rem;font-size:.86rem}.ott-cookie-banner a{color:#DCC8FF}.ott-cookie-actions{display:flex;flex:0 0 auto;gap:.5rem}.ott-cookie-button{min-height:2.4rem;padding:.5rem .75rem;border-radius:.55rem;border:1px solid #A9B5FF;background:transparent;color:#FFF4DF;font:600 .82rem Inter,system-ui,sans-serif;white-space:nowrap;cursor:pointer}.ott-cookie-button--accept{border-color:#FF6B72;background:#FF6B72;color:#090B24}.ott-cookie-button:focus-visible{outline:3px solid #DCC8FF;outline-offset:3px}@media(max-width:42rem){.ott-cookie-banner{align-items:stretch;flex-direction:column;gap:.65rem}.ott-cookie-actions{display:grid;grid-template-columns:1fr 1fr}.ott-cookie-button{width:100%}}';
     document.head.appendChild(style);
 
     banner = document.createElement('aside');
     banner.className = 'ott-cookie-banner';
     banner.setAttribute('aria-label', 'Cookie choices');
     banner.setAttribute('role', 'region');
-    banner.innerHTML = '<strong>Optional marketing cookies</strong><p>With your permission, we use Meta Pixel to measure our ads and show relevant ads to people interested in Out There: Together. <a href="/cookies/">Cookie policy</a></p><div class="ott-cookie-actions"><button class="ott-cookie-button" type="button" data-cookie-reject>Reject</button><button class="ott-cookie-button ott-cookie-button--accept" type="button" data-cookie-accept>Accept marketing cookies</button></div>';
+    banner.innerHTML = '<div class="ott-cookie-copy"><strong>Optional marketing cookies</strong><p>Allow Meta Pixel to measure our ads? The site works without it. <a href="/cookies/">Cookie policy</a></p></div><div class="ott-cookie-actions"><button class="ott-cookie-button" type="button" data-cookie-reject>No thanks</button><button class="ott-cookie-button ott-cookie-button--accept" type="button" data-cookie-accept>Allow</button></div>';
     document.body.appendChild(banner);
 
     banner.querySelector('[data-cookie-reject]').addEventListener('click', function () { setConsent('rejected'); });
@@ -63,7 +63,8 @@
     if (consent === 'accepted') {
       hideBanner();
       loadMetaPixel();
-    } else if (consent === 'rejected') hideBanner();
+    }
+    else if (consent === 'rejected') hideBanner();
 
     document.addEventListener('click', function (event) {
       var target = event.target.closest('[data-cookie-settings]');
