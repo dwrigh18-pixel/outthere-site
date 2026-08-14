@@ -60,8 +60,10 @@
   function initialise() {
     createBanner();
     var consent = getConsent();
-    if (consent === 'accepted') loadMetaPixel();
-    else if (consent === 'rejected') hideBanner();
+    if (consent === 'accepted') {
+      hideBanner();
+      loadMetaPixel();
+    } else if (consent === 'rejected') hideBanner();
 
     document.addEventListener('click', function (event) {
       var target = event.target.closest('[data-cookie-settings]');
