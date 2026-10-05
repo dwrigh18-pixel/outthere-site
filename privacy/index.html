@@ -189,7 +189,14 @@ fbq('track', 'PageView');
 <p>Every photo you upload to a gallery or a chat goes first to a private holding area, and is published only if it passes a check against a database of known child sexual abuse images. The check uses PhotoDNA, which is provided by Microsoft. A private scanner that we run, hosted by Hetzner in Germany, turns the photo into a hash, which is a short string of numbers that works like a fingerprint and cannot be turned back into the picture. The scanner works on the photo in memory and sends only the hashes to Microsoft&#39;s PhotoDNA service in the UK. Microsoft does not receive the photo.</p>
 <p>If a photo matches, it is not published. It stays in a restricted store, which ordinary members and ordinary app access cannot reach, so that it can be reviewed and so that the law can be followed. There is currently no fixed end date for this, which we are reviewing. We do not tell you the detail of why an upload failed.</p>
 <h3>Automatic nudity check (Sightengine)</h3>
-<p>Photos you upload are also checked automatically for nudity by Sightengine, a service of Kozelo SAS in France. We do this to help keep the service safe for members. We send Sightengine the photo itself and nothing else about you: no name, email address or member number. Sightengine sends back a result, and we record it. At present the result does not change what happens to your photo.</p>
+<p>Photos you upload are also checked automatically for nudity by Sightengine, a service of Kozelo SAS in France. We do this to help keep the service safe for members. We send Sightengine the photo itself and nothing else about you: no name, email address or member number. Sightengine sends back a result, and we record it. The result affects what happens to your photo in these ways:</p>
+<ul>
+<li>If you add a gallery photo as public and the check finds an image we treat as explicit, we move it to your private gallery instead. If your private gallery is full, we decline the photo.</li>
+<li>If a profile picture, meetup photo or group picture is found to be explicit, we decline it and ask you to choose another.</li>
+<li>Photos sent in chats are checked and the result is recorded, but they are not blocked by the check. Chats have their own rule: you must have completed identity verification to send or open a photo.</li>
+<li>If the check cannot run, we keep a gallery photo private, and decline or ask you to retry for other photos.</li>
+</ul>
+<p>The check can be wrong, and a photo may be moved or declined by mistake.</p>
 <p>Sightengine deletes images after processing by default, and we do not use any of its features that keep images. Photos may be processed in any of Sightengine&#39;s data centres, including outside the UK and the European Economic Area. Where that happens, the transfer is protected by the EU standard contractual clauses and the UK addendum in our data processing agreement with Sightengine.</p>
 <p>If you think we have made a wrong decision about one of your photos, email <a href="mailto:hello@outtheretogether.com">hello@outtheretogether.com</a> and a person will review it.</p>
 <h3>Identity verification (Didit)</h3>
