@@ -46,6 +46,8 @@ th{font-family:var(--disp);font-size:.95rem;letter-spacing:.02em;background:rgb(
 .toc h2{margin:0 0 .5rem;font-size:1.05rem}
 .toc ol{margin:0;padding-left:1.2rem}
 .toc li{margin-bottom:.3rem;font-size:.94rem}
+.draft{background:#fff3a8;color:#21152F;padding:0 .2em;border-radius:2px}
+.draft-banner{background:#fff3a8;color:#21152F;border-bottom:3px solid var(--coral);padding:.8rem 0;font-size:.95rem;line-height:1.45}
 footer.site{background:var(--grape-deep);color:rgb(255 244 236 / .72);padding-block:2.2rem;font-size:.9rem}
 footer a{color:rgb(255 244 236 / .82)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:.6rem 1.5rem;justify-content:space-between}
@@ -69,6 +71,8 @@ fbq('track', 'PageView');
 <script src="/assets/cookie-consent.js?v=20260814-3" defer></script>
 </head>
 <body>
+<!-- DRAFT, NOT FOR PUBLICATION. Publish only together with the privacy policy and terms drafts, once the nudity detector is live. -->
+<div class="draft-banner"><div class="wrap"><strong>DRAFT. Not for publication.</strong> Publish only with the updated privacy policy and terms, and remove this banner first.</div></div>
 <header class="site"><div class="wrap">
   <a class="brand" href="/" aria-label="Out There: Together, home"><svg viewBox="0 -8 430 220" role="img" aria-label="Out There: Together"><defs><clipPath id="pennant-wide-dark"><path d="M19 14 C39 4 59 22 85 12 L69 38 L85 64 C59 74 39 56 19 66 Z"/></clipPath></defs>
   <g transform="rotate(-5 75 103)">
@@ -87,7 +91,7 @@ fbq('track', 'PageView');
 <main><div class="wrap">
 
 <h1>Delete your account</h1>
-<p class="updated">Last updated 18 September 2026</p>
+<p class="updated">Last updated <mark class="draft" title="Set when published.">[DATE OF PUBLICATION]</mark></p>
 <p class="lede">You can delete your Out There account and the personal data attached to it at any time. You do not need the app installed to do it.</p>
 
 <div class="callout">
@@ -101,7 +105,9 @@ fbq('track', 'PageView');
 
 <h2>What gets deleted</h2>
 <ul>
-<li>Your profile: display name, photo, home port, interests and description.</li>
+<li>Your profile: display name, profile picture, home port, interests and description.</li>
+<li>Your gallery photos, and the photos you sent in chats.</li>
+<li>The result of your identity and age check. Our checker, Didit, keeps its own records under its own retention rules, explained in our <a href="/privacy/#photos">privacy policy</a>.</li>
 <li>Your identity and intent preferences, and the consent attached to them.</li>
 <li>Your sailing memberships and planning or booked status.</li>
 <li>Your crew memberships, invitations and shortlists.</li>
@@ -118,6 +124,7 @@ fbq('track', 'PageView');
 <tr><td>Messages you sent in a sailing or crew chat</td><td>So the conversation still makes sense to the people you were talking to. They are detached from your profile and no longer identify you.</td><td>12 months from when you sent them - longer while an open report about it is being handled, and indefinitely if a moderator has hidden it as the record of what was acted on</td></tr>
 <tr><td>Records that consent was given and withdrawn</td><td>We are required to be able to evidence what was agreed and when.</td><td>6 years</td></tr>
 <tr><td>Safety reports and moderation decisions</td><td>So that patterns of behaviour can still be identified and other members protected.</td><td>12 months from the report</td></tr>
+<tr><td>An image that has been reported, or matched against known child abuse images</td><td>So that we can act on the report and, where the law requires, report it to the authorities.</td><td>Reported images: 12 months from the report. Matched images: <mark class="draft" title="Solicitor and incident procedure to set.">[PRESERVATION PERIOD]</mark></td></tr>
 <tr><td>Records of clicks through to booking partners</td><td>Commission reconciliation and tax records.</td><td>6 years</td></tr>
 </tbody>
 </table>

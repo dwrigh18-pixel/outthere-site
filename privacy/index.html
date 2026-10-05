@@ -46,6 +46,9 @@ th{font-family:var(--disp);font-size:.95rem;letter-spacing:.02em;background:rgb(
 .toc h2{margin:0 0 .5rem;font-size:1.05rem}
 .toc ol{margin:0;padding-left:1.2rem}
 .toc li{margin-bottom:.3rem;font-size:.94rem}
+.draft{background:#fff3a8;color:#21152F;padding:0 .2em;border-radius:2px}
+.draft.sol{background:#cfe8ff}
+.draft-banner{background:#fff3a8;color:#21152F;border-bottom:3px solid var(--coral);padding:.8rem 0;font-size:.95rem;line-height:1.45}
 footer.site{background:var(--grape-deep);color:rgb(255 244 236 / .72);padding-block:2.2rem;font-size:.9rem}
 footer a{color:rgb(255 244 236 / .82)}
 footer .wrap{display:flex;flex-wrap:wrap;gap:.6rem 1.5rem;justify-content:space-between}
@@ -69,6 +72,11 @@ fbq('track', 'PageView');
 <script src="/assets/cookie-consent.js?v=20260814-3" defer></script>
 </head>
 <body>
+<!-- DRAFT, NOT FOR PUBLICATION. Prepared 5 October 2026 for David's approval and solicitor review.
+     Do not merge or publish until the automatic nudity detector is live, every highlighted placeholder is resolved and the draft banner below is removed.
+     Yellow marks are placeholders or facts to confirm. Blue marks are points for the solicitor.
+     See docs/drafts/image-policy-cover-note.md in the product repository for the full list. -->
+<div class="draft-banner"><div class="wrap"><strong>DRAFT. Not for publication.</strong> This describes an automatic nudity check that is not yet switched on. Remove this banner, and resolve every highlighted placeholder, before publishing.</div></div>
 <header class="site"><div class="wrap">
   <a class="brand" href="/" aria-label="Out There: Together, home"><svg viewBox="0 -8 430 220" role="img" aria-label="Out There: Together"><defs><clipPath id="pennant-wide-dark"><path d="M19 14 C39 4 59 22 85 12 L69 38 L85 64 C59 74 39 56 19 66 Z"/></clipPath></defs>
   <g transform="rotate(-5 75 103)">
@@ -87,11 +95,11 @@ fbq('track', 'PageView');
 <main><div class="wrap">
 
 <h1>Privacy policy</h1>
-<p class="updated">Last updated 18 September 2026</p>
+<p class="updated">Last updated <mark class="draft" title="Set on the day the detector goes live and this policy is published.">[DATE OF PUBLICATION]</mark></p>
 <p class="lede">This policy explains what personal data Out There: Together collects, why, and what you can do about it. It covers both this website and the Out There mobile app.</p>
 
 <div class="callout">
-<p><strong>The short version.</strong> We collect what we need to show you sailings and connect you with other people. With your permission, we also use Meta Pixel to measure our advertising. We do not sell your data for money. Anything about your identity or who you are looking to meet is optional, kept separate from your public profile, and only stored if you explicitly ask us to. We do not take payments, so we never hold your card details.</p>
+<p><strong>The short version.</strong> We collect what we need to show you sailings and connect you with other people. With your permission, we also use Meta Pixel to measure our advertising. We do not sell your data for money. Anything about your identity or who you are looking to meet is optional, kept separate from your public profile, and only stored if you explicitly ask us to. We do not take payments, so we never hold your card details. Photos you upload are checked automatically before anyone else can see them, and nude images are only allowed in places you control (section 5).</p>
 </div>
 
 <div class="toc">
@@ -101,6 +109,7 @@ fbq('track', 'PageView');
 <li><a href="#what">What we collect</a></li>
 <li><a href="#why">Why we use it, and our legal basis</a></li>
 <li><a href="#sensitive">Identity and intent data</a></li>
+<li><a href="#photos">Photos, image checks and identity checks</a></li>
 <li><a href="#sharing">Who we share it with</a></li>
 <li><a href="#booking">What happens when you click through to book</a></li>
 <li><a href="#retention">How long we keep it</a></li>
@@ -138,9 +147,12 @@ fbq('track', 'PageView');
 <tr><td>Crews</td><td>Which crews you belong to, invitations you send or accept, and shared sailing shortlists.</td></tr>
 <tr><td>Events</td><td>Events you host or are invited to, and your replies to them.</td></tr>
 <tr><td>Messages</td><td>The content of messages you send in sailing chats, crew chats and one-to-one messages, and when you sent them.</td></tr>
+<tr><td>Photos and images</td><td>Photos you add to your profile, gallery, meetups and chats. They are stored privately and checked when you upload them. See section 5.</td></tr>
+<tr><td>Image check records</td><td>A record of each upload: when it happened, which checks were run, what they found and what happened to the photo, including whether a member of staff looked at it. The record does not contain the photo. See section 5.</td></tr>
+<tr><td>Identity and age check</td><td>Optional. We keep only whether your check passed or failed, when, and a reference to the check. Our provider, Didit, handles your document and face. See section 5.</td></tr>
 <tr><td>Identity and intent</td><td>Optional. See section 4, which explains how this is treated differently.</td></tr>
-<tr><td>Safety</td><td>Reports you make, accounts you block or mute, and the outcome of any moderation decision.</td></tr>
-<tr><td>Partner clicks</td><td>When you tap through to a booking partner we record that it happened, which sailing and partner it was for, and a reference code. See section 6.</td></tr>
+<tr><td>Safety</td><td>Reports you make, accounts you block or mute, and the outcome of any moderation decision. If a report is about a photo, we keep a copy of it with the report as evidence.</td></tr>
+<tr><td>Partner clicks</td><td>When you tap through to a booking partner we record that it happened, which sailing and partner it was for, and a reference code. See section 7.</td></tr>
 <tr><td>Technical</td><td>Basic device and app information needed to keep the service working and to sync your data when you reconnect.</td></tr>
 <tr><td>App usage analytics (only if you turn it on)</td><td>If you choose to turn it on, we use PostHog, an analytics provider hosted in the EU, to understand how the Out There Together app is used, for example which screens are opened and how often. This is switched off by default and only starts if you say yes. You are identified by your account&#39;s internal ID number, the same kind of reference number the app uses behind the scenes for your account generally, never by your name, email address or any profile detail. We never send PostHog your messages, your photos, or anything about your gender identity, sexual orientation, dating preferences or intent to date. Screens related to those things, and to safety reports, blocking, muting or identity verification, are excluded entirely and are never reported to PostHog, whether or not you have turned analytics on. You can turn this off at any time in Settings, which stops sending this information immediately and clears what PostHog holds locally on your phone.</td></tr>
 </tbody>
@@ -155,6 +167,12 @@ fbq('track', 'PageView');
 <tr><td>Creating and running your account, showing you sailings, crews, events and messages</td><td>Performance of a contract with you</td></tr>
 <tr><td>Storing your identity and intent preferences</td><td>Your explicit consent, which you can withdraw at any time</td></tr>
 <tr><td>Keeping the community safe: reports, blocking, moderation, and preventing abuse</td><td>Our legitimate interests in protecting members, and our legal obligations</td></tr>
+<tr><td>Storing and showing the photos you choose to upload, to the people you choose to show them to</td><td>Performance of a contract with you. For any photo that reveals your sex life or sexual orientation, also your explicit consent, given when you upload it <mark class="draft" title="The app does not yet ask for this consent at upload.">[DEPENDS ON APP BUILD]</mark> <mark class="draft sol" title="Flagged for solicitor review before publication.">[SOLICITOR REVIEW]</mark></td></tr>
+<tr><td>Checking every upload against a database of known child sexual abuse images (PhotoDNA)</td><td>Our legitimate interests in protecting children and preventing crime, and our legal obligations <mark class="draft sol" title="Flagged for solicitor review before publication.">[SOLICITOR REVIEW]</mark></td></tr>
+<tr><td>Checking uploads for nude or sexually explicit content, and moving or refusing photos that break our rules about where they may appear</td><td>Our legitimate interests in keeping shared spaces suitable for the people in them <mark class="draft" title="Do not publish until the detector is switched on.">[DEPENDS ON DETECTOR]</mark> <mark class="draft sol" title="Flagged for solicitor review before publication.">[SOLICITOR REVIEW]</mark></td></tr>
+<tr><td>Staff looking at held or reported images, and acting on what they find</td><td>Our legitimate interests in protecting members, and our legal obligations. For images that reveal your sex life or orientation, the special category conditions explained in section 5 <mark class="draft sol" title="Flagged for solicitor review before publication.">[SOLICITOR REVIEW]</mark></td></tr>
+<tr><td>Checking your identity and age through Didit</td><td>Your consent, which we record against a numbered version of the wording you agreed to, and which you can withdraw at any time. Didit also asks for your consent to handle your face data inside its own check <mark class="draft sol" title="Flagged for solicitor review before publication.">[SOLICITOR REVIEW]</mark></td></tr>
+<tr><td>Keeping a copy of an image as evidence, and reporting it to the authorities</td><td>Our legal obligations, our legitimate interests in protecting members, and the establishment or defence of legal claims <mark class="draft sol" title="Flagged for solicitor review before publication.">[SOLICITOR REVIEW]</mark></td></tr>
 <tr><td>Recording clicks through to booking partners so we are paid correctly</td><td>Our legitimate interests in running a viable service</td></tr>
 <tr><td>Understanding how the website is used, in aggregate</td><td>Our legitimate interests in improving what we offer</td></tr>
 <tr><td>Understanding how the app is used, if you turn on app usage analytics</td><td>Your consent, which you can withdraw at any time in Settings</td></tr>
@@ -175,20 +193,52 @@ fbq('track', 'PageView');
 <li>You can withdraw consent at any time. When you do, we delete the stored preferences.</li>
 </ul>
 
-<h2 id="sharing">5. Who we share it with</h2>
+<h2 id="photos">5. Photos, image checks and identity checks</h2>
+<p>This section explains what happens to a photo when you upload it, who looks at it, and what we keep. The rules about which photos are allowed, and where, are in our <a href="/terms/#cs-intimate">Terms, Conditions &amp; Community Standards</a>.</p>
+
+<h3>Before anyone else sees a photo</h3>
+<p>When you upload a gallery photo, profile picture, meetup photo or chat image, it goes first to a private holding area that no other member can reach. It is checked there. Only if it passes is it published, moved to your private gallery, or refused. You do not see the detail of what a check found.</p>
+
+<h3>Check one: known child abuse images (PhotoDNA)</h3>
+<p>Every upload is checked against a database of known child sexual abuse images, using a tool called PhotoDNA, which is provided by Microsoft. A private scanner that we run turns your photo into a hash, which is a short string of numbers that works like a fingerprint and cannot be turned back into the picture. The photo is handled in the scanner&#39;s memory only. The scanner sends just the hashes to Microsoft&#39;s PhotoDNA service, which compares them with the database. Microsoft does not receive your photo. Our scanner runs on a private server in <mark class="draft" title="Check against the provider's written terms or the live build before publishing.">[TO CONFIRM: hosting provider and country of the scanner server; the build notes say UK or EU]</mark>.</p>
+<p>If there is a match, the photo is not published and is held. It is kept in a restricted area, and we deal with it under our incident procedure, which includes reporting it to the authorities as the law requires <mark class="draft sol" title="Flagged for solicitor review before publication.">[SOLICITOR REVIEW]</mark>. We may not tell you that this has happened.</p>
+
+<h3>Check two: nude or sexually explicit content <mark class="draft" title="Do not publish until the detector is switched on.">[DEPENDS ON DETECTOR]</mark></h3>
+<p>Every upload is also checked automatically for nude or sexually explicit content, so that a photo that would be visible to members generally can be moved to your private gallery, or refused if it is a profile picture, meetup photo or group picture. The check is run for us by <mark class="draft" title="Name, country and data terms to be confirmed after the trial. Leading candidate: Sightengine.">[IMAGE CHECKING PROVIDER]</mark>, in <mark class="draft" title="To be confirmed with the provider.">[PROVIDER COUNTRY AND WHERE IMAGES ARE PROCESSED]</mark>.</p>
+<p>We send the provider the photo itself <mark class="draft" title="Check against the provider's written terms or the live build before publishing.">[TO CONFIRM: whether any other information, such as your member ID, is sent; the intention is that none is]</mark>. The provider deletes the photo straight after checking it and does not use it to train its own systems <mark class="draft" title="Check against the provider's written terms or the live build before publishing.">[TO CONFIRM: against the provider&#39;s written terms and data processing agreement; do not publish this sentence until confirmed]</mark>. It sends us back a result, and we keep the result in the image check record. We have a data processing agreement with the provider <mark class="draft" title="Check against the provider's written terms or the live build before publishing.">[TO CONFIRM: signed agreement in place]</mark>.</p>
+<p>The check is automatic and can be wrong. If it moves or refuses a photo that it should not have, email <a href="mailto:hello@outtheretogether.com">hello@outtheretogether.com</a> with the subject &quot;Photo check&quot; and a member of staff will look again. Nothing about your account is decided only by this check.</p>
+
+<h3>When a member of staff looks at an image</h3>
+<p>A member of staff may look at an image if our automatic checks have held it, if someone has reported it, or if we need to see it to investigate a breach of our community standards. Only authorised staff can do this. We keep a log of who looked, when and why <mark class="draft" title="Check against the provider's written terms or the live build before publishing.">[TO CONFIRM: the access log is built before launch; at the time of drafting it is not confirmed]</mark>. A reported image may lead to the image being removed, a warning, or the account being suspended or closed.</p>
+
+<h3>Photos can be special category data</h3>
+<p>A photo, especially an intimate one, can reveal information about your sex life or sexual orientation. That is special category data under UK data protection law, and we treat it with extra care. Intimate images are only allowed in your private gallery, where you control who sees them, or in chats where everyone has passed the identity and age check. When you add a photo that may be intimate, we ask for your explicit consent <mark class="draft" title="The app does not yet ask for this consent at upload.">[DEPENDS ON APP BUILD]</mark>. For the safety checks and staff review described above, which we carry out whether or not a member has consented to them because their purpose is to protect people, we rely on the conditions for preventing or detecting unlawful acts and protecting members, and on dealing with legal claims, under the Data Protection Act 2018 <mark class="draft sol" title="Flagged for solicitor review before publication.">[SOLICITOR REVIEW: Article 9 condition and Schedule 1 condition for each use, and whether we need an appropriate policy document and an updated data protection impact assessment]</mark>.</p>
+
+<h3>Identity and age check (Didit)</h3>
+<p>Before you can send, view or share photos, you have to complete an optional identity and age check. It is run by Didit, an identity verification provider. Inside Didit&#39;s own screens you show a photo of an identity document and a photo of your face. Didit checks the document, checks that a live person is present, compares your face with the document photo, and looks at device and connection details to spot fraud. Didit holds that information. It also applies an age rule: if you are not 18 or over, or the age of majority where you live if that is higher, you do not pass.</p>
+<p>We tell Didit our reference number for you so that the result comes back to the right account. In return we receive only whether you passed, failed or are waiting, and when. We never receive or keep your document, your face image, the name on the document or your date of birth. Face comparison is biometric processing, and Didit asks for your consent for it inside its own check. We record our own consent as well, against a numbered version of the wording you agreed to.</p>
+<p>How long Didit keeps your information is set by Didit and our agreement with it <mark class="draft" title="Check against the provider's written terms or the live build before publishing.">[TO CONFIRM: Didit&#39;s retention period and whether it is controller or processor for this data, against its written terms]</mark>. If you withdraw your verification consent in the app, we delete your result and badge and you lose the ability to send, view or share photos until you verify again <mark class="draft" title="Check against the provider's written terms or the live build before publishing.">[TO CONFIRM: whether we also ask Didit to delete its copy when you withdraw or delete your account; the current build does not]</mark>. Didit&#39;s own privacy notice explains its handling.</p>
+
+<h3>What we keep</h3>
+<p>The table in section 8 gives the periods for photos, image check records, held images, reported images and identity check results.</p>
+
+<h2 id="sharing">6. Who we share it with</h2>
 <p><strong>We do not sell your personal data, and we never will.</strong></p>
 <p>We share it only with service providers who process it on our instructions:</p>
 <ul>
-<li><strong>Supabase</strong>, which hosts our database, authentication and file storage.</li>
+<li><strong>Supabase</strong>, which hosts our database, authentication and file storage, including your photos.</li>
+<li><strong>Microsoft</strong>, which runs the PhotoDNA service that compares hashes of your photos with known child abuse images. It receives hashes only, never your photos.</li>
+<li><strong><mark class="draft" title="Name, country and data terms to be confirmed after the trial. Leading candidate: Sightengine.">[IMAGE CHECKING PROVIDER]</mark></strong>, which checks photos for nude or sexually explicit content, and deletes them straight after checking <mark class="draft" title="Check against the provider's written terms or the live build before publishing.">[TO CONFIRM: against the provider&#39;s written terms]</mark>.</li>
+<li><strong>Didit</strong>, which runs the optional identity and age check.</li>
 <li><strong>Metricool</strong>, which provides website analytics.</li>
 <li><strong>PostHog</strong>, which provides in-app product analytics, only for members who have opted in.</li>
 <li><strong>Meta</strong>, which provides Meta Pixel for advertising measurement when you have accepted marketing cookies.</li>
 <li><strong>GitHub</strong>, which hosts this website.</li>
 </ul>
-<p>We may also disclose personal data where we are legally required to, or where it is necessary to protect the safety of our members.</p>
-<p>Other members see only what your settings allow: your display name, your photo if you have added one, your home port if you have added one, your status on a sailing you have both joined, and anything you post in a chat you are both part of.</p>
+<p>We may also disclose personal data, including an image, where we are legally required to, or where it is necessary to protect the safety of our members. This includes reporting child sexual abuse material to the authorities, and giving information to the police about someone sharing intimate images without consent <mark class="draft sol" title="Flagged for solicitor review before publication.">[SOLICITOR REVIEW]</mark>.</p>
+<p>Other members see only what your settings allow: your display name, your profile picture if you have added one, the gallery photos you have chosen to make visible, anything private you have approved them to see, your home port if you have added one, your status on a sailing you have both joined, and anything you post in a chat you are both part of.</p>
 
-<h2 id="booking">6. What happens when you click through to book</h2>
+<h2 id="booking">7. What happens when you click through to book</h2>
 <p>Out There is an introducer, not a travel agent. We never take payments, hold deposits or confirm bookings.</p>
 <p>When you tap through to a booking partner, we record that the click happened, along with the sailing, the partner and a reference code that lets the partner tell us the referral came from you. We do this so that we are paid the referral fee we are owed.</p>
 <p>Once you arrive on the partner's website you are dealing with them, under their privacy policy, not ours. We have no visibility of what you book or what you pay.</p>
@@ -202,6 +252,12 @@ fbq('track', 'PageView');
 <tbody>
 <tr><td>Account and profile</td><td>While your account is open. Deleted within 30 days of you closing it.</td></tr>
 <tr><td>Messages</td><td>12 months from when you sent them, then permanently deleted, whether or not the sailing or crew still exists. A message under an open safety report is kept until the report is closed, then follows the same 12-month clock. A message a moderator has hidden for breaking the rules is kept for as long as it stays hidden, which today means indefinitely, because it is the record of what was acted on.</td></tr>
+<tr><td>Photos you upload (gallery, profile picture, meetups, chats)</td><td>Until you delete the photo or your account, whichever is first. A photo sent in a chat is also deleted when its message reaches the 12-month cut-off, and when you delete your account, even though the text of a sailing or crew message may remain until that cut-off.</td></tr>
+<tr><td>Image check records (when, which checks, result, who looked)</td><td>While your account is open, then <mark class="draft" title="Check against the provider's written terms or the live build before publishing.">[TO CONFIRM: period after account deletion; the current build does not clear these records when an account is deleted]</mark>. These records do not contain the photo.</td></tr>
+<tr><td>Images held by the automatic nudity check</td><td>Until a member of staff has reviewed them, and in any case no longer than <mark class="draft" title="Decision needed. A short fixed period such as 30 days is suggested.">[HELD IMAGE RETENTION PERIOD]</mark>, unless they are reported, in which case the next row applies.</td></tr>
+<tr><td>Images reported to us</td><td>A copy is kept with the report and follows the report&#39;s 12-month period, then is deleted.</td></tr>
+<tr><td>Images matched by PhotoDNA</td><td>Held in a restricted area for as long as <mark class="draft" title="Solicitor and incident procedure to set. The current build keeps them with no end date.">[PRESERVATION PERIOD]</mark> <mark class="draft sol" title="Flagged for solicitor review before publication.">[SOLICITOR REVIEW]</mark> needed so we can report them and the authorities can act, then deleted.</td></tr>
+<tr><td>Identity and age check result</td><td>Until you withdraw consent or delete your account, then deleted. Didit&#39;s own retention is set out in section 5.</td></tr>
 <tr><td>Identity and intent preferences</td><td>Until you withdraw consent, then deleted.</td></tr>
 <tr><td>Consent records</td><td>Six years after the consent ends, because we need to show what was agreed and when.</td></tr>
 <tr><td>Safety reports and moderation decisions</td><td>12 months from the report, then deleted, so repeat behaviour can be identified in that time.</td></tr>
@@ -214,7 +270,7 @@ fbq('track', 'PageView');
 </table>
 </div>
 
-<h2 id="rights">7. Your rights</h2>
+<h2 id="rights">9. Your rights</h2>
 <p>Under UK data protection law you have the right to:</p>
 <ul>
 <li>ask for a copy of the personal data we hold about you;</li>
@@ -222,34 +278,35 @@ fbq('track', 'PageView');
 <li>have your data deleted, in some circumstances;</li>
 <li>restrict or object to how we use it;</li>
 <li>receive your data in a portable format;</li>
-<li>withdraw consent at any time, where we rely on consent.</li>
+<li>withdraw consent at any time, where we rely on consent;</li>
+<li>ask for a person to look again at an automatic decision about a photo of yours.</li>
 </ul>
 <p>Ask us at <a href="mailto:hello@outtheretogether.com">hello@outtheretogether.com</a> and we will respond within one month. There is no charge.</p>
 
-<h2 id="delete">9. Deleting your account</h2>
+<h2 id="delete">10. Deleting your account</h2>
 <p>You can delete your Out There account and the personal data attached to it at any time. There are two ways:</p>
 <ul>
 <li><strong>In the app.</strong> Go to You, then Settings, then Delete account.</li>
 <li><strong>On the web.</strong> Use the <a href="/delete-account/">account deletion request page</a>, which does not require you to have the app installed.</li>
 </ul>
-<p>When you delete your account we remove your profile, your photo, your sailing and crew memberships, your event replies, and your identity and intent preferences within 30 days. Your one-to-one chats are deleted in full at the same time, since with your account gone there is no one left who needs to read them.</p>
+<p>When you delete your account we remove your profile, your profile picture, your gallery photos and the photos you sent in chats, your sailing and crew memberships, your event replies, your identity check result, and your identity and intent preferences within 30 days. Your one-to-one chats are deleted in full at the same time, since with your account gone there is no one left who needs to read them.</p>
 <p>Some records are kept longer, and we explain why in section 8. In short: messages you sent in a sailing or crew chat stay visible to the people you were talking to, though they are no longer linked to your profile, until they reach the 12-month cut-off in section 8 like any other message; records of consent, of safety reports, and of clicks through to booking partners are retained because we are required to be able to evidence them.</p>
 
-<h2 id="transfers">10. Where your data is held</h2>
-<p>Our database and files are hosted by Supabase. Our website is hosted by GitHub Pages. Our analytics provider, Metricool, is based in Spain. Our app analytics provider, PostHog, holds app usage analytics in the EU. When you consent to marketing cookies, Meta may process Pixel data in the UK, European Economic Area and other countries, including the United States.</p>
+<h2 id="transfers">11. Where your data is held</h2>
+<p>Our database and files are hosted by Supabase. Our website is hosted by GitHub Pages. Our analytics provider, Metricool, is based in Spain. Our app analytics provider, PostHog, holds app usage analytics in the EU. Our PhotoDNA scanner runs on a private server in <mark class="draft" title="Check against the provider's written terms or the live build before publishing.">[TO CONFIRM: scanner hosting country]</mark>, and Microsoft&#39;s PhotoDNA service, which receives hashes only, is in the UK. Didit, which runs the identity and age check, processes data in <mark class="draft" title="Check against the provider's written terms or the live build before publishing.">[TO CONFIRM: Didit&#39;s processing locations and transfer mechanism]</mark>. <mark class="draft" title="Name, country and data terms to be confirmed after the trial. Leading candidate: Sightengine.">[IMAGE CHECKING PROVIDER]</mark> processes photos for the nude content check in <mark class="draft" title="To be confirmed with the provider.">[PROVIDER COUNTRY AND WHERE IMAGES ARE PROCESSED]</mark>. When you consent to marketing cookies, Meta may process Pixel data in the UK, European Economic Area and other countries, including the United States.</p>
 <p>Where personal data is transferred outside the UK, we rely on the UK International Data Transfer Agreement or the UK Addendum to the European Commission's standard contractual clauses, together with the adequacy decisions that apply to the country concerned.</p>
 
-<h2 id="security">11. Security</h2>
-<p>Access to your data is controlled at the database level, so members can only read the records they are entitled to see. Passwords are hashed and never stored in a readable form. Identity and intent preferences are held in a separate restricted schema. Supplier credentials and tracked partner links are held on our servers and are never exposed to the app.</p>
+<h2 id="security">12. Security</h2>
+<p>Access to your data is controlled at the database level, so members can only read the records they are entitled to see. Passwords are hashed and never stored in a readable form. Identity and intent preferences are held in a separate restricted schema. Photos are stored privately, and each one can be opened only by the people entitled to see it. Held, reported and matched images sit in restricted areas that ordinary members and ordinary app access cannot reach. Supplier credentials and tracked partner links are held on our servers and are never exposed to the app.</p>
 <p>No system is perfectly secure. If a breach occurs that is likely to put your rights at risk, we will tell you and the ICO without undue delay.</p>
 
-<h2 id="children">11. Age</h2>
-<p>Out There is for adults. You must be 18 or over to hold an account. We do not knowingly collect data about anyone under 18, and we will delete any account we find belongs to someone under that age.</p>
+<h2 id="children">13. Age</h2>
+<p>Out There is for adults. You must be 18 or over to hold an account. We do not knowingly collect data about anyone under 18, and we will delete any account we find belongs to someone under that age. To send, view or share photos you must pass the identity and age check described in section 5, which does not pass anyone who is not an adult.</p>
 
-<h2 id="changes">13. Changes</h2>
+<h2 id="changes">14. Changes</h2>
 <p>If we change this policy we will update the date at the top. If a change materially affects how we use your data, we will tell you in the app or by email before it takes effect.</p>
 
-<h2 id="contact">14. Contact and complaints</h2>
+<h2 id="contact">15. Contact and complaints</h2>
 <p>Email <a href="mailto:hello@outtheretogether.com">hello@outtheretogether.com</a>.</p>
 <p>If you are unhappy with how we have handled your data you can complain to the Information Commissioner's Office at <a href="https://ico.org.uk/make-a-complaint/">ico.org.uk/make-a-complaint</a>, by calling 0303 123 1113, or by writing to Information Commissioner's Office, Wycliffe House, Water Lane, Wilmslow, Cheshire SK9 5AF. We would rather you came to us first so we can put it right.</p>
 </div></main>
