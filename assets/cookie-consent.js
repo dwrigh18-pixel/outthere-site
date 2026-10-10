@@ -12,16 +12,38 @@
     try { window.localStorage.setItem(STORAGE_KEY, value); } catch (error) { /* The banner will be shown again if storage is unavailable. */ }
   }
 
-  function loadMetaPixel() {
-    if (window.__ottMetaPixelLoaded) return;
-    window.__ottMetaPixelLoaded = true;
+  // Promote every <script type="text/plain" data-cookie-category="marketing">
+  // on the page to a real script. Nothing in these blocks runs until the
+  // visitor accepts marketing cookies.
+  function loadMarketingScripts() {
+    if (window.__ottMarketingScriptsLoaded) return;
+    window.__ottMarketingScriptsLoaded = true;
 
-    var pixelCode = document.getElementById('ott-meta-pixel-code');
-    if (!pixelCode) return;
+    var gated = document.querySelectorAll('script[type="text/plain"][data-cookie-category="marketing"]');
+    for (var i = 0; i < gated.length; i++) {
+      var source = gated[i];
+      if (source.getAttribute('data-cookie-activated')) continue;
+      source.setAttribute('data-cookie-activated', '1');
+      if (source.id === 'ott-meta-pixel-code') window.__ottMetaPixelLoaded = true;
 
-    var script = document.createElement('script');
-    script.text = pixelCode.textContent;
-    document.head.appendChild(script);
+      var script = document.createElement('script');
+      for (var j = 0; j < source.attributes.length; j++) {
+        var attr = source.attributes[j];
+        if (attr.name === 'type' || attr.name === 'id' || attr.name.indexOf('data-cookie-') === 0) continue;
+        script.setAttribute(attr.name, attr.value);
+      }
+      if (source.src) script.src = source.src;
+      else script.text = source.textContent;
+      document.head.appendChild(script);
+    }
+  }
+
+  function bannerPurpose() {
+    var names = [];
+    if (document.getElementById('ott-meta-pixel-code')) names.push('Meta Pixel');
+    if (document.querySelector('script[type="text/plain"][data-cookie-category="marketing"][data-cookie-vendor="travelpayouts"]')) names.push('TravelPayouts');
+    if (!names.length) names.push('Meta Pixel');
+    return 'Allow ' + names.join(' and ') + ' to measure our ads?';
   }
 
   function hideBanner() {
@@ -31,7 +53,7 @@
   function setConsent(value) {
     saveConsent(value);
     hideBanner();
-    if (value === 'accepted') loadMetaPixel();
+    if (value === 'accepted') loadMarketingScripts();
   }
 
   function showBanner() {
@@ -50,7 +72,7 @@
     banner.className = 'ott-cookie-banner';
     banner.setAttribute('aria-label', 'Cookie choices');
     banner.setAttribute('role', 'region');
-    banner.innerHTML = '<div class="ott-cookie-copy"><strong>Optional marketing cookies</strong><p>Allow Meta Pixel to measure our ads? The site works without it. <a href="/cookies/">Cookie policy</a></p></div><div class="ott-cookie-actions"><button class="ott-cookie-button" type="button" data-cookie-reject>No thanks</button><button class="ott-cookie-button ott-cookie-button--accept" type="button" data-cookie-accept>Allow</button></div>';
+    banner.innerHTML = '<div class="ott-cookie-copy"><strong>Optional marketing cookies</strong><p>' + bannerPurpose() + ' The site works without it. <a href="/cookies/">Cookie policy</a></p></div><div class="ott-cookie-actions"><button class="ott-cookie-button" type="button" data-cookie-reject>No thanks</button><button class="ott-cookie-button ott-cookie-button--accept" type="button" data-cookie-accept>Allow</button></div>';
     document.body.appendChild(banner);
 
     banner.querySelector('[data-cookie-reject]').addEventListener('click', function () { setConsent('rejected'); });
@@ -62,7 +84,7 @@
     var consent = getConsent();
     if (consent === 'accepted') {
       hideBanner();
-      loadMetaPixel();
+      loadMarketingScripts();
     }
     else if (consent === 'rejected') hideBanner();
 
