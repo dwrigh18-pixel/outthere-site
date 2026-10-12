@@ -72,7 +72,7 @@
     banner.className = 'ott-cookie-banner';
     banner.setAttribute('aria-label', 'Cookie choices');
     banner.setAttribute('role', 'region');
-    banner.innerHTML = '<div class="ott-cookie-copy"><strong>Optional marketing cookies</strong><p>' + bannerPurpose() + ' The site works without it. <a href="/cookies/">Cookie policy</a></p></div><div class="ott-cookie-actions"><button class="ott-cookie-button" type="button" data-cookie-reject>No thanks</button><button class="ott-cookie-button ott-cookie-button--accept" type="button" data-cookie-accept>Allow</button></div>';
+    banner.innerHTML = '<div class="ott-cookie-copy"><strong>Optional marketing cookies</strong><p>' + bannerPurpose() + ' The site works without ' + (bannerPurpose().indexOf(' and ') > -1 ? 'them' : 'it') + '. <a href="/cookies/">Cookie policy</a></p></div><div class="ott-cookie-actions"><button class="ott-cookie-button" type="button" data-cookie-reject>No thanks</button><button class="ott-cookie-button ott-cookie-button--accept" type="button" data-cookie-accept>Allow</button></div>';
     document.body.appendChild(banner);
 
     banner.querySelector('[data-cookie-reject]').addEventListener('click', function () { setConsent('rejected'); });
