@@ -52,11 +52,15 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:.6rem 1.5rem;justify-content:space-
 code{font-family:var(--mono);font-size:.88em;background:rgb(43 15 74 / .07);padding:.05em .3em;border-radius:3px}
 </style>
 <link rel="stylesheet" href="/assets/subpage-theme.css">
-<!-- TravelPayouts, marker 558875. Restores hrefs to TravelPayouts domains that ad
-     blockers would otherwise strip, and is how TravelPayouts verifies the site.
-     Sets no cookies and writes nothing to browser storage. Inert on pages carrying
-     no TravelPayouts links. -->
-<script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
+<!-- TravelPayouts, marker 558875. Blocked until consent: the browser parses this
+     as text/plain and never runs it; assets/cookie-consent.js promotes it to a
+     real script only if the visitor accepts marketing cookies. Once running it
+     fetches instructions from tpembars.com and can fingerprint the browser, write
+     localStorage keys and analytics cookies, and send interaction events to
+     travelpayouts.com, so it is not strictly necessary and PECR requires consent
+     first. It also restores hrefs to TravelPayouts domains that ad blockers
+     would otherwise strip. -->
+<script type="text/plain" data-cookie-category="marketing" data-cookie-vendor="travelpayouts" nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
   (function () {
       var script = document.createElement("script");
       script.async = 1;
@@ -65,6 +69,7 @@ code{font-family:var(--mono);font-size:.88em;background:rgb(43 15 74 / .07);padd
       document.head.appendChild(script);
   })();
 </script>
+<script src="/assets/cookie-consent.js?v=20261010-1" defer></script>
 </head>
 <body>
 <header class="site"><div class="wrap">
