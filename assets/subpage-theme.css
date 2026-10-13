@@ -34,7 +34,7 @@ header.site {
 
 header .wrap { max-width: 72rem; }
 .brand {
-  background: url('/assets/brand/logo-horizontal-light.png') left center / contain no-repeat;
+  background: url('/assets/brand/logo-approved-horizontal.png') left center / 100% auto no-repeat;
   display: block;
   height: 42px;
   width: min(13rem, 48vw);
