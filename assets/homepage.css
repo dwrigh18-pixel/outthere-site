@@ -348,3 +348,10 @@ h1 { font-size: clamp(2.8rem,4.6vw,4.2rem); line-height: 1.13; letter-spacing: -
   .phone-discover .app-filters span { font-size: .55rem; }
   .phone-discover .sailing-photo { height: 106px; }
 }
+
+/* Supplied app captures retain their complete native screen proportions. */
+.screenshot-phone { width: 100%; max-width: 350px; margin-inline: auto; border: 5px solid #2E3042; border-radius: 32px; outline: 1px solid rgba(255,244,223,.4); }
+.app-screenshot { display: block; width: 100%; height: auto; object-fit: contain; }
+@media (max-width: 560px) {
+  .screenshot-phone { border-radius: 27px; }
+}
