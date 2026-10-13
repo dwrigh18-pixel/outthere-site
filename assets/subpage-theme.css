@@ -34,10 +34,10 @@ header.site {
 
 header .wrap { max-width: 72rem; }
 .brand {
-  background: url('/assets/brand/logo-horizontal-light.png') left center / contain no-repeat;
+  background: url('/assets/brand/logo-approved-horizontal.png') left center / 100% auto no-repeat;
   display: block;
-  height: 42px;
-  width: min(13rem, 48vw);
+  aspect-ratio: 1920 / 570;
+  width: min(16.25rem, 48vw);
 }
 .brand svg { display: none; }
 header a { color: var(--warm-cream); font-family: var(--body); font-weight: 700; letter-spacing: .02em; text-transform: none; }
