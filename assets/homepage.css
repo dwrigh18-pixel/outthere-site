@@ -101,15 +101,15 @@ h1 { font-size: clamp(2.8rem,4.6vw,4.2rem); line-height: 1.13; letter-spacing: -
 .product-panel h2 { text-align: center; font-size: clamp(1.65rem,3vw,2.35rem); }
 .mobile-break { display: none; }
 .product-grid { max-width: 60rem; margin: 2.2rem auto 0; display: grid; grid-template-columns: 1fr 1fr; gap: 2.3rem; }
-.phone-panel { width: 100%; height: 458px; display: flex; flex-direction: column; }
+.phone-panel { width: 100%; max-width: 350px; aspect-ratio: 390 / 844; margin-inline: auto; display: flex; flex-direction: column; border: 5px solid #2E3042; outline: 1px solid rgba(255,244,223,.4); }
 .phone-panel .app-content { padding: 17px 23px; flex: 1; }
 .phone-panel .app-title { font-size: 1.6rem; }
 .crew-avatars { display: flex; gap: 10px; margin: 18px 0; }
 .crew-avatar, .crew-add { display: block; width: 51px; height: 51px; flex: 0 0 auto; border-radius: 50%; border: 2px solid var(--periwinkle); }
 .crew-avatar { background-image: url('community-hero.jpg'); background-size: 242px auto; }
-.crew-avatar-one { background-position: -47px -44px; }
+.crew-avatar-one { background-position: -76px -45px; }
 .crew-avatar-two { background-position: -101px -33px; }
-.crew-avatar-three { background-position: -168px -62px; }
+.crew-avatar-three { background-position: -162px -63px; }
 .crew-avatar-four { background-position: -144px -32px; }
 .crew-add { display: flex; justify-content: center; align-items: center; color: var(--periwinkle); background: var(--card); }
 .crew-add .icon { width: 24px; height: 24px; }
@@ -119,6 +119,9 @@ h1 { font-size: clamp(2.8rem,4.6vw,4.2rem); line-height: 1.13; letter-spacing: -
 .shortlist-row h5 { font-size: .77rem; line-height: 1.4; color: var(--periwinkle); }
 .shortlist-row .travel-fact { font-size: .54rem; margin-top: 3px; }
 .shortlist-row > .icon { width: 16px; height: 16px; color: var(--periwinkle); }
+.crew-chat-preview { display: flex; gap: 12px; align-items: center; padding: 14px; margin-top: 20px; border: 1px solid var(--line); background: var(--raised); border-radius: 12px; color: var(--periwinkle); }
+.crew-chat-preview h4 { font-size: .8rem; color: var(--cream); }
+.crew-chat-preview p { font-size: .65rem; margin-top: 4px; }
 .day-port { font-size: .8rem; margin-block: 7px 17px; }
 .day-plan { display: flex; align-items: center; gap: 12px; padding: 9px; margin-top: 13px; background: var(--raised); border: 1px solid #353E71; border-radius: 13px; }
 .day-plan img, .coffee-art { width: 63px; height: 67px; object-fit: cover; border-radius: 9px; flex-shrink: 0; }
@@ -265,7 +268,7 @@ h1 { font-size: clamp(2.8rem,4.6vw,4.2rem); line-height: 1.13; letter-spacing: -
   .product-panel h2 { text-align: left; font-size: 1.5rem; padding-inline: .4rem; }
   .mobile-break { display: inline; }
   .product-grid { margin-top: 1.6rem; }
-  .phone-panel { height: 425px; border-radius: 29px; }
+  .phone-panel { border-radius: 29px; }
   .phone-panel .app-content { padding: 10px 13px 12px; }
   .phone-panel .app-title { font-size: 1.45rem; }
   .crew-avatars { gap: 7px; }
@@ -325,3 +328,4 @@ h1 { font-size: clamp(2.8rem,4.6vw,4.2rem); line-height: 1.13; letter-spacing: -
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition: none !important; }
 }
+
