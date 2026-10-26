@@ -34,10 +34,10 @@ header.site {
 
 header .wrap { max-width: 72rem; }
 .brand {
-  background: url('/assets/brand/capsule-mark.png') left center / contain no-repeat;
+  background: url('/assets/brand/logo-full-180.png') left center / contain no-repeat;
   display: block;
-  aspect-ratio: 459 / 536;
-  height: 48px;
+  aspect-ratio: 509 / 180;
+  height: 52px;
   width: auto;
 }
 .brand svg { display: none; }
