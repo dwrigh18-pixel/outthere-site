@@ -34,9 +34,9 @@ header.site {
 
 header .wrap { max-width: 72rem; }
 .brand {
-  background: url('/assets/brand/logo-approved-horizontal.png') left center / 100% auto no-repeat;
+  background: url('/assets/brand/capsule-lockup-light.png') left center / contain no-repeat;
   display: block;
-  aspect-ratio: 1920 / 570;
+  aspect-ratio: 707 / 200;
   width: min(16.25rem, 48vw);
 }
 .brand svg { display: none; }
