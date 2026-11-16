@@ -8,7 +8,8 @@ Allowed here:
 
 - public HTML, CSS, JavaScript and image assets for the marketing site;
 - public privacy, cookie, account-deletion and verification-complete pages;
-- the `CNAME` and static-hosting configuration needed to publish those pages.
+- the `CNAME` and static-hosting configuration needed to publish those pages;
+- the cruise line pages under `cruise-lines/`, the script that builds them (`scripts/build_cruise_lines.py`) and the daily workflow that runs it. The script reads one public address that returns totals per cruise line and nothing about any member. It holds no key and must never be given one. David approved publishing these totals on 16 November 2026.
 
 Never add any of the following:
 

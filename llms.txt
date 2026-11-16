@@ -15,6 +15,7 @@ Key facts:
 ## Main pages
 
 - [Home](https://outtheretogether.com/): what the app does, how it works and frequently asked questions
+- [Cruise lines](https://outtheretogether.com/cruise-lines/): how many members are planning or booked with each cruise line, refreshed daily. Totals only, never names. Each cruise line has its own page
 - [Android app on Google Play](https://play.google.com/store/apps/details?id=com.blockbeam.outthere)
 - [Web version](https://app.outtheretogether.com/sign-in)
 

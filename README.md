@@ -10,6 +10,7 @@ Read [AGENTS.md](AGENTS.md) before making changes.
 
 - `index.html` and `assets/` — marketing homepage and public brand assets.
 - `privacy/`, `cookies/`, `delete-account/`, `verification-complete/` — public support and policy pages.
+- `cruise-lines/` — one page per cruise line with its member total, plus the list. Built by `scripts/build_cruise_lines.py`, which `.github/workflows/cruise-line-totals.yml` runs once a day. Do not edit these pages by hand: change the script and run it.
 - `CNAME` — custom domain configuration.
 
 ## Deployment

@@ -1,0 +1,165 @@
+{
+  "updated": "2026-11-16",
+  "cruise_lines": [
+    {
+      "name": "MSC Cruises",
+      "is_charter_operator": false,
+      "members": 9,
+      "upcoming_sailings": 4035,
+      "ships": 25,
+      "last_departure": "2028-11-10"
+    },
+    {
+      "name": "Norwegian Cruise Line",
+      "is_charter_operator": false,
+      "members": 6,
+      "upcoming_sailings": 2068,
+      "ships": 21,
+      "last_departure": "2028-10-29"
+    },
+    {
+      "name": "Atlantis Events",
+      "is_charter_operator": true,
+      "members": 5,
+      "upcoming_sailings": 4,
+      "ships": 4,
+      "last_departure": "2027-07-06"
+    },
+    {
+      "name": "Carnival Cruise Line",
+      "is_charter_operator": false,
+      "members": 4,
+      "upcoming_sailings": 2023,
+      "ships": 27,
+      "last_departure": "2028-03-17"
+    },
+    {
+      "name": "Princess Cruises",
+      "is_charter_operator": false,
+      "members": 3,
+      "upcoming_sailings": 1327,
+      "ships": 17,
+      "last_departure": "2028-03-17"
+    },
+    {
+      "name": "Virgin Voyages",
+      "is_charter_operator": false,
+      "members": 3,
+      "upcoming_sailings": 412,
+      "ships": 4,
+      "last_departure": "2028-10-28"
+    },
+    {
+      "name": "Celebrity Cruises",
+      "is_charter_operator": false,
+      "members": 2,
+      "upcoming_sailings": 514,
+      "ships": 17,
+      "last_departure": "2028-02-20"
+    },
+    {
+      "name": "P&O Cruises",
+      "is_charter_operator": false,
+      "members": 2,
+      "upcoming_sailings": 777,
+      "ships": 7,
+      "last_departure": "2028-10-28"
+    },
+    {
+      "name": "Ambassador Cruise Line",
+      "is_charter_operator": false,
+      "members": 1,
+      "upcoming_sailings": 98,
+      "ships": 3,
+      "last_departure": "2028-03-10"
+    },
+    {
+      "name": "Celestyal",
+      "is_charter_operator": false,
+      "members": 1,
+      "upcoming_sailings": 479,
+      "ships": 2,
+      "last_departure": "2028-11-18"
+    },
+    {
+      "name": "Holland America Line",
+      "is_charter_operator": false,
+      "members": 1,
+      "upcoming_sailings": 1232,
+      "ships": 11,
+      "last_departure": "2028-03-17"
+    },
+    {
+      "name": "Royal Caribbean",
+      "is_charter_operator": false,
+      "members": 1,
+      "upcoming_sailings": 2478,
+      "ships": 31,
+      "last_departure": "2028-02-20"
+    },
+    {
+      "name": "Viking River Cruises",
+      "is_charter_operator": false,
+      "members": 1,
+      "upcoming_sailings": 71,
+      "ships": 1,
+      "last_departure": "2028-11-12"
+    },
+    {
+      "name": "Cunard",
+      "is_charter_operator": false,
+      "members": 0,
+      "upcoming_sailings": 595,
+      "ships": 4,
+      "last_departure": "2029-01-04"
+    },
+    {
+      "name": "Disney Cruise Line",
+      "is_charter_operator": false,
+      "members": 0,
+      "upcoming_sailings": 827,
+      "ships": 8,
+      "last_departure": "2028-03-17"
+    },
+    {
+      "name": "Diva Destinations",
+      "is_charter_operator": true,
+      "members": 0,
+      "upcoming_sailings": 1,
+      "ships": 1,
+      "last_departure": "2027-07-11"
+    },
+    {
+      "name": "Fred. Olsen Cruise Lines",
+      "is_charter_operator": false,
+      "members": 0,
+      "upcoming_sailings": 137,
+      "ships": 3,
+      "last_departure": "2028-01-05"
+    },
+    {
+      "name": "Marella Cruises",
+      "is_charter_operator": false,
+      "members": 0,
+      "upcoming_sailings": 383,
+      "ships": 5,
+      "last_departure": "2028-02-20"
+    },
+    {
+      "name": "Olivia Travel",
+      "is_charter_operator": true,
+      "members": 0,
+      "upcoming_sailings": 13,
+      "ships": 12,
+      "last_departure": "2027-12-30"
+    },
+    {
+      "name": "VACAYA",
+      "is_charter_operator": true,
+      "members": 0,
+      "upcoming_sailings": 3,
+      "ships": 3,
+      "last_departure": "2027-07-27"
+    }
+  ]
+}

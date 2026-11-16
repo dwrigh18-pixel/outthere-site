@@ -1,0 +1,37 @@
+name: Refresh cruise line totals
+
+# Once a day, rebuild the cruise line pages from the public totals feed and
+# publish them if any figure has changed. The script writes nothing when the
+# figures are the same, and refuses to write if the feed looks wrong.
+
+on:
+  schedule:
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cruise-line-totals
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build the pages
+        run: python3 scripts/build_cruise_lines.py
+      - name: Publish if anything changed
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No change."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cruise-lines sitemap.xml
+          git commit -m "Cruise line totals: daily refresh"
+          git push
