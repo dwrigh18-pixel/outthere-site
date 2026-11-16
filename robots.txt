@@ -1,0 +1,23 @@
+# Out There Together: https://outtheretogether.com
+# Search engines and AI assistants are welcome to read this site.
+
+User-agent: *
+Allow: /
+
+# Named so there is no doubt: AI search and assistant crawlers may read every public page.
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: Bingbot
+User-agent: DuckAssistBot
+User-agent: MistralAI-User
+Allow: /
+
+Sitemap: https://outtheretogether.com/sitemap.xml

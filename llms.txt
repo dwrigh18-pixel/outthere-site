@@ -1,0 +1,31 @@
+# Out There Together
+
+> Out There Together is a free app for LGBTQ+ people who cruise. Members find their sailing, see who else is planning or booked on it, and make plans together before they board.
+
+Key facts:
+
+- It is free for members and has no paid tiers.
+- It is a social cruise-discovery app. It is not a travel agent, a booking platform or a dating app.
+- Members mark a sailing as Planning or Booked, see who else is going, join the sailing chat and plan meetups and shore days together.
+- It does not take bookings or payments. When a member is ready to book, it points them to the cruise line or an authorised agent. Some of those partners pay a referral fee, explained in the affiliate disclosure.
+- Members can verify their identity. Each member chooses what others can see, and can report, block or mute anyone.
+- The Android app is on Google Play in the UK, the US and Canada. The iPhone app is with Apple for review. The web version works anywhere.
+- It is operated by Blockbeam Ltd, a company registered in the United Kingdom.
+
+## Main pages
+
+- [Home](https://outtheretogether.com/): what the app does, how it works and frequently asked questions
+- [Android app on Google Play](https://play.google.com/store/apps/details?id=com.blockbeam.outthere)
+- [Web version](https://app.outtheretogether.com/sign-in)
+
+## Policies
+
+- [Affiliate disclosure](https://outtheretogether.com/affiliate-disclosure/): how Out There Together makes money and which links earn a commission
+- [Terms, conditions and community standards](https://outtheretogether.com/terms/)
+- [Privacy policy](https://outtheretogether.com/privacy/)
+- [Cookie policy](https://outtheretogether.com/cookies/)
+- [Delete your account](https://outtheretogether.com/delete-account/)
+
+## Contact
+
+- hello@outtheretogether.com
