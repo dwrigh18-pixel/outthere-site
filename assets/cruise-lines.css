@@ -1,0 +1,46 @@
+/* Cruise line pages. Builds on homepage.css and its Night Voyage tokens. */
+.cl-hero { padding-block: 3.5rem 1.5rem; max-width: 60rem; }
+.cl-hero h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); line-height: 1.08; text-wrap: balance; }
+.cl-lede { max-width: 42rem; margin-top: 1.2rem; color: var(--periwinkle); font-size: 1.12rem; line-height: 1.65; }
+.cl-updated { margin-top: 1.3rem; font: 500 .74rem var(--mono); color: var(--periwinkle); letter-spacing: .08em; text-transform: uppercase; }
+.cl-crumbs { font-size: .82rem; color: var(--periwinkle); margin-bottom: 1.4rem; }
+.cl-crumbs a { color: var(--cream); text-underline-offset: 4px; }
+
+.cl-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; margin-top: 2.2rem; max-width: 60rem; }
+.cl-stat { padding: 1.4rem 1.5rem; border: 1px solid var(--line); border-radius: 20px; background: linear-gradient(160deg, var(--card), var(--raised)); }
+.cl-stat strong { display: block; font-size: clamp(2rem, 4.5vw, 2.9rem); font-weight: 700; line-height: 1; color: var(--cream); }
+.cl-stat-lead strong { color: var(--coral); }
+.cl-stat span { display: block; margin-top: .6rem; color: var(--periwinkle); font-size: .9rem; line-height: 1.45; }
+
+.cl-section { padding-block: 2.6rem .4rem; max-width: 60rem; }
+.cl-section h2 { font-size: clamp(1.5rem, 3vw, 2rem); text-wrap: balance; }
+.cl-section > p { max-width: 44rem; margin-top: .9rem; color: var(--periwinkle); line-height: 1.7; }
+.cl-section > p a, .cl-note a { color: var(--cream); text-underline-offset: 4px; }
+
+.cl-table { width: 100%; margin-top: 1.5rem; border-collapse: separate; border-spacing: 0; border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: var(--raised); font-size: .95rem; }
+.cl-table th, .cl-table td { padding: .9rem 1.2rem; text-align: left; border-bottom: 1px solid var(--line); }
+.cl-table tr:last-child td { border-bottom: 0; }
+.cl-table thead th { font-size: .72rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--periwinkle); background: var(--card); }
+.cl-table td.num, .cl-table th.num { text-align: right; font-variant-numeric: tabular-nums; }
+.cl-table td.num strong { color: var(--coral); font-size: 1.1rem; }
+.cl-table td a { color: var(--cream); font-weight: 600; text-underline-offset: 4px; }
+.cl-table td small { display: block; color: var(--periwinkle); font-size: .8rem; margin-top: .15rem; }
+
+.cl-note { margin-top: 1.5rem; padding: 1.3rem 1.5rem; border: 1px solid var(--line); border-left: 3px solid var(--coral); border-radius: 14px; background: var(--raised); color: var(--periwinkle); font-size: .93rem; line-height: 1.7; max-width: 44rem; }
+.cl-note strong { color: var(--cream); }
+
+.cl-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; margin-top: 1.5rem; }
+.cl-steps .step h3 { margin-top: 0; }
+
+.cl-cta { margin-block: 3rem 1rem; padding: 2.4rem 1.6rem; border: 1px solid var(--line); border-radius: 24px; background: linear-gradient(160deg, var(--card), var(--raised)); text-align: center; max-width: 60rem; }
+.cl-cta h2 { font-size: clamp(1.6rem, 3.4vw, 2.3rem); }
+.cl-cta > p { color: var(--periwinkle); margin-top: .7rem; }
+.cl-cta .store-buttons { margin-top: 1.5rem; }
+
+@media (max-width: 760px) {
+  .cl-stats, .cl-steps { grid-template-columns: 1fr; }
+  .cl-table th, .cl-table td { padding: .75rem .8rem; }
+  .cl-table .hide-narrow { display: none; }
+}
+.cl-stat-text strong { font-size: clamp(1.5rem, 3.2vw, 2rem); line-height: 1.15; }
+.cl-table td.num { color: var(--periwinkle); }
