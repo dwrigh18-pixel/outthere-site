@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "cruise_lines": [
     {
       "name": "MSC Cruises",
       "is_charter_operator": false,
       "members": 9,
-      "upcoming_sailings": 4035,
+      "upcoming_sailings": 4015,
       "ships": 25,
       "last_departure": "2028-11-10"
     },
@@ -13,7 +13,7 @@
       "name": "Norwegian Cruise Line",
       "is_charter_operator": false,
       "members": 6,
-      "upcoming_sailings": 2068,
+      "upcoming_sailings": 2065,
       "ships": 21,
       "last_departure": "2028-10-29"
     },
@@ -29,7 +29,7 @@
       "name": "Carnival Cruise Line",
       "is_charter_operator": false,
       "members": 4,
-      "upcoming_sailings": 2023,
+      "upcoming_sailings": 2018,
       "ships": 27,
       "last_departure": "2028-03-17"
     },
@@ -45,7 +45,7 @@
       "name": "Virgin Voyages",
       "is_charter_operator": false,
       "members": 3,
-      "upcoming_sailings": 412,
+      "upcoming_sailings": 411,
       "ships": 4,
       "last_departure": "2028-10-28"
     },
@@ -53,7 +53,7 @@
       "name": "Celebrity Cruises",
       "is_charter_operator": false,
       "members": 2,
-      "upcoming_sailings": 514,
+      "upcoming_sailings": 513,
       "ships": 17,
       "last_departure": "2028-02-20"
     },
@@ -77,7 +77,7 @@
       "name": "Celestyal",
       "is_charter_operator": false,
       "members": 1,
-      "upcoming_sailings": 479,
+      "upcoming_sailings": 478,
       "ships": 2,
       "last_departure": "2028-11-18"
     },
@@ -93,7 +93,7 @@
       "name": "Royal Caribbean",
       "is_charter_operator": false,
       "members": 1,
-      "upcoming_sailings": 2478,
+      "upcoming_sailings": 2472,
       "ships": 31,
       "last_departure": "2028-02-20"
     },
@@ -117,7 +117,7 @@
       "name": "Disney Cruise Line",
       "is_charter_operator": false,
       "members": 0,
-      "upcoming_sailings": 827,
+      "upcoming_sailings": 823,
       "ships": 8,
       "last_departure": "2028-03-17"
     },
