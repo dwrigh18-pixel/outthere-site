@@ -68,15 +68,15 @@ def number(value: int) -> str:
 
 
 def members_phrase(count: int) -> str:
-    """'9 Out There Together members are' / '1 Out There Together member is'."""
+    """'9 Out There Together members have' / '1 Out There Together member has'."""
     if count == 1:
-        return "1 Out There Together member is"
-    return f"{number(count)} Out There Together members are"
+        return "1 Out There Together member has"
+    return f"{number(count)} Out There Together members have"
 
 
 def article(name: str) -> str:
     """'an' before a vowel sound, including initials said as letters (MSC)."""
-    return "an" if re.match(r"(?i)[aeio]|MSC|NCL", name) else "a"
+    return "an" if re.match(r"(?i)[aeio]|MSC\b|NCL\b", name) else "a"
 
 
 def join_names(names: list[str]) -> str:
@@ -248,7 +248,7 @@ SELL_ANSWER = (
 def table(rows: list[dict], first_heading: str, tag_charters: bool) -> str:
     out = [
         '      <table class="cl-table">',
-        f'        <thead><tr><th>{first_heading}</th><th class="num">Members planning or booked</th>'
+        f'        <thead><tr><th>{first_heading}</th><th class="num">Members with a sailing shortlisted or booked</th>'
         '<th class="num hide-narrow">Upcoming sailings in the app</th></tr></thead>',
         '        <tbody>',
     ]
@@ -273,7 +273,7 @@ def list_page(lines: list[dict], updated: dt.date) -> str:
     following = f"The surest answer is the companies that run sailings for LGBTQ+ travellers: {esc(charter_names)}. "
     if top_mainstream:
         following += (
-            "Among the mainstream lines, Out There Together members are most often planning or booked with "
+            "Among the mainstream lines, Out There Together members have most often shortlisted or booked sailings with "
             f"{esc(join_names(top_mainstream))}. "
         )
     following += "Our totals are still small, so treat them as an early signal."
@@ -281,7 +281,7 @@ def list_page(lines: list[dict], updated: dt.date) -> str:
     faqs = [
         ("Which cruise lines have a big LGBTQ+ following?", following),
         ("How do I find other LGBTQ+ people on my cruise?",
-         "Find your sailing in the Out There Together app and mark it as Planning or Booked. Verified members can "
+         "Find your sailing in the Out There Together app, then add it to your shortlist or mark it Booked. Verified members can "
          "see who else is on the same sailing, say hello in the sailing chat and plan meetups before anyone boards."),
         ("Do you sell cruises?", SELL_ANSWER.format(root="../")),
         ("Can anyone see that I am on a sailing?",
@@ -301,11 +301,11 @@ def list_page(lines: list[dict], updated: dt.date) -> str:
     body = f"""    <section class="wrap cl-hero">
       <p class="eyebrow">Cruise lines <span>·</span> Member totals</p>
       <h1>Which cruise lines are LGBTQ+ travellers sailing with?</h1>
-      <p class="cl-lede">These are the cruise lines that Out There Together members are planning or booked with. The totals come straight from the app and refresh every day. No names, no profiles, just numbers.</p>
+      <p class="cl-lede">These are the cruise lines that Out There Together members have shortlisted or booked sailings with. The totals come straight from the app and refresh every day. No names, no profiles, just numbers.</p>
       <p class="cl-updated">Updated {long_date(updated)}</p>
 
       <div class="cl-stats">
-        <div class="cl-stat cl-stat-lead"><strong>{len(with_members)}</strong><span>cruise lines with members planning or booked</span></div>
+        <div class="cl-stat cl-stat-lead"><strong>{len(with_members)}</strong><span>cruise lines with sailings members have shortlisted or booked</span></div>
         <div class="cl-stat"><strong>{len(lines)}</strong><span>cruise lines and charter companies in the app</span></div>
         <div class="cl-stat"><strong>{len(charters)}</strong><span>companies running sailings for LGBTQ+ travellers</span></div>
       </div>
@@ -326,7 +326,7 @@ def list_page(lines: list[dict], updated: dt.date) -> str:
 {waiting_section}
     <section class="wrap cl-section">
       <h2>How we count</h2>
-      <p>A member is counted for a cruise line when they have marked at least one upcoming sailing with that line as Planning or Booked. Sailings that have already returned are not counted. We publish the total for each cruise line and nothing else: never a name, a photo, a profile or the sailing someone is on. The <a href="../privacy/">privacy policy</a> explains this in full.</p>
+      <p>A member is counted for a cruise line when they have shortlisted or booked at least one upcoming sailing with that line. Sailings that have already returned are not counted. We publish the total for each cruise line and nothing else: never a name, a photo, a profile or the sailing someone is on. The <a href="../privacy/">privacy policy</a> explains this in full.</p>
     </section>
 
 {faq_block(faqs)}
@@ -337,7 +337,7 @@ def list_page(lines: list[dict], updated: dt.date) -> str:
         root="../",
         lines_href="./",
         title="Which cruise lines are LGBTQ+ travellers sailing with?",
-        description="The cruise lines Out There Together members are planning or booked with, counted from the "
+        description="The cruise lines Out There Together members have shortlisted or booked sailings with, counted from the "
                     "app and refreshed every day. Totals only, never names.",
         path="cruise-lines/",
         body=body,
@@ -358,19 +358,19 @@ def line_page(row: dict, lines: list[dict], updated: dt.date) -> str:
     runs = f"{safe} runs sailings for LGBTQ+ travellers. " if charter else ""
 
     if count:
-        lede = f"{runs}{members_phrase(count)} planning or booked on an upcoming {safe} sailing."
+        lede = f"{runs}{members_phrase(count)} shortlisted or booked an upcoming {safe} sailing."
         if sole_top:
             lede += " That is the most of any cruise line in the app today."
         member_word = "member" if count == 1 else "members"
         lead_stat = (f'<div class="cl-stat cl-stat-lead"><strong>{number(count)}</strong>'
-                     f'<span>{member_word} planning or booked with {safe}</span></div>')
-        first_answer = (f"Yes. {members_phrase(count)} planning or booked on an upcoming {safe} sailing, "
+                     f'<span>{member_word} with {article(name)} {safe} sailing shortlisted or booked</span></div>')
+        first_answer = (f"Yes. {members_phrase(count)} shortlisted or booked an upcoming {safe} sailing, "
                         f"as of {date}. That only counts members of the app, so the real number is higher.")
     else:
         lede = (f"{runs}No Out There Together member has marked an upcoming {safe} sailing yet. "
                 "Mark yours and you will be the first name others see.")
         lead_stat = (f'<div class="cl-stat cl-stat-lead cl-stat-text"><strong>Be the first</strong>'
-                     f'<span>to mark {article(name)} {safe} sailing as Planning or Booked</span></div>')
+                     f'<span>to shortlist or book {article(name)} {safe} sailing</span></div>')
         first_answer = (f"No Out There Together member has marked an upcoming {safe} sailing yet, as of {date}. "
                         "That only reflects members of the app, which opened to the public in October 2026. "
                         f"It says nothing about who sails with {safe}.")
@@ -383,7 +383,7 @@ def line_page(row: dict, lines: list[dict], updated: dt.date) -> str:
     faqs = [
         (first_question, first_answer),
         (f"How do I meet other LGBTQ+ travellers on {article(name)} {name} sailing?",
-         f"Find your {safe} sailing in the Out There Together app and mark it as Planning or Booked. Verified "
+         f"Find your {safe} sailing in the Out There Together app, then add it to your shortlist or mark it Booked. Verified "
          "members can see who else is on the same sailing, say hello in the sailing chat and plan meetups before boarding."),
         (f"Can I book {article(name)} {name} sailing through Out There Together?", SELL_ANSWER.format(root="../../")),
         ("Does this page show who is on which sailing?",
@@ -409,14 +409,14 @@ def line_page(row: dict, lines: list[dict], updated: dt.date) -> str:
       <h2>See who else is going on your {safe} sailing</h2>
       <div class="cl-steps">
         <article class="step"><h3>Find your sailing</h3><p>Search {safe} by ship, port and month. If yours is missing, add it.</p></article>
-        <article class="step"><h3>Mark it</h3><p>Choose Planning while you decide, or Booked once you have. That is what adds you to the total on this page.</p></article>
+        <article class="step"><h3>Mark it</h3><p>Add it to your shortlist while you decide, or mark it Booked once you have. That is what adds you to the total on this page.</p></article>
         <article class="step"><h3>Meet your shipmates</h3><p>Verified members can see who else is on the sailing, join its chat and plan sailaway drinks or a day ashore.</p></article>
       </div>
     </section>
 
     <section class="wrap cl-section">
       <h2>What this number means</h2>
-      <p>It counts members of Out There Together who have marked at least one upcoming {safe} sailing as Planning or Booked. Each person is counted once. It does not count every LGBTQ+ person sailing with {safe}, so the real number on board will be higher.</p>
+      <p>It counts members of Out There Together who have shortlisted or booked at least one upcoming {safe} sailing. Each person is counted once. It does not count every LGBTQ+ person sailing with {safe}, so the real number on board will be higher.</p>
       <p class="cl-note"><strong>We do not rate cruise lines.</strong> This page reports what our members are doing, not how welcoming a cruise line is. Out There Together opened to the public in October 2026, so the totals are small and growing. See <a href="../">every cruise line's total</a>.</p>
     </section>
 
@@ -428,7 +428,7 @@ def line_page(row: dict, lines: list[dict], updated: dt.date) -> str:
         root="../../",
         lines_href="../",
         title=f"LGBTQ+ travellers on {name}",
-        description=f"How many Out There Together members are planning or booked with {name}, refreshed every "
+        description=f"How many Out There Together members have shortlisted or booked {article(name)} {name} sailing, refreshed every "
                     "day, and how to see who else is going on your sailing.",
         path=f"cruise-lines/{slug(name)}/",
         body=body,
