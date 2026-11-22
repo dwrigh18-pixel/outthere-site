@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "cruise_lines": [
     {
       "name": "MSC Cruises",
       "is_charter_operator": false,
       "members": 8,
-      "upcoming_sailings": 3993,
+      "upcoming_sailings": 3985,
       "ships": 25,
       "last_departure": "2028-11-10"
     },
@@ -13,7 +13,7 @@
       "name": "Norwegian Cruise Line",
       "is_charter_operator": false,
       "members": 6,
-      "upcoming_sailings": 2058,
+      "upcoming_sailings": 2051,
       "ships": 21,
       "last_departure": "2028-10-29"
     },
@@ -28,8 +28,8 @@
     {
       "name": "Carnival Cruise Line",
       "is_charter_operator": false,
-      "members": 4,
-      "upcoming_sailings": 2011,
+      "members": 5,
+      "upcoming_sailings": 2003,
       "ships": 27,
       "last_departure": "2028-03-17"
     },
@@ -53,7 +53,7 @@
       "name": "Celebrity Cruises",
       "is_charter_operator": false,
       "members": 2,
-      "upcoming_sailings": 512,
+      "upcoming_sailings": 511,
       "ships": 17,
       "last_departure": "2028-02-20"
     },
@@ -61,7 +61,7 @@
       "name": "P&O Cruises",
       "is_charter_operator": false,
       "members": 2,
-      "upcoming_sailings": 773,
+      "upcoming_sailings": 769,
       "ships": 7,
       "last_departure": "2028-10-28"
     },
@@ -69,7 +69,7 @@
       "name": "Princess Cruises",
       "is_charter_operator": false,
       "members": 2,
-      "upcoming_sailings": 1321,
+      "upcoming_sailings": 1318,
       "ships": 17,
       "last_departure": "2028-03-17"
     },
@@ -77,7 +77,7 @@
       "name": "Celestyal",
       "is_charter_operator": false,
       "members": 1,
-      "upcoming_sailings": 476,
+      "upcoming_sailings": 475,
       "ships": 2,
       "last_departure": "2028-11-18"
     },
@@ -85,7 +85,7 @@
       "name": "Holland America Line",
       "is_charter_operator": false,
       "members": 1,
-      "upcoming_sailings": 1227,
+      "upcoming_sailings": 1219,
       "ships": 11,
       "last_departure": "2028-03-17"
     },
@@ -93,7 +93,7 @@
       "name": "Royal Caribbean",
       "is_charter_operator": false,
       "members": 1,
-      "upcoming_sailings": 2460,
+      "upcoming_sailings": 2455,
       "ships": 31,
       "last_departure": "2028-02-20"
     },
@@ -117,7 +117,7 @@
       "name": "Disney Cruise Line",
       "is_charter_operator": false,
       "members": 0,
-      "upcoming_sailings": 818,
+      "upcoming_sailings": 816,
       "ships": 8,
       "last_departure": "2028-03-17"
     },
@@ -133,7 +133,7 @@
       "name": "Fred. Olsen Cruise Lines",
       "is_charter_operator": false,
       "members": 0,
-      "upcoming_sailings": 132,
+      "upcoming_sailings": 131,
       "ships": 3,
       "last_departure": "2028-01-05"
     },
@@ -141,7 +141,7 @@
       "name": "Marella Cruises",
       "is_charter_operator": false,
       "members": 0,
-      "upcoming_sailings": 381,
+      "upcoming_sailings": 380,
       "ships": 5,
       "last_departure": "2028-02-20"
     },
