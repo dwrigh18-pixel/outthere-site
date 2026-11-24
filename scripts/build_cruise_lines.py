@@ -40,7 +40,7 @@ WEB_APP = "https://app.outtheretogether.com/sign-in"
 CSS_VERSION = "20261116-1"
 
 # Pages that exist outside this script. Kept here so the sitemap is whole.
-STATIC_PAGES = ["", "affiliate-disclosure/", "terms/", "privacy/", "cookies/", "delete-account/"]
+STATIC_PAGES = ["", "affiliate-disclosure/", "child-safety/", "terms/", "privacy/", "cookies/", "delete-account/"]
 
 MONTHS = ["January", "February", "March", "April", "May", "June", "July",
           "August", "September", "October", "November", "December"]
