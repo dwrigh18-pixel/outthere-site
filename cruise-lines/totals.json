@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "cruise_lines": [
     {
       "name": "MSC Cruises",
       "is_charter_operator": false,
       "members": 8,
-      "upcoming_sailings": 3977,
+      "upcoming_sailings": 3968,
       "ships": 25,
       "last_departure": "2028-11-10"
     },
@@ -13,7 +13,7 @@
       "name": "Norwegian Cruise Line",
       "is_charter_operator": false,
       "members": 6,
-      "upcoming_sailings": 2046,
+      "upcoming_sailings": 2044,
       "ships": 21,
       "last_departure": "2028-10-29"
     },
@@ -29,7 +29,7 @@
       "name": "Carnival Cruise Line",
       "is_charter_operator": false,
       "members": 4,
-      "upcoming_sailings": 1994,
+      "upcoming_sailings": 1986,
       "ships": 27,
       "last_departure": "2028-03-17"
     },
@@ -37,7 +37,7 @@
       "name": "Virgin Voyages",
       "is_charter_operator": false,
       "members": 3,
-      "upcoming_sailings": 408,
+      "upcoming_sailings": 407,
       "ships": 4,
       "last_departure": "2028-10-28"
     },
@@ -53,7 +53,7 @@
       "name": "Celebrity Cruises",
       "is_charter_operator": false,
       "members": 2,
-      "upcoming_sailings": 509,
+      "upcoming_sailings": 508,
       "ships": 17,
       "last_departure": "2028-02-20"
     },
@@ -69,7 +69,7 @@
       "name": "Princess Cruises",
       "is_charter_operator": false,
       "members": 2,
-      "upcoming_sailings": 1314,
+      "upcoming_sailings": 1311,
       "ships": 17,
       "last_departure": "2028-03-17"
     },
@@ -77,7 +77,7 @@
       "name": "Celestyal",
       "is_charter_operator": false,
       "members": 1,
-      "upcoming_sailings": 475,
+      "upcoming_sailings": 474,
       "ships": 2,
       "last_departure": "2028-11-18"
     },
@@ -93,17 +93,9 @@
       "name": "Royal Caribbean",
       "is_charter_operator": false,
       "members": 1,
-      "upcoming_sailings": 2444,
+      "upcoming_sailings": 2438,
       "ships": 31,
       "last_departure": "2028-02-20"
-    },
-    {
-      "name": "Viking River Cruises",
-      "is_charter_operator": false,
-      "members": 1,
-      "upcoming_sailings": 70,
-      "ships": 1,
-      "last_departure": "2028-11-12"
     },
     {
       "name": "Cunard",
@@ -117,7 +109,7 @@
       "name": "Disney Cruise Line",
       "is_charter_operator": false,
       "members": 0,
-      "upcoming_sailings": 815,
+      "upcoming_sailings": 812,
       "ships": 8,
       "last_departure": "2028-03-17"
     },
@@ -133,7 +125,7 @@
       "name": "Fred. Olsen Cruise Lines",
       "is_charter_operator": false,
       "members": 0,
-      "upcoming_sailings": 131,
+      "upcoming_sailings": 130,
       "ships": 3,
       "last_departure": "2028-01-05"
     },
@@ -160,6 +152,14 @@
       "upcoming_sailings": 3,
       "ships": 3,
       "last_departure": "2027-07-27"
+    },
+    {
+      "name": "Viking River Cruises",
+      "is_charter_operator": false,
+      "members": 0,
+      "upcoming_sailings": 70,
+      "ships": 1,
+      "last_departure": "2028-11-12"
     }
   ]
 }
