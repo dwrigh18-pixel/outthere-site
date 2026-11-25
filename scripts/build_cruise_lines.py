@@ -28,6 +28,7 @@ import html
 import json
 import re
 import sys
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
@@ -38,7 +39,7 @@ OUT = ROOT / "cruise-lines"
 PLAY = "https://play.google.com/store/apps/details?id=com.blockbeam.outthere"
 APPLE = "https://apps.apple.com/app/id6816005221"
 WEB_APP = "https://app.outtheretogether.com/sign-in"
-CSS_VERSION = "20261125-1"
+CSS_VERSION = "20261125-2"
 
 # Pages that exist outside this script. Kept here so the sitemap is whole.
 STATIC_PAGES = ["", "affiliate-disclosure/", "child-safety/", "terms/", "privacy/", "cookies/", "delete-account/"]
@@ -103,6 +104,9 @@ def fetch() -> list[dict]:
             "ships": int(row["ships"]),
             "last_departure": str(row["last_departure"]),
         })
+        facts = clean_facts(row.get("facts"))
+        if facts:
+            cleaned[-1]["facts"] = facts
         dt.date.fromisoformat(cleaned[-1]["last_departure"])
         if not cleaned[-1]["name"] or cleaned[-1]["members"] < 0:
             raise SystemExit("Feed row failed checks; nothing written.")
@@ -110,6 +114,204 @@ def fetch() -> list[dict]:
         raise SystemExit("Two cruise lines share an address; nothing written.")
     cleaned.sort(key=lambda row: (-row["members"], row["name"].lower()))
     return cleaned
+
+
+# ------------------------------------------------------- facts about a line
+
+def clean_facts(raw: object) -> dict | None:
+    """Keep only well-formed facts. Anything odd is dropped, never published."""
+    if not isinstance(raw, dict):
+        return None
+
+    def counted(key: str, label: str, count: str, limit: int) -> list[tuple[str, int]]:
+        out = []
+        for item in raw.get(key) or []:
+            if not isinstance(item, dict):
+                continue
+            name, value = item.get(label), item.get(count)
+            if isinstance(name, (str, int)) and str(name).strip() and isinstance(value, int) and value > 0:
+                out.append((str(name).strip(), value))
+        return out[:limit]
+
+    nights = raw.get("nights") if isinstance(raw.get("nights"), dict) else {}
+    common = []
+    for item in nights.get("common") or []:
+        if isinstance(item, dict) and isinstance(item.get("nights"), int) and isinstance(item.get("sailings"), int):
+            common.append((item["nights"], item["sailings"]))
+
+    sailings = []
+    for item in raw.get("lgbtq_sailings") or []:
+        if not isinstance(item, dict):
+            continue
+        try:
+            departs = dt.date.fromisoformat(str(item.get("departs")))
+            returns = dt.date.fromisoformat(str(item.get("returns")))
+        except ValueError:
+            continue
+        company, ship = item.get("company"), item.get("ship")
+        if not (isinstance(company, str) and company.strip() and isinstance(ship, str) and ship.strip()):
+            continue
+        sailings.append({
+            "company": company.strip(), "ship": ship.strip(),
+            "ship_line": str(item.get("ship_line") or "").strip(),
+            "departs": departs.isoformat(), "returns": returns.isoformat(),
+            "from": str(item.get("from") or "").strip(),
+        })
+
+    # Country guidance: only entries whose source is a named Wikipedia article
+    # are published, so every country on the page links to where it came from.
+    safety = raw.get("criminalised_calls") if isinstance(raw.get("criminalised_calls"), dict) else {}
+    countries = []
+    for item in safety.get("countries") or []:
+        if not isinstance(item, dict) or not isinstance(item.get("sailings"), int) or item["sailings"] <= 0:
+            continue
+        match = re.fullmatch(r"Wikipedia, (LGBTQ rights in (.+?)) \(en\.wikipedia\.org\)\.?", str(item.get("source") or "").strip())
+        if not match:
+            continue
+        try:
+            reviewed = dt.date.fromisoformat(str(item.get("reviewed"))).isoformat()
+        except ValueError:
+            continue
+        place = re.sub(r"^the ", "", match.group(2))
+        countries.append({
+            "name": place,
+            "sailings": item["sailings"],
+            "url": "https://en.wikipedia.org/wiki/" + urllib.parse.quote(match.group(1).replace(" ", "_")),
+            "reviewed": reviewed,
+        })
+    with_itinerary = safety.get("sailings_with_itinerary")
+    flagged = safety.get("sailings")
+    safe_ok = (isinstance(with_itinerary, int) and isinstance(flagged, int)
+               and 0 < flagged <= with_itinerary and countries)
+
+    return {
+        "regions": counted("regions", "name", "sailings", 6),
+        "departure_ports": counted("departure_ports", "name", "sailings", 6),
+        "ships": counted("ships", "name", "sailings", 20),
+        "ports_of_call": counted("ports_of_call", "name", "calls", 10),
+        "nights_common": common[:5],
+        "nights_shortest": nights.get("shortest") if isinstance(nights.get("shortest"), int) else None,
+        "nights_longest": nights.get("longest") if isinstance(nights.get("longest"), int) else None,
+        "lgbtq_sailings": sailings[:24],
+        "safety": {"sailings": flagged, "with_itinerary": with_itinerary, "countries": countries} if safe_ok else None,
+    }
+
+
+def date_range(start_iso: str, end_iso: str) -> str:
+    start, end = dt.date.fromisoformat(start_iso), dt.date.fromisoformat(end_iso)
+    if start.year != end.year:
+        return f"{long_date(start)} to {long_date(end)}"
+    if start.month != end.month:
+        return f"{start.day} {MONTHS[start.month - 1]} to {long_date(end)}"
+    return f"{start.day} to {long_date(end)}"
+
+
+def bar_card(heading: str, rows: list[tuple[str, int]], note: str = "") -> str:
+    if len(rows) < 2:
+        return ""
+    top = max(value for _, value in rows)
+    items = "".join(
+        f'<li><span>{esc(name)}</span><span class="bar"><i style="width:{max(3, round(value / top * 100))}%"></i></span>'
+        f'<span class="n">{number(value)}</span></li>'
+        for name, value in rows
+    )
+    extra = f'<p class="cl-fact-note">{esc(note)}</p>' if note else ""
+    return f'<div class="cl-fact-card"><h3>{esc(heading)}</h3><ul class="cl-bars">{items}</ul>{extra}</div>'
+
+
+def facts_sections(row: dict, lines: list[dict]) -> str:
+    """The parts of a line page that are about that line and no other."""
+    facts = row.get("facts")
+    if not facts:
+        return ""
+    safe = esc(row["name"])
+    known = {line["name"]: slug(line["name"]) for line in lines}
+    out = []
+
+    # Bars mean little for a company with a handful of sailings; those get the list below.
+    if row["upcoming_sailings"] >= 10:
+        ships = facts["ships"]
+        ship_note = f"And {len(ships) - 8} more." if len(ships) > 8 else ""
+        nights = [(f"{n} night" + ("" if n == 1 else "s"), count) for n, count in facts["nights_common"]]
+        nights_note = ""
+        if facts["nights_shortest"] and facts["nights_longest"] and facts["nights_shortest"] != facts["nights_longest"]:
+            nights_note = f"Shortest {facts['nights_shortest']} nights, longest {facts['nights_longest']}."
+        cards = "".join(card for card in [
+            bar_card("Where the sailings go", facts["regions"]),
+            bar_card("Where they leave from", facts["departure_ports"]),
+            bar_card("The ships", ships[:8], ship_note),
+            bar_card("How long", nights, nights_note),
+        ] if card)
+        if cards:
+            out.append(f"""    <section class="wrap cl-section">
+      <h2>{safe} at a glance</h2>
+      <p>Counted from the upcoming {safe} sailings in the app, so the figures move as sailings are added and depart.</p>
+      <div class="cl-facts">{cards}</div>
+    </section>""")
+
+        ports = facts["ports_of_call"]
+        if len(ports) >= 3:
+            chips = "".join(f"<li>{esc(name)}<b>{number(calls)}</b></li>" for name, calls in ports)
+            out.append(f"""    <section class="wrap cl-section">
+      <h2>The ports you are most likely to call at</h2>
+      <p>The number is how many upcoming {safe} sailings in the app call there.</p>
+      <ul class="cl-chips">{chips}</ul>
+    </section>""")
+
+
+        safety = facts.get("safety")
+        if safety:
+            share = safety["sailings"] / safety["with_itinerary"] * 100
+            percent = "Under 1%" if share < 1 else f"{round(share)}%"
+            links = join_names([
+                f'<a href="{esc(c["url"])}" rel="noopener">{esc(c["name"])}</a> ({number(c["sailings"])})'
+                for c in safety["countries"]
+            ])
+            checked = long_date(max(dt.date.fromisoformat(c["reviewed"]) for c in safety["countries"]))
+            country_word = "country is" if len(safety["countries"]) == 1 else "countries are"
+            out.append(f"""    <section class="wrap cl-section">
+      <h2>Ports where same-sex relationships are against the law</h2>
+      <p>Some itineraries call at countries where same-sex relationships are a criminal offence or are prosecuted. We count them so you know before you book, not after.</p>
+      <div class="cl-safety">
+        <div class="cl-safety-figure"><strong>{percent}</strong><span>of upcoming {safe} sailings call at one of these ports: {number(safety["sailings"])} of the {number(safety["with_itinerary"])} we hold an itinerary for.</span></div>
+        <div>
+          <p>The {country_word} {links}. The number after each is how many sailings call there.</p>
+          <p>Each name links to the Wikipedia article our guidance is drawn from, last checked {checked}. Laws change, so read the article before you travel.</p>
+          <p>This counts the itinerary. It says nothing about {safe}'s own policies or how you are treated on board. In the app, every port on your sailing carries its own guidance.</p>
+        </div>
+      </div>
+    </section>""")
+
+    sailings = facts["lgbtq_sailings"]
+    if sailings:
+        cards = []
+        for item in sailings:
+            when = date_range(item["departs"], item["returns"])
+            place = f" · from {esc(item['from'])}" if item["from"] else ""
+            if row["is_charter_operator"]:
+                line = item["ship_line"]
+                on = (f'<a href="../{known[line]}/">{esc(line)}</a>' if line in known and line != row["name"]
+                      else esc(line))
+                title = esc(item["ship"]) + (f" <small>({on})</small>" if line and line != row["name"] else "")
+            else:
+                company = item["company"]
+                title = (f'<a href="../{known[company]}/">{esc(company)}</a>' if company in known else esc(company))
+                title += f" on {esc(item['ship'])}"
+            cards.append(f'<li><span class="when">{when}{place}</span><strong>{title}</strong></li>')
+        if row["is_charter_operator"]:
+            heading = f"Upcoming {safe} sailings"
+            intro = f"Every upcoming {safe} sailing in the app. Find yours and see who else is going."
+        else:
+            heading = f"Sailings run for LGBTQ+ travellers on {safe} ships"
+            intro = (f"Some companies take a whole ship, or a group on one, for LGBTQ+ travellers. "
+                     f"These are the ones on {safe} ships in the app.")
+        out.append(f"""    <section class="wrap cl-section">
+      <h2>{heading}</h2>
+      <p>{intro}</p>
+      <ul class="cl-sailings">{"".join(cards)}</ul>
+    </section>""")
+
+    return ("\n\n".join(out) + "\n\n") if out else ""
 
 
 # ---------------------------------------------------------------- page shell
@@ -434,7 +636,7 @@ def line_page(row: dict, lines: list[dict], updated: dt.date) -> str:
       </div>
     </section>
 
-    <section class="wrap cl-section">
+{facts_sections(row, lines)}    <section class="wrap cl-section">
       <h2>See who else is going on your {safe} sailing</h2>
       <div class="cl-steps">
         <article class="step"><h3>Find your sailing</h3><p>Search {safe} by ship, port and month. If yours is missing, add it.</p></article>

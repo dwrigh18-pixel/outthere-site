@@ -47,3 +47,29 @@
 .cl-links { list-style: none; display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.3rem 0 0; padding: 0; }
 .cl-links a { display: inline-block; padding: .5rem .95rem; border: 1px solid var(--line); border-radius: 999px; background: var(--raised); color: var(--cream); font-size: .9rem; font-weight: 600; text-decoration: none; }
 .cl-links a:hover { border-color: var(--periwinkle); }
+.cl-facts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.1rem; margin-top: 1.5rem; }
+.cl-fact-card { padding: 1.4rem 1.5rem; border: 1px solid var(--line); border-radius: 20px; background: linear-gradient(160deg, var(--card), var(--raised)); }
+.cl-fact-card h3 { font-size: 1.05rem; margin: 0 0 .9rem; }
+.cl-fact-note { margin: .9rem 0 0; color: var(--periwinkle); font-size: .9rem; }
+.cl-bars { list-style: none; margin: 0; padding: 0; }
+.cl-bars li { display: grid; grid-template-columns: minmax(0, 11rem) 1fr 3.2rem; align-items: center; gap: .8rem; padding: .32rem 0; color: var(--cream); font-size: .92rem; }
+.cl-bars .bar { height: .55rem; border-radius: 99px; background: rgba(169,181,255,.18); overflow: hidden; }
+.cl-bars .bar i { display: block; height: 100%; border-radius: 99px; background: var(--periwinkle); }
+.cl-bars .n { text-align: right; color: var(--periwinkle); font-variant-numeric: tabular-nums; }
+.cl-chips { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem; margin: 1.3rem 0 0; padding: 0; }
+.cl-chips li { padding: .4rem .85rem; border: 1px solid var(--line); border-radius: 999px; background: var(--raised); color: var(--cream); font-size: .88rem; }
+.cl-chips li b { color: var(--periwinkle); font-weight: 600; margin-left: .4rem; }
+.cl-sailings { list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: .9rem; margin: 1.5rem 0 0; padding: 0; }
+.cl-sailings li { padding: 1.1rem 1.3rem; border: 1px solid var(--line); border-left: 3px solid #FF9A45; border-radius: 16px; background: var(--raised); }
+.cl-sailings .when { display: block; font: 500 .74rem var(--mono); color: #FF9A45; letter-spacing: .06em; text-transform: uppercase; }
+.cl-sailings strong { display: block; margin-top: .45rem; color: var(--cream); font-size: 1.02rem; }
+.cl-sailings strong small { color: var(--periwinkle); font-weight: 500; font-size: .88rem; }
+.cl-sailings a { color: var(--cream); text-underline-offset: 4px; }
+.cl-safety { display: grid; grid-template-columns: 15rem 1fr; gap: 1.6rem; align-items: start; margin-top: 1.5rem; padding: 1.5rem; border: 1px solid var(--line); border-radius: 20px; background: linear-gradient(160deg, var(--card), var(--raised)); }
+.cl-safety-figure strong { display: block; font-size: clamp(2.2rem, 5vw, 3rem); font-weight: 700; line-height: 1; color: var(--coral); }
+.cl-safety-figure span { display: block; margin-top: .6rem; color: var(--periwinkle); font-size: .9rem; line-height: 1.5; }
+.cl-safety p { margin: 0 0 .75rem; color: var(--periwinkle); line-height: 1.65; }
+.cl-safety p:last-child { margin-bottom: 0; }
+.cl-safety a { color: var(--cream); text-underline-offset: 4px; }
+@media (max-width: 760px) { .cl-safety { grid-template-columns: 1fr; } }
+@media (max-width: 760px) { .cl-facts, .cl-sailings { grid-template-columns: 1fr; } .cl-bars li { grid-template-columns: minmax(0, 8.5rem) 1fr 2.8rem; } }
