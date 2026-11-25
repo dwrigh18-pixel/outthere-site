@@ -38,7 +38,7 @@ OUT = ROOT / "cruise-lines"
 PLAY = "https://play.google.com/store/apps/details?id=com.blockbeam.outthere"
 APPLE = "https://apps.apple.com/app/id6816005221"
 WEB_APP = "https://app.outtheretogether.com/sign-in"
-CSS_VERSION = "20261116-1"
+CSS_VERSION = "20261125-1"
 
 # Pages that exist outside this script. Kept here so the sitemap is whole.
 STATIC_PAGES = ["", "affiliate-disclosure/", "child-safety/", "terms/", "privacy/", "cookies/", "delete-account/"]
@@ -115,7 +115,7 @@ def fetch() -> list[dict]:
 # ---------------------------------------------------------------- page shell
 
 def shell(*, root: str, title: str, description: str, path: str, body: str,
-          schema: list[dict], lines_href: str) -> str:
+          schema: list[dict], lines_href: str, robots: str = "index,follow") -> str:
     graph = json.dumps({"@context": "https://schema.org", "@graph": schema},
                        ensure_ascii=False, indent=2).replace("</", "<\\/")
     return f"""<!DOCTYPE html>
@@ -125,7 +125,7 @@ def shell(*, root: str, title: str, description: str, path: str, body: str,
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>{esc(title)} | Out There Together</title>
   <meta name="description" content="{esc(description)}">
-  <meta name="robots" content="index,follow">
+  <meta name="robots" content="{robots}">
   <link rel="canonical" href="{SITE}/{path}">
   <meta name="theme-color" content="#090B24">
   <meta property="og:type" content="website">
@@ -134,7 +134,10 @@ def shell(*, root: str, title: str, description: str, path: str, body: str,
   <meta property="og:description" content="{esc(description)}">
   <meta property="og:url" content="{SITE}/{path}">
   <meta property="og:image" content="{SITE}/og-image.png?v=20261026-3">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{SITE}/og-image.png?v=20261026-3">
   <script type="application/ld+json">
 {graph}
   </script>
@@ -144,7 +147,7 @@ def shell(*, root: str, title: str, description: str, path: str, body: str,
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{root}assets/homepage.css?v=20261125-2">
+  <link rel="stylesheet" href="{root}assets/homepage.css?v=20261125-3">
   <link rel="stylesheet" href="{root}assets/cruise-lines.css?v={CSS_VERSION}">
 </head>
 <body>
@@ -247,6 +250,28 @@ SELL_ANSWER = (
 )
 
 
+# ------------------------------------------------------------ shared pieces
+
+def line_link(row: dict, prefix: str) -> str:
+    return f'<a href="{prefix}{slug(row["name"])}/">{esc(row["name"])}</a>'
+
+
+def robots_for(row: dict) -> str:
+    """A page that can only say "nobody yet" stays out of search until a member joins.
+
+    It is still built, linked and followed, so it is ready the day that changes.
+    """
+    return "index,follow" if row["members"] else "noindex,follow"
+
+
+def other_lines(row: dict, lines: list[dict]) -> str:
+    links = "".join(f"<li>{line_link(other, '../')}</li>" for other in lines if other["name"] != row["name"])
+    return f"""    <section class="wrap cl-section">
+      <h2>Other cruise lines</h2>
+      <ul class="cl-links">{links}</ul>
+    </section>"""
+
+
 # ------------------------------------------------------------------ the list
 
 def table(rows: list[dict], first_heading: str, tag_charters: bool) -> str:
@@ -298,7 +323,7 @@ def list_page(lines: list[dict], updated: dt.date) -> str:
         waiting_section = f"""
     <section class="wrap cl-section">
       <h2>Also in the app, waiting for a first member</h2>
-      <p>{esc(join_names([row["name"] for row in waiting]))}. If you are sailing with one of them, mark your sailing and you will be the first name others see.</p>
+      <p>{join_names([line_link(row, "") for row in waiting])}. If you are sailing with one of them, mark your sailing and you will be the first name others see.</p>
     </section>
 """
 
@@ -340,7 +365,7 @@ def list_page(lines: list[dict], updated: dt.date) -> str:
     return shell(
         root="../",
         lines_href="./",
-        title="Which cruise lines are LGBTQ+ travellers sailing with?",
+        title="Cruise lines LGBTQ+ travellers sail with",
         description="The cruise lines Out There Together members have shortlisted or booked sailings with, counted from the "
                     "app and refreshed every day. Totals only, never names.",
         path="cruise-lines/",
@@ -426,6 +451,8 @@ def line_page(row: dict, lines: list[dict], updated: dt.date) -> str:
 
 {faq_block(faqs)}
 
+{other_lines(row, lines)}
+
 {cta(f"Sailing with {name}? Add yours.")}"""
 
     return shell(
@@ -435,6 +462,7 @@ def line_page(row: dict, lines: list[dict], updated: dt.date) -> str:
         description=f"How many Out There Together members have shortlisted or booked {article(name)} {name} sailing, refreshed every "
                     "day, and how to see who else is going on your sailing.",
         path=f"cruise-lines/{slug(name)}/",
+        robots=robots_for(row),
         body=body,
         schema=[faq_schema(faqs), crumbs_schema([
             ("Home", ""), ("Cruise lines", "cruise-lines/"), (name, f"cruise-lines/{slug(name)}/"),
@@ -455,7 +483,8 @@ def sitemap(lines: list[dict], updated: dt.date) -> str:
         entries.append((loc, existing.get(loc, updated.isoformat())))
     entries.append((f"{SITE}/cruise-lines/", updated.isoformat()))
     for row in lines:
-        entries.append((f"{SITE}/cruise-lines/{slug(row['name'])}/", updated.isoformat()))
+        if row["members"]:
+            entries.append((f"{SITE}/cruise-lines/{slug(row['name'])}/", updated.isoformat()))
     rows = "\n".join(f"  <url><loc>{loc}</loc><lastmod>{lastmod}</lastmod></url>" for loc, lastmod in entries)
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + rows + '\n</urlset>\n')

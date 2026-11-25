@@ -188,7 +188,7 @@ h1 { font-size: clamp(2.8rem, 4.6vw, 4.2rem); line-height: 1.1; letter-spacing: 
   .screen-row { gap: 1rem; }
   .safety-panel { padding: 2.2rem; }
 }
-@media (max-width: 900px) { .nav-links { display: none; } }
+@media (max-width: 1000px) { .nav-links { display: none; } }
 @media (max-width: 860px) {
   .nav-links { display: none; }
   .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; min-height: 0; padding-block: 3rem 1rem; }
