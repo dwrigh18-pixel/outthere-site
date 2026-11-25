@@ -44,3 +44,6 @@
 }
 .cl-stat-text strong { font-size: clamp(1.5rem, 3.2vw, 2rem); line-height: 1.15; }
 .cl-table td.num { color: var(--periwinkle); }
+.cl-links { list-style: none; display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.3rem 0 0; padding: 0; }
+.cl-links a { display: inline-block; padding: .5rem .95rem; border: 1px solid var(--line); border-radius: 999px; background: var(--raised); color: var(--cream); font-size: .9rem; font-weight: 600; text-decoration: none; }
+.cl-links a:hover { border-color: var(--periwinkle); }
