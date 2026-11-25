@@ -31,7 +31,7 @@
             83
           ],
           [
-            "Other / Mixed",
+            "Other regions",
             81
           ]
         ],
@@ -290,7 +290,7 @@
             114
           ],
           [
-            "Other / Mixed",
+            "Other regions",
             91
           ]
         ],
@@ -685,7 +685,7 @@
             53
           ],
           [
-            "Other / Mixed",
+            "Other regions",
             33
           ],
           [
@@ -1130,7 +1130,7 @@
             6
           ],
           [
-            "Other / Mixed",
+            "Other regions",
             2
           ]
         ],
@@ -1301,7 +1301,7 @@
             85
           ],
           [
-            "Other / Mixed",
+            "Other regions",
             33
           ],
           [
@@ -1555,7 +1555,7 @@
             124
           ],
           [
-            "Other / Mixed",
+            "Other regions",
             36
           ],
           [
@@ -1645,20 +1645,12 @@
             119
           ],
           [
-            "Cruise in Innvikfjorden",
-            104
-          ],
-          [
             "Olden",
             104
           ],
           [
             "Basseterre",
             103
-          ],
-          [
-            "Cruise in Nordfjord",
-            102
           ]
         ],
         "nights_common": [
@@ -2710,10 +2702,6 @@
         ],
         "ports_of_call": [
           [
-            "Messina Strait",
-            120
-          ],
-          [
             "Southampton",
             82
           ],
@@ -2939,10 +2927,6 @@
             50
           ],
           [
-            "Glacier Viewing",
-            37
-          ],
-          [
             "Ketchikan",
             37
           ],
@@ -3095,7 +3079,7 @@
             17
           ],
           [
-            "Other / Mixed",
+            "Other regions",
             3
           ]
         ],
@@ -3272,7 +3256,7 @@
             101
           ],
           [
-            "Other / Mixed",
+            "Other regions",
             2
           ]
         ],
@@ -3881,7 +3865,7 @@
       "facts": {
         "regions": [
           [
-            "Other / Mixed",
+            "Other regions",
             70
           ]
         ],
