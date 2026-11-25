@@ -263,21 +263,24 @@ def facts_sections(row: dict, lines: list[dict]) -> str:
         if safety:
             share = safety["sailings"] / safety["with_itinerary"] * 100
             percent = "Under 1%" if share < 1 else f"{round(share)}%"
+            ranked = sorted(safety["countries"], key=lambda c: -c["sailings"])
             links = join_names([
-                f'<a href="{esc(c["url"])}" rel="noopener">{esc(c["name"])}</a> ({number(c["sailings"])})'
-                for c in safety["countries"]
+                f'<a href="{esc(c["url"])}" rel="noopener">{esc(c["name"])}</a>'
+                for c in ranked
             ])
+            order_note = ", with the most visited first" if len(ranked) > 1 else ""
+            link_note = "Each name links" if len(ranked) > 1 else "The name links"
             checked = long_date(max(dt.date.fromisoformat(c["reviewed"]) for c in safety["countries"]))
             country_word = "country is" if len(safety["countries"]) == 1 else "countries are"
             out.append(f"""    <section class="wrap cl-section">
       <h2>Ports where same-sex relationships are against the law</h2>
       <p>Some itineraries call at countries where same-sex relationships are a criminal offence or are prosecuted. We count them so you know before you book, not after.</p>
       <div class="cl-safety">
-        <div class="cl-safety-figure"><strong>{percent}</strong><span>of upcoming {safe} sailings call at one of these ports: {number(safety["sailings"])} of the {number(safety["with_itinerary"])} we hold an itinerary for.</span></div>
+        <div class="cl-safety-figure"><strong>{percent}</strong><span>of upcoming {safe} sailings with an itinerary in the app call at one of these ports.</span></div>
         <div>
-          <p>The {country_word} {links}. The number after each is how many sailings call there.</p>
-          <p>Each name links to the Wikipedia article our guidance is drawn from, last checked {checked}. Laws change, so read the article before you travel.</p>
-          <p>This counts the itinerary. It says nothing about {safe}'s own policies or how you are treated on board. In the app, every port on your sailing carries its own guidance.</p>
+          <p>The {country_word} {links}{order_note}.</p>
+          <p>{link_note} to the Wikipedia article our guidance is drawn from, last checked {checked}. Laws change, so read the article before you travel.</p>
+          <p>This counts the itinerary. It says nothing about the policies of {safe} or how you are treated on board. In the app, every port on your sailing carries its own guidance.</p>
         </div>
       </div>
     </section>""")
