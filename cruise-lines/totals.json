@@ -7,7 +7,258 @@
       "members": 8,
       "upcoming_sailings": 3966,
       "ships": 25,
-      "last_departure": "2028-11-10"
+      "last_departure": "2028-11-10",
+      "facts": {
+        "regions": [
+          [
+            "Mediterranean",
+            2132
+          ],
+          [
+            "Caribbean & Bahamas",
+            934
+          ],
+          [
+            "Northern Europe",
+            403
+          ],
+          [
+            "South America",
+            222
+          ],
+          [
+            "Canaries",
+            83
+          ],
+          [
+            "Other / Mixed",
+            81
+          ]
+        ],
+        "departure_ports": [
+          [
+            "Miami",
+            379
+          ],
+          [
+            "Marseille",
+            287
+          ],
+          [
+            "Barcelona",
+            273
+          ],
+          [
+            "Genoa",
+            250
+          ],
+          [
+            "Port Canaveral",
+            241
+          ],
+          [
+            "Civitavecchia",
+            200
+          ]
+        ],
+        "ships": [
+          [
+            "MSC World Asia",
+            300
+          ],
+          [
+            "MSC Seaview",
+            272
+          ],
+          [
+            "MSC Fantasia",
+            240
+          ],
+          [
+            "MSC Virtuosa",
+            235
+          ],
+          [
+            "MSC Musica",
+            233
+          ],
+          [
+            "MSC World Europa",
+            230
+          ],
+          [
+            "MSC Euribia",
+            214
+          ],
+          [
+            "MSC Sinfonia",
+            194
+          ],
+          [
+            "MSC Splendida",
+            187
+          ],
+          [
+            "MSC Preziosa",
+            175
+          ],
+          [
+            "MSC Magnifica",
+            168
+          ],
+          [
+            "MSC Opera",
+            163
+          ],
+          [
+            "MSC Seashore",
+            150
+          ],
+          [
+            "MSC Divina",
+            131
+          ],
+          [
+            "MSC Lirica",
+            131
+          ],
+          [
+            "MSC Seaside",
+            125
+          ],
+          [
+            "MSC Meraviglia",
+            123
+          ],
+          [
+            "MSC Orchestra",
+            121
+          ],
+          [
+            "MSC World America",
+            121
+          ],
+          [
+            "MSC Armonia",
+            118
+          ]
+        ],
+        "ports_of_call": [
+          [
+            "Marseille",
+            1156
+          ],
+          [
+            "Barcelona",
+            1056
+          ],
+          [
+            "Genoa",
+            1006
+          ],
+          [
+            "Ocean Cay Msc Marine Reserve",
+            742
+          ],
+          [
+            "Civitavecchia",
+            677
+          ],
+          [
+            "Naples",
+            651
+          ],
+          [
+            "Palermo",
+            539
+          ],
+          [
+            "Nassau",
+            489
+          ],
+          [
+            "Valletta",
+            459
+          ],
+          [
+            "Livorno",
+            361
+          ]
+        ],
+        "nights_common": [
+          [
+            7,
+            2514
+          ],
+          [
+            14,
+            300
+          ],
+          [
+            4,
+            200
+          ],
+          [
+            10,
+            168
+          ],
+          [
+            3,
+            154
+          ]
+        ],
+        "nights_shortest": 1,
+        "nights_longest": 132,
+        "lgbtq_sailings": [],
+        "safety": {
+          "sailings": 558,
+          "with_itinerary": 3872,
+          "countries": [
+            {
+              "name": "Tunisia",
+              "sailings": 290,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Tunisia",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Morocco",
+              "sailings": 103,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Morocco",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Saint Vincent and the Grenadines",
+              "sailings": 75,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Saint_Vincent_and_the_Grenadines",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Jamaica",
+              "sailings": 62,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Jamaica",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Egypt",
+              "sailings": 28,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Egypt",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Samoa",
+              "sailings": 5,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Samoa",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Trinidad and Tobago",
+              "sailings": 3,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Trinidad_and_Tobago",
+              "reviewed": "2026-09-30"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "Norwegian Cruise Line",
@@ -15,7 +266,261 @@
       "members": 6,
       "upcoming_sailings": 2044,
       "ships": 21,
-      "last_departure": "2028-10-29"
+      "last_departure": "2028-10-29",
+      "facts": {
+        "regions": [
+          [
+            "Caribbean & Bahamas",
+            948
+          ],
+          [
+            "Mediterranean",
+            229
+          ],
+          [
+            "Alaska",
+            205
+          ],
+          [
+            "Hawaii",
+            139
+          ],
+          [
+            "Northern Europe",
+            114
+          ],
+          [
+            "Other / Mixed",
+            91
+          ]
+        ],
+        "departure_ports": [
+          [
+            "Miami",
+            415
+          ],
+          [
+            "Port Canaveral",
+            251
+          ],
+          [
+            "Seattle",
+            145
+          ],
+          [
+            "Honolulu",
+            131
+          ],
+          [
+            "New York",
+            101
+          ],
+          [
+            "Philadelphia",
+            85
+          ]
+        ],
+        "ships": [
+          [
+            "Norwegian Breakaway",
+            130
+          ],
+          [
+            "Norwegian Getaway",
+            130
+          ],
+          [
+            "Norwegian Aqua",
+            128
+          ],
+          [
+            "Pride of America",
+            119
+          ],
+          [
+            "Norwegian Escape",
+            114
+          ],
+          [
+            "Norwegian Dawn",
+            113
+          ],
+          [
+            "Norwegian Viva",
+            110
+          ],
+          [
+            "Norwegian Joy",
+            106
+          ],
+          [
+            "Norwegian Luna",
+            104
+          ],
+          [
+            "Norwegian Encore",
+            101
+          ],
+          [
+            "Norwegian Jade",
+            99
+          ],
+          [
+            "Norwegian Epic",
+            95
+          ],
+          [
+            "Norwegian Prima",
+            95
+          ],
+          [
+            "Norwegian Gem",
+            93
+          ],
+          [
+            "Norwegian Pearl",
+            91
+          ],
+          [
+            "Norwegian Bliss",
+            84
+          ],
+          [
+            "Norwegian Star",
+            82
+          ],
+          [
+            "Norwegian Spirit",
+            79
+          ],
+          [
+            "Norwegian Aura",
+            78
+          ],
+          [
+            "Norwegian Jewel",
+            57
+          ]
+        ],
+        "ports_of_call": [
+          [
+            "Great Stirrup Cay",
+            678
+          ],
+          [
+            "Cozumel",
+            291
+          ],
+          [
+            "Nassau",
+            277
+          ],
+          [
+            "Puerto Plata",
+            255
+          ],
+          [
+            "Tortola",
+            248
+          ],
+          [
+            "St. Thomas",
+            241
+          ],
+          [
+            "Juneau",
+            189
+          ],
+          [
+            "Ketchikan (Ward Cove)",
+            186
+          ],
+          [
+            "Harvest Caye",
+            177
+          ],
+          [
+            "Royal Naval Dockyard",
+            175
+          ]
+        ],
+        "nights_common": [
+          [
+            7,
+            1043
+          ],
+          [
+            4,
+            161
+          ],
+          [
+            5,
+            137
+          ],
+          [
+            10,
+            131
+          ],
+          [
+            11,
+            125
+          ]
+        ],
+        "nights_shortest": 2,
+        "nights_longest": 22,
+        "lgbtq_sailings": [
+          {
+            "company": "Diva Destinations",
+            "ship": "Norwegian Jade",
+            "ship_line": "Norwegian Cruise Line",
+            "departs": "2027-07-11",
+            "returns": "2027-07-18",
+            "from": "Ravenna"
+          }
+        ],
+        "safety": {
+          "sailings": 161,
+          "with_itinerary": 2044,
+          "countries": [
+            {
+              "name": "Jamaica",
+              "sailings": 122,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Jamaica",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Morocco",
+              "sailings": 15,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Morocco",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Samoa",
+              "sailings": 14,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Samoa",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Tunisia",
+              "sailings": 8,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Tunisia",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Egypt",
+              "sailings": 1,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Egypt",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Grenada",
+              "sailings": 1,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Grenada",
+              "reviewed": "2026-08-12"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "Atlantis Events",
@@ -23,7 +528,140 @@
       "members": 4,
       "upcoming_sailings": 4,
       "ships": 4,
-      "last_departure": "2027-07-06"
+      "last_departure": "2027-07-06",
+      "facts": {
+        "regions": [
+          [
+            "Caribbean & Bahamas",
+            3
+          ],
+          [
+            "Northern Europe",
+            1
+          ]
+        ],
+        "departure_ports": [
+          [
+            "Miami",
+            2
+          ],
+          [
+            "Copenhagen",
+            1
+          ],
+          [
+            "San Juan",
+            1
+          ]
+        ],
+        "ships": [
+          [
+            "Allure of the Seas",
+            1
+          ],
+          [
+            "Oceania Marina",
+            1
+          ],
+          [
+            "Resilient Lady",
+            1
+          ],
+          [
+            "Valiant Lady",
+            1
+          ]
+        ],
+        "ports_of_call": [
+          [
+            "Aarhus",
+            1
+          ],
+          [
+            "Cozumel",
+            1
+          ],
+          [
+            "Gdańsk",
+            1
+          ],
+          [
+            "Helsinki",
+            1
+          ],
+          [
+            "Nassau",
+            1
+          ],
+          [
+            "Oranjestad",
+            1
+          ],
+          [
+            "Phillipsburg",
+            1
+          ],
+          [
+            "Puerto Plata",
+            1
+          ],
+          [
+            "Riga",
+            1
+          ],
+          [
+            "Roatan",
+            1
+          ]
+        ],
+        "nights_common": [
+          [
+            7,
+            3
+          ],
+          [
+            9,
+            1
+          ]
+        ],
+        "nights_shortest": 7,
+        "nights_longest": 9,
+        "lgbtq_sailings": [
+          {
+            "company": "Atlantis Events",
+            "ship": "Resilient Lady",
+            "ship_line": "Virgin Voyages",
+            "departs": "2026-11-22",
+            "returns": "2026-11-29",
+            "from": "Miami"
+          },
+          {
+            "company": "Atlantis Events",
+            "ship": "Allure of the Seas",
+            "ship_line": "Royal Caribbean",
+            "departs": "2027-03-07",
+            "returns": "2027-03-14",
+            "from": "Miami"
+          },
+          {
+            "company": "Atlantis Events",
+            "ship": "Valiant Lady",
+            "ship_line": "Virgin Voyages",
+            "departs": "2027-03-27",
+            "returns": "2027-04-03",
+            "from": "San Juan"
+          },
+          {
+            "company": "Atlantis Events",
+            "ship": "Oceania Marina",
+            "ship_line": "Oceania Cruises",
+            "departs": "2027-07-06",
+            "returns": "2027-07-15",
+            "from": "Copenhagen"
+          }
+        ],
+        "safety": null
+      }
     },
     {
       "name": "Carnival Cruise Line",
@@ -31,7 +669,246 @@
       "members": 4,
       "upcoming_sailings": 1986,
       "ships": 27,
-      "last_departure": "2028-03-17"
+      "last_departure": "2028-03-17",
+      "facts": {
+        "regions": [
+          [
+            "Caribbean & Bahamas",
+            1627
+          ],
+          [
+            "Mexico & Pacific Coast",
+            205
+          ],
+          [
+            "Alaska",
+            53
+          ],
+          [
+            "Other / Mixed",
+            33
+          ],
+          [
+            "Mediterranean",
+            20
+          ],
+          [
+            "Hawaii",
+            16
+          ]
+        ],
+        "departure_ports": [
+          [
+            "Miami",
+            408
+          ],
+          [
+            "Port Canaveral",
+            374
+          ],
+          [
+            "Galveston",
+            272
+          ],
+          [
+            "Long Beach",
+            209
+          ],
+          [
+            "New Orleans",
+            170
+          ],
+          [
+            "Tampa",
+            129
+          ]
+        ],
+        "ships": [
+          [
+            "Carnival Radiance",
+            114
+          ],
+          [
+            "Carnival Elation",
+            100
+          ],
+          [
+            "Carnival Conquest",
+            99
+          ],
+          [
+            "Carnival Glory",
+            99
+          ],
+          [
+            "Carnival Sunrise",
+            99
+          ],
+          [
+            "Carnival Paradise",
+            98
+          ],
+          [
+            "Mardi Gras",
+            91
+          ],
+          [
+            "Carnival Dream",
+            89
+          ],
+          [
+            "Carnival Horizon",
+            86
+          ],
+          [
+            "Carnival Freedom",
+            80
+          ],
+          [
+            "Carnival Breeze",
+            76
+          ],
+          [
+            "Carnival Valor",
+            75
+          ],
+          [
+            "Carnival Magic",
+            68
+          ],
+          [
+            "Carnival Panorama",
+            68
+          ],
+          [
+            "Carnival Vista",
+            68
+          ],
+          [
+            "Carnival Liberty",
+            67
+          ],
+          [
+            "Carnival Celebration",
+            66
+          ],
+          [
+            "Carnival Pride",
+            64
+          ],
+          [
+            "Carnival Venezia",
+            64
+          ],
+          [
+            "Carnival Firenze",
+            62
+          ]
+        ],
+        "ports_of_call": [
+          [
+            "Celebration Key™",
+            1020
+          ],
+          [
+            "RelaxAway",
+            593
+          ],
+          [
+            "Cozumel",
+            521
+          ],
+          [
+            "Nassau",
+            450
+          ],
+          [
+            "Amber Cove",
+            211
+          ],
+          [
+            "Ensenada",
+            185
+          ],
+          [
+            "Isla Tropicale",
+            182
+          ],
+          [
+            "Progreso",
+            140
+          ],
+          [
+            "Cabo San Lucas",
+            126
+          ],
+          [
+            "Grand Cayman",
+            115
+          ]
+        ],
+        "nights_common": [
+          [
+            4,
+            413
+          ],
+          [
+            5,
+            393
+          ],
+          [
+            7,
+            389
+          ],
+          [
+            6,
+            259
+          ],
+          [
+            8,
+            254
+          ]
+        ],
+        "nights_shortest": 3,
+        "nights_longest": 16,
+        "lgbtq_sailings": [],
+        "safety": {
+          "sailings": 113,
+          "with_itinerary": 1986,
+          "countries": [
+            {
+              "name": "Jamaica",
+              "sailings": 96,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Jamaica",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Grenada",
+              "sailings": 9,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Grenada",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Tunisia",
+              "sailings": 7,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Tunisia",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Morocco",
+              "sailings": 1,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Morocco",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Trinidad and Tobago",
+              "sailings": 1,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Trinidad_and_Tobago",
+              "reviewed": "2026-09-30"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "Virgin Voyages",
@@ -39,7 +916,193 @@
       "members": 3,
       "upcoming_sailings": 407,
       "ships": 4,
-      "last_departure": "2028-10-28"
+      "last_departure": "2028-10-28",
+      "facts": {
+        "regions": [
+          [
+            "Caribbean & Bahamas",
+            271
+          ],
+          [
+            "Mediterranean",
+            82
+          ],
+          [
+            "Alaska",
+            29
+          ],
+          [
+            "Mexico & Pacific Coast",
+            17
+          ],
+          [
+            "Northern Europe",
+            4
+          ],
+          [
+            "Red Sea & Middle East",
+            1
+          ]
+        ],
+        "departure_ports": [
+          [
+            "Miami",
+            233
+          ],
+          [
+            "San Juan",
+            44
+          ],
+          [
+            "Piraeus",
+            42
+          ],
+          [
+            "Barcelona",
+            37
+          ],
+          [
+            "Seattle",
+            28
+          ],
+          [
+            "Los Angeles",
+            15
+          ]
+        ],
+        "ships": [
+          [
+            "Valiant Lady",
+            121
+          ],
+          [
+            "Resilient Lady",
+            108
+          ],
+          [
+            "Scarlet Lady",
+            102
+          ],
+          [
+            "Brilliant Lady",
+            76
+          ]
+        ],
+        "ports_of_call": [
+          [
+            "The Beach Club at Bimini",
+            224
+          ],
+          [
+            "Grand Turk",
+            57
+          ],
+          [
+            "Key West",
+            56
+          ],
+          [
+            "Puerto Plata",
+            56
+          ],
+          [
+            "Philipsburg",
+            55
+          ],
+          [
+            "Mykonos",
+            48
+          ],
+          [
+            "George Town",
+            41
+          ],
+          [
+            "Santorini",
+            30
+          ],
+          [
+            "Ketchikan",
+            29
+          ],
+          [
+            "Sitka",
+            26
+          ]
+        ],
+        "nights_common": [
+          [
+            7,
+            146
+          ],
+          [
+            5,
+            104
+          ],
+          [
+            4,
+            62
+          ],
+          [
+            8,
+            22
+          ],
+          [
+            10,
+            22
+          ]
+        ],
+        "nights_shortest": 3,
+        "nights_longest": 17,
+        "lgbtq_sailings": [
+          {
+            "company": "Atlantis Events",
+            "ship": "Resilient Lady",
+            "ship_line": "Virgin Voyages",
+            "departs": "2026-11-22",
+            "returns": "2026-11-29",
+            "from": "Miami"
+          },
+          {
+            "company": "Atlantis Events",
+            "ship": "Valiant Lady",
+            "ship_line": "Virgin Voyages",
+            "departs": "2027-03-27",
+            "returns": "2027-04-03",
+            "from": "San Juan"
+          }
+        ],
+        "safety": {
+          "sailings": 33,
+          "with_itinerary": 407,
+          "countries": [
+            {
+              "name": "Jamaica",
+              "sailings": 20,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Jamaica",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Morocco",
+              "sailings": 7,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Morocco",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Egypt",
+              "sailings": 3,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Egypt",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Saint Vincent and the Grenadines",
+              "sailings": 3,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Saint_Vincent_and_the_Grenadines",
+              "reviewed": "2026-09-30"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "Ambassador Cruise Line",
@@ -47,7 +1110,174 @@
       "members": 2,
       "upcoming_sailings": 97,
       "ships": 3,
-      "last_departure": "2028-03-10"
+      "last_departure": "2028-03-10",
+      "facts": {
+        "regions": [
+          [
+            "Northern Europe",
+            67
+          ],
+          [
+            "Caribbean & Bahamas",
+            13
+          ],
+          [
+            "Mediterranean",
+            9
+          ],
+          [
+            "Canaries",
+            6
+          ],
+          [
+            "Other / Mixed",
+            2
+          ]
+        ],
+        "departure_ports": [
+          [
+            "London",
+            58
+          ],
+          [
+            "Bridgetown",
+            9
+          ],
+          [
+            "Belfast",
+            6
+          ],
+          [
+            "Liverpool",
+            6
+          ],
+          [
+            "Newcastle upon Tyne",
+            6
+          ],
+          [
+            "Dundee",
+            5
+          ]
+        ],
+        "ships": [
+          [
+            "Ambition",
+            53
+          ],
+          [
+            "Ambience",
+            35
+          ],
+          [
+            "Renaissance",
+            9
+          ]
+        ],
+        "ports_of_call": [
+          [
+            "IJmuiden",
+            18
+          ],
+          [
+            "Honfleur",
+            17
+          ],
+          [
+            "Zeebrugge",
+            15
+          ],
+          [
+            "Pointe-a-Pitre",
+            13
+          ],
+          [
+            "Vigo",
+            13
+          ],
+          [
+            "Willemstad",
+            13
+          ],
+          [
+            "Alesund",
+            12
+          ],
+          [
+            "Austefjorden",
+            12
+          ],
+          [
+            "Leixoes",
+            12
+          ],
+          [
+            "Castries",
+            11
+          ]
+        ],
+        "nights_common": [
+          [
+            14,
+            13
+          ],
+          [
+            12,
+            9
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            11,
+            8
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        "nights_shortest": 1,
+        "nights_longest": 45,
+        "lgbtq_sailings": [],
+        "safety": {
+          "sailings": 16,
+          "with_itinerary": 97,
+          "countries": [
+            {
+              "name": "Grenada",
+              "sailings": 7,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Grenada",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Saint Vincent and the Grenadines",
+              "sailings": 6,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Saint_Vincent_and_the_Grenadines",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Jamaica",
+              "sailings": 3,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Jamaica",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Morocco",
+              "sailings": 3,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Morocco",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Tunisia",
+              "sailings": 1,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Tunisia",
+              "reviewed": "2026-08-12"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "Celebrity Cruises",
@@ -55,7 +1285,249 @@
       "members": 2,
       "upcoming_sailings": 507,
       "ships": 17,
-      "last_departure": "2028-02-20"
+      "last_departure": "2028-02-20",
+      "facts": {
+        "regions": [
+          [
+            "Galápagos",
+            235
+          ],
+          [
+            "Caribbean & Bahamas",
+            110
+          ],
+          [
+            "Alaska",
+            85
+          ],
+          [
+            "Other / Mixed",
+            33
+          ],
+          [
+            "Asia",
+            12
+          ],
+          [
+            "Mediterranean",
+            12
+          ]
+        ],
+        "departure_ports": [
+          [
+            "Baltra Island",
+            235
+          ],
+          [
+            "Fort Lauderdale",
+            67
+          ],
+          [
+            "Vancouver",
+            45
+          ],
+          [
+            "Seward",
+            40
+          ],
+          [
+            "Port Canaveral",
+            25
+          ],
+          [
+            "Budapest",
+            16
+          ]
+        ],
+        "ships": [
+          [
+            "Celebrity Flora",
+            235
+          ],
+          [
+            "Celebrity Solstice",
+            94
+          ],
+          [
+            "Celebrity Reflection",
+            26
+          ],
+          [
+            "Celebrity Apex",
+            25
+          ],
+          [
+            "Celebrity Compass",
+            21
+          ],
+          [
+            "Celebrity Eclipse",
+            17
+          ],
+          [
+            "Celebrity Seeker",
+            11
+          ],
+          [
+            "Celebrity Equinox",
+            10
+          ],
+          [
+            "Celebrity Beyond",
+            9
+          ],
+          [
+            "Celebrity Edge",
+            9
+          ],
+          [
+            "Celebrity Summit",
+            9
+          ],
+          [
+            "Celebrity Ascent",
+            8
+          ],
+          [
+            "Celebrity Constellation",
+            8
+          ],
+          [
+            "Celebrity Xcel",
+            8
+          ],
+          [
+            "Celebrity Millennium",
+            7
+          ],
+          [
+            "Celebrity Infinity",
+            6
+          ],
+          [
+            "Celebrity Silhouette",
+            4
+          ]
+        ],
+        "ports_of_call": [
+          [
+            "Quito",
+            547
+          ],
+          [
+            "Daphne Island",
+            235
+          ],
+          [
+            "Puerto Ayora",
+            235
+          ],
+          [
+            "Lima",
+            180
+          ],
+          [
+            "Bartolome Island",
+            120
+          ],
+          [
+            "Denali",
+            120
+          ],
+          [
+            "Egas Port",
+            120
+          ],
+          [
+            "Elizabeth Bay",
+            120
+          ],
+          [
+            "Las Bachas",
+            120
+          ],
+          [
+            "North Seymour Island",
+            120
+          ]
+        ],
+        "nights_common": [
+          [
+            7,
+            130
+          ],
+          [
+            10,
+            92
+          ],
+          [
+            11,
+            90
+          ],
+          [
+            16,
+            64
+          ],
+          [
+            9,
+            31
+          ]
+        ],
+        "nights_shortest": 3,
+        "nights_longest": 17,
+        "lgbtq_sailings": [
+          {
+            "company": "VACAYA",
+            "ship": "Celebrity Beyond",
+            "ship_line": "Celebrity Cruises",
+            "departs": "2027-02-14",
+            "returns": "2027-02-21",
+            "from": "Fort Lauderdale"
+          }
+        ],
+        "safety": {
+          "sailings": 16,
+          "with_itinerary": 506,
+          "countries": [
+            {
+              "name": "Grenada",
+              "sailings": 5,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Grenada",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Jamaica",
+              "sailings": 3,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Jamaica",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Malaysia",
+              "sailings": 3,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Malaysia",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Morocco",
+              "sailings": 2,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Morocco",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Saint Vincent and the Grenadines",
+              "sailings": 2,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Saint_Vincent_and_the_Grenadines",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Samoa",
+              "sailings": 1,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Samoa",
+              "reviewed": "2026-09-30"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "P&O Cruises",
@@ -63,7 +1535,224 @@
       "members": 2,
       "upcoming_sailings": 769,
       "ships": 7,
-      "last_departure": "2028-10-28"
+      "last_departure": "2028-10-28",
+      "facts": {
+        "regions": [
+          [
+            "Northern Europe",
+            195
+          ],
+          [
+            "Mediterranean",
+            182
+          ],
+          [
+            "Canaries",
+            175
+          ],
+          [
+            "Caribbean & Bahamas",
+            124
+          ],
+          [
+            "Other / Mixed",
+            36
+          ],
+          [
+            "Asia",
+            5
+          ]
+        ],
+        "departure_ports": [
+          [
+            "Southampton",
+            358
+          ],
+          [
+            "Santa Cruz de Tenerife",
+            144
+          ],
+          [
+            "Valletta",
+            115
+          ],
+          [
+            "Bridgetown",
+            78
+          ],
+          [
+            "Antigua",
+            28
+          ],
+          [
+            "Basseterre",
+            18
+          ]
+        ],
+        "ships": [
+          [
+            "Azura",
+            267
+          ],
+          [
+            "Arvia",
+            143
+          ],
+          [
+            "Iona",
+            109
+          ],
+          [
+            "Britannia",
+            72
+          ],
+          [
+            "Ventura",
+            71
+          ],
+          [
+            "Arcadia",
+            62
+          ],
+          [
+            "Aurora",
+            45
+          ]
+        ],
+        "ports_of_call": [
+          [
+            "Madeira",
+            178
+          ],
+          [
+            "Gran Canaria",
+            168
+          ],
+          [
+            "Arrecife de Lanzarote",
+            154
+          ],
+          [
+            "St Maarten",
+            126
+          ],
+          [
+            "Tenerife",
+            124
+          ],
+          [
+            "Castries",
+            119
+          ],
+          [
+            "Cruise in Innvikfjorden",
+            104
+          ],
+          [
+            "Olden",
+            104
+          ],
+          [
+            "Basseterre",
+            103
+          ],
+          [
+            "Cruise in Nordfjord",
+            102
+          ]
+        ],
+        "nights_common": [
+          [
+            14,
+            326
+          ],
+          [
+            7,
+            261
+          ],
+          [
+            21,
+            17
+          ],
+          [
+            12,
+            16
+          ],
+          [
+            4,
+            15
+          ]
+        ],
+        "nights_shortest": 3,
+        "nights_longest": 125,
+        "lgbtq_sailings": [],
+        "safety": {
+          "sailings": 204,
+          "with_itinerary": 768,
+          "countries": [
+            {
+              "name": "Grenada",
+              "sailings": 96,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Grenada",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Morocco",
+              "sailings": 84,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Morocco",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Saint Vincent and the Grenadines",
+              "sailings": 14,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Saint_Vincent_and_the_Grenadines",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Jamaica",
+              "sailings": 8,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Jamaica",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Malaysia",
+              "sailings": 7,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Malaysia",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Papua New Guinea",
+              "sailings": 6,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Papua_New_Guinea",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Tunisia",
+              "sailings": 6,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Tunisia",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Samoa",
+              "sailings": 6,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Samoa",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Egypt",
+              "sailings": 3,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Egypt",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Trinidad and Tobago",
+              "sailings": 3,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Trinidad_and_Tobago",
+              "reviewed": "2026-09-30"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "Princess Cruises",
@@ -71,7 +1760,246 @@
       "members": 2,
       "upcoming_sailings": 1309,
       "ships": 17,
-      "last_departure": "2028-03-17"
+      "last_departure": "2028-03-17",
+      "facts": {
+        "regions": [
+          [
+            "Caribbean & Bahamas",
+            370
+          ],
+          [
+            "Alaska",
+            192
+          ],
+          [
+            "Mediterranean",
+            146
+          ],
+          [
+            "Asia",
+            143
+          ],
+          [
+            "Australia & New Zealand",
+            92
+          ],
+          [
+            "Northern Europe",
+            89
+          ]
+        ],
+        "departure_ports": [
+          [
+            "Fort Lauderdale",
+            255
+          ],
+          [
+            "Los Angeles",
+            115
+          ],
+          [
+            "Vancouver",
+            115
+          ],
+          [
+            "Tokyo",
+            99
+          ],
+          [
+            "Southampton",
+            72
+          ],
+          [
+            "San Juan",
+            62
+          ]
+        ],
+        "ships": [
+          [
+            "Sun Princess",
+            143
+          ],
+          [
+            "Regal Princess",
+            133
+          ],
+          [
+            "Emerald Princess",
+            94
+          ],
+          [
+            "Crown Princess",
+            91
+          ],
+          [
+            "Star Princess",
+            87
+          ],
+          [
+            "Enchanted Princess",
+            83
+          ],
+          [
+            "Discovery Princess",
+            81
+          ],
+          [
+            "Sapphire Princess",
+            76
+          ],
+          [
+            "Diamond Princess",
+            70
+          ],
+          [
+            "Sky Princess",
+            70
+          ],
+          [
+            "Coral Princess",
+            68
+          ],
+          [
+            "Grand Princess",
+            67
+          ],
+          [
+            "Royal Princess",
+            67
+          ],
+          [
+            "Island Princess",
+            55
+          ],
+          [
+            "Caribbean Princess",
+            44
+          ],
+          [
+            "Majestic Princess",
+            41
+          ],
+          [
+            "Ruby Princess",
+            39
+          ]
+        ],
+        "ports_of_call": [
+          [
+            "Ft. Lauderdale",
+            573
+          ],
+          [
+            "Juneau",
+            232
+          ],
+          [
+            "Ketchikan",
+            231
+          ],
+          [
+            "Skagway",
+            200
+          ],
+          [
+            "Amber Cove",
+            183
+          ],
+          [
+            "Crete",
+            178
+          ],
+          [
+            "San Juan",
+            171
+          ],
+          [
+            "Barbados",
+            163
+          ],
+          [
+            "Celebration Key",
+            163
+          ],
+          [
+            "Glacier Bay National Park",
+            158
+          ]
+        ],
+        "nights_common": [
+          [
+            7,
+            408
+          ],
+          [
+            14,
+            248
+          ],
+          [
+            10,
+            74
+          ],
+          [
+            16,
+            60
+          ],
+          [
+            12,
+            58
+          ]
+        ],
+        "nights_shortest": 2,
+        "nights_longest": 129,
+        "lgbtq_sailings": [],
+        "safety": {
+          "sailings": 154,
+          "with_itinerary": 1309,
+          "countries": [
+            {
+              "name": "Grenada",
+              "sailings": 58,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Grenada",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Malaysia",
+              "sailings": 34,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Malaysia",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Jamaica",
+              "sailings": 23,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Jamaica",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Morocco",
+              "sailings": 20,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Morocco",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Samoa",
+              "sailings": 15,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Samoa",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Papua New Guinea",
+              "sailings": 9,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Papua_New_Guinea",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Trinidad and Tobago",
+              "sailings": 1,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Trinidad_and_Tobago",
+              "reviewed": "2026-09-30"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "Celestyal",
@@ -79,7 +2007,128 @@
       "members": 1,
       "upcoming_sailings": 473,
       "ships": 2,
-      "last_departure": "2028-11-18"
+      "last_departure": "2028-11-18",
+      "facts": {
+        "regions": [
+          [
+            "Mediterranean",
+            473
+          ]
+        ],
+        "departure_ports": [
+          [
+            "Piraeus",
+            436
+          ],
+          [
+            "Barcelona",
+            20
+          ],
+          [
+            "Lisbon",
+            14
+          ],
+          [
+            "Istanbul",
+            3
+          ]
+        ],
+        "ships": [
+          [
+            "Discovery",
+            324
+          ],
+          [
+            "Journey",
+            149
+          ]
+        ],
+        "ports_of_call": [
+          [
+            "Kusadasi",
+            423
+          ],
+          [
+            "Mykonos",
+            410
+          ],
+          [
+            "Santorini",
+            410
+          ],
+          [
+            "Patmos",
+            286
+          ],
+          [
+            "Rhodes",
+            271
+          ],
+          [
+            "Heraklion",
+            246
+          ],
+          [
+            "Crete",
+            119
+          ],
+          [
+            "Milos",
+            119
+          ],
+          [
+            "Bari",
+            48
+          ],
+          [
+            "Corfu",
+            48
+          ]
+        ],
+        "nights_common": [
+          [
+            3,
+            144
+          ],
+          [
+            4,
+            142
+          ],
+          [
+            7,
+            132
+          ],
+          [
+            14,
+            47
+          ],
+          [
+            8,
+            4
+          ]
+        ],
+        "nights_shortest": 3,
+        "nights_longest": 22,
+        "lgbtq_sailings": [],
+        "safety": {
+          "sailings": 38,
+          "with_itinerary": 473,
+          "countries": [
+            {
+              "name": "Morocco",
+              "sailings": 33,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Morocco",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Egypt",
+              "sailings": 5,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Egypt",
+              "reviewed": "2026-08-12"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "Holland America Line",
@@ -87,7 +2136,237 @@
       "members": 1,
       "upcoming_sailings": 1216,
       "ships": 11,
-      "last_departure": "2028-03-17"
+      "last_departure": "2028-03-17",
+      "facts": {
+        "regions": [
+          [
+            "Alaska",
+            547
+          ],
+          [
+            "Caribbean & Bahamas",
+            185
+          ],
+          [
+            "Northern Europe",
+            144
+          ],
+          [
+            "Mediterranean",
+            93
+          ],
+          [
+            "Mexico & Pacific Coast",
+            50
+          ],
+          [
+            "Asia",
+            46
+          ]
+        ],
+        "departure_ports": [
+          [
+            "Vancouver",
+            325
+          ],
+          [
+            "Fort Lauderdale",
+            199
+          ],
+          [
+            "Anchorage",
+            108
+          ],
+          [
+            "Rotterdam",
+            86
+          ],
+          [
+            "Fairbanks",
+            72
+          ],
+          [
+            "San Diego",
+            61
+          ]
+        ],
+        "ships": [
+          [
+            "Nieuw Amsterdam",
+            176
+          ],
+          [
+            "Koningsdam",
+            171
+          ],
+          [
+            "Westerdam",
+            160
+          ],
+          [
+            "Zaandam",
+            146
+          ],
+          [
+            "Nieuw Statendam",
+            122
+          ],
+          [
+            "Rotterdam",
+            111
+          ],
+          [
+            "Zuiderdam",
+            81
+          ],
+          [
+            "Oosterdam",
+            78
+          ],
+          [
+            "Eurodam",
+            75
+          ],
+          [
+            "Noordam",
+            55
+          ],
+          [
+            "Volendam",
+            41
+          ]
+        ],
+        "ports_of_call": [
+          [
+            "Skagway",
+            524
+          ],
+          [
+            "Juneau",
+            477
+          ],
+          [
+            "Ketchikan",
+            451
+          ],
+          [
+            "Glacier Bay",
+            411
+          ],
+          [
+            "Denali National Park",
+            408
+          ],
+          [
+            "Fairbanks",
+            300
+          ],
+          [
+            "RelaxAway Half Moon Cay",
+            279
+          ],
+          [
+            "Dawson",
+            264
+          ],
+          [
+            "Whitehorse",
+            246
+          ],
+          [
+            "Whittier",
+            234
+          ]
+        ],
+        "nights_common": [
+          [
+            7,
+            245
+          ],
+          [
+            14,
+            215
+          ],
+          [
+            11,
+            125
+          ],
+          [
+            10,
+            95
+          ],
+          [
+            12,
+            85
+          ]
+        ],
+        "nights_shortest": 1,
+        "nights_longest": 129,
+        "lgbtq_sailings": [
+          {
+            "company": "Olivia Travel",
+            "ship": "Eurodam",
+            "ship_line": "Holland America Line",
+            "departs": "2027-02-13",
+            "returns": "2027-02-20",
+            "from": "Fort Lauderdale"
+          }
+        ],
+        "safety": {
+          "sailings": 133,
+          "with_itinerary": 1216,
+          "countries": [
+            {
+              "name": "Jamaica",
+              "sailings": 55,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Jamaica",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Morocco",
+              "sailings": 44,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Morocco",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Egypt",
+              "sailings": 15,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Egypt",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Tunisia",
+              "sailings": 14,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Tunisia",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Papua New Guinea",
+              "sailings": 6,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Papua_New_Guinea",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Malaysia",
+              "sailings": 5,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Malaysia",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Trinidad and Tobago",
+              "sailings": 3,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Trinidad_and_Tobago",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Samoa",
+              "sailings": 3,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Samoa",
+              "reviewed": "2026-09-30"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "Royal Caribbean",
@@ -95,7 +2374,261 @@
       "members": 1,
       "upcoming_sailings": 2436,
       "ships": 31,
-      "last_departure": "2028-02-20"
+      "last_departure": "2028-02-20",
+      "facts": {
+        "regions": [
+          [
+            "Caribbean & Bahamas",
+            1486
+          ],
+          [
+            "Mexico & Pacific Coast",
+            253
+          ],
+          [
+            "Asia",
+            189
+          ],
+          [
+            "Mediterranean",
+            173
+          ],
+          [
+            "Alaska",
+            172
+          ],
+          [
+            "South Pacific",
+            42
+          ]
+        ],
+        "departure_ports": [
+          [
+            "Port Canaveral",
+            350
+          ],
+          [
+            "Fort Lauderdale",
+            279
+          ],
+          [
+            "Tampa",
+            219
+          ],
+          [
+            "Miami",
+            214
+          ],
+          [
+            "Los Angeles",
+            201
+          ],
+          [
+            "Galveston",
+            163
+          ]
+        ],
+        "ships": [
+          [
+            "Anthem of the Seas",
+            147
+          ],
+          [
+            "Ovation of the Seas",
+            135
+          ],
+          [
+            "Utopia of the Seas",
+            129
+          ],
+          [
+            "Navigator of the Seas",
+            125
+          ],
+          [
+            "Jewel of the Seas",
+            101
+          ],
+          [
+            "Liberty of the Seas",
+            97
+          ],
+          [
+            "Grandeur of the Seas",
+            92
+          ],
+          [
+            "Spectrum of the Seas",
+            90
+          ],
+          [
+            "Legend of the Seas",
+            89
+          ],
+          [
+            "Radiance of the Seas",
+            86
+          ],
+          [
+            "Brilliance of the Seas",
+            83
+          ],
+          [
+            "Serenade of the Seas",
+            78
+          ],
+          [
+            "Adventure of the Seas",
+            76
+          ],
+          [
+            "Quantum of the Seas",
+            76
+          ],
+          [
+            "Harmony of the Seas",
+            74
+          ],
+          [
+            "Enchantment of the Seas",
+            70
+          ],
+          [
+            "Explorer of the Seas",
+            69
+          ],
+          [
+            "Freedom of the Seas",
+            68
+          ],
+          [
+            "Oasis of the Seas",
+            68
+          ],
+          [
+            "Voyager of the Seas",
+            68
+          ]
+        ],
+        "ports_of_call": [
+          [
+            "Perfect Day CocoCay",
+            697
+          ],
+          [
+            "Cozumel",
+            520
+          ],
+          [
+            "Nassau",
+            507
+          ],
+          [
+            "Puerto Costa Maya",
+            425
+          ],
+          [
+            "Roatan",
+            190
+          ],
+          [
+            "Ensenada",
+            184
+          ],
+          [
+            "Philipsburg",
+            172
+          ],
+          [
+            "Charlotte Amalie",
+            170
+          ],
+          [
+            "Skagway",
+            149
+          ],
+          [
+            "Oranjestad",
+            144
+          ]
+        ],
+        "nights_common": [
+          [
+            7,
+            897
+          ],
+          [
+            4,
+            426
+          ],
+          [
+            3,
+            319
+          ],
+          [
+            5,
+            306
+          ],
+          [
+            8,
+            138
+          ]
+        ],
+        "nights_shortest": 2,
+        "nights_longest": 25,
+        "lgbtq_sailings": [
+          {
+            "company": "Atlantis Events",
+            "ship": "Allure of the Seas",
+            "ship_line": "Royal Caribbean",
+            "departs": "2027-03-07",
+            "returns": "2027-03-14",
+            "from": "Miami"
+          }
+        ],
+        "safety": {
+          "sailings": 206,
+          "with_itinerary": 2436,
+          "countries": [
+            {
+              "name": "Malaysia",
+              "sailings": 86,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Malaysia",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Jamaica",
+              "sailings": 83,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Jamaica",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Morocco",
+              "sailings": 17,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Morocco",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Saint Vincent and the Grenadines",
+              "sailings": 9,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Saint_Vincent_and_the_Grenadines",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Egypt",
+              "sailings": 8,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Egypt",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Grenada",
+              "sailings": 7,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Grenada",
+              "reviewed": "2026-08-12"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "Cunard",
@@ -103,7 +2636,188 @@
       "members": 0,
       "upcoming_sailings": 591,
       "ships": 4,
-      "last_departure": "2029-01-04"
+      "last_departure": "2029-01-04",
+      "facts": {
+        "regions": [
+          [
+            "Mediterranean",
+            160
+          ],
+          [
+            "Northern Europe",
+            128
+          ],
+          [
+            "Caribbean & Bahamas",
+            51
+          ],
+          [
+            "Canada & New England",
+            29
+          ],
+          [
+            "Canaries",
+            23
+          ],
+          [
+            "Transatlantic",
+            20
+          ]
+        ],
+        "departure_ports": [
+          [
+            "Southampton",
+            264
+          ],
+          [
+            "New York",
+            77
+          ],
+          [
+            "Civitavecchia",
+            53
+          ],
+          [
+            "Trieste",
+            36
+          ],
+          [
+            "Barcelona",
+            30
+          ],
+          [
+            "Miami",
+            29
+          ]
+        ],
+        "ships": [
+          [
+            "Queen Elizabeth",
+            196
+          ],
+          [
+            "Queen Mary 2",
+            184
+          ],
+          [
+            "Queen Anne",
+            129
+          ],
+          [
+            "Queen Victoria",
+            82
+          ]
+        ],
+        "ports_of_call": [
+          [
+            "Messina Strait",
+            120
+          ],
+          [
+            "Southampton",
+            82
+          ],
+          [
+            "Zadar",
+            82
+          ],
+          [
+            "Valletta",
+            80
+          ],
+          [
+            "Split",
+            78
+          ],
+          [
+            "Dubrovnik",
+            76
+          ],
+          [
+            "Corfu",
+            73
+          ],
+          [
+            "La Spezia (tours to Florence or Pisa)",
+            67
+          ],
+          [
+            "Funchal",
+            61
+          ],
+          [
+            "Sydney",
+            61
+          ]
+        ],
+        "nights_common": [
+          [
+            7,
+            148
+          ],
+          [
+            14,
+            100
+          ],
+          [
+            21,
+            61
+          ],
+          [
+            12,
+            38
+          ],
+          [
+            16,
+            13
+          ]
+        ],
+        "nights_shortest": 2,
+        "nights_longest": 116,
+        "lgbtq_sailings": [],
+        "safety": {
+          "sailings": 63,
+          "with_itinerary": 537,
+          "countries": [
+            {
+              "name": "Malaysia",
+              "sailings": 26,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Malaysia",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Morocco",
+              "sailings": 17,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Morocco",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Jamaica",
+              "sailings": 10,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Jamaica",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Grenada",
+              "sailings": 6,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Grenada",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Tunisia",
+              "sailings": 3,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Tunisia",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Saint Vincent and the Grenadines",
+              "sailings": 3,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Saint_Vincent_and_the_Grenadines",
+              "reviewed": "2026-09-30"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "Disney Cruise Line",
@@ -111,7 +2825,180 @@
       "members": 0,
       "upcoming_sailings": 812,
       "ships": 8,
-      "last_departure": "2028-03-17"
+      "last_departure": "2028-03-17",
+      "facts": {
+        "regions": [
+          [
+            "Caribbean & Bahamas",
+            539
+          ],
+          [
+            "Asia",
+            116
+          ],
+          [
+            "Mexico & Pacific Coast",
+            90
+          ],
+          [
+            "Alaska",
+            37
+          ],
+          [
+            "Mediterranean",
+            8
+          ],
+          [
+            "Northern Europe",
+            8
+          ]
+        ],
+        "departure_ports": [
+          [
+            "Port Canaveral",
+            312
+          ],
+          [
+            "Fort Lauderdale",
+            165
+          ],
+          [
+            "Singapore",
+            116
+          ],
+          [
+            "San Diego",
+            89
+          ],
+          [
+            "Galveston",
+            58
+          ],
+          [
+            "Vancouver",
+            39
+          ]
+        ],
+        "ships": [
+          [
+            "Disney Dream",
+            132
+          ],
+          [
+            "Disney Adventure",
+            116
+          ],
+          [
+            "Disney Wish",
+            110
+          ],
+          [
+            "Disney Destiny",
+            100
+          ],
+          [
+            "Disney Fantasy",
+            99
+          ],
+          [
+            "Disney Wonder",
+            99
+          ],
+          [
+            "Disney Magic",
+            87
+          ],
+          [
+            "Disney Treasure",
+            69
+          ]
+        ],
+        "ports_of_call": [
+          [
+            "Disney Castaway Cay",
+            405
+          ],
+          [
+            "Nassau",
+            266
+          ],
+          [
+            "Disney Lookout Cay at Lighthouse Point",
+            258
+          ],
+          [
+            "Cozumel",
+            93
+          ],
+          [
+            "Ensenada",
+            85
+          ],
+          [
+            "Progreso",
+            50
+          ],
+          [
+            "Glacier Viewing",
+            37
+          ],
+          [
+            "Ketchikan",
+            37
+          ],
+          [
+            "Tortola",
+            37
+          ],
+          [
+            "George Town",
+            36
+          ]
+        ],
+        "nights_common": [
+          [
+            4,
+            283
+          ],
+          [
+            3,
+            199
+          ],
+          [
+            5,
+            154
+          ],
+          [
+            7,
+            151
+          ],
+          [
+            6,
+            14
+          ]
+        ],
+        "nights_shortest": 3,
+        "nights_longest": 14,
+        "lgbtq_sailings": [],
+        "safety": {
+          "sailings": 62,
+          "with_itinerary": 723,
+          "countries": [
+            {
+              "name": "Jamaica",
+              "sailings": 35,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Jamaica",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Malaysia",
+              "sailings": 27,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Malaysia",
+              "reviewed": "2026-08-12"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "Diva Destinations",
@@ -119,7 +3006,72 @@
       "members": 0,
       "upcoming_sailings": 1,
       "ships": 1,
-      "last_departure": "2027-07-11"
+      "last_departure": "2027-07-11",
+      "facts": {
+        "regions": [
+          [
+            "Mediterranean",
+            1
+          ]
+        ],
+        "departure_ports": [
+          [
+            "Ravenna",
+            1
+          ]
+        ],
+        "ships": [
+          [
+            "Norwegian Jade",
+            1
+          ]
+        ],
+        "ports_of_call": [
+          [
+            "Corfu",
+            1
+          ],
+          [
+            "Dubrovnik",
+            1
+          ],
+          [
+            "Kotor",
+            1
+          ],
+          [
+            "Mykonos",
+            1
+          ],
+          [
+            "Olympia (Katakolon)",
+            1
+          ],
+          [
+            "Santorini",
+            1
+          ]
+        ],
+        "nights_common": [
+          [
+            7,
+            1
+          ]
+        ],
+        "nights_shortest": 7,
+        "nights_longest": 7,
+        "lgbtq_sailings": [
+          {
+            "company": "Diva Destinations",
+            "ship": "Norwegian Jade",
+            "ship_line": "Norwegian Cruise Line",
+            "departs": "2027-07-11",
+            "returns": "2027-07-18",
+            "from": "Ravenna"
+          }
+        ],
+        "safety": null
+      }
     },
     {
       "name": "Fred. Olsen Cruise Lines",
@@ -127,7 +3079,176 @@
       "members": 0,
       "upcoming_sailings": 130,
       "ships": 3,
-      "last_departure": "2028-01-05"
+      "last_departure": "2028-01-05",
+      "facts": {
+        "regions": [
+          [
+            "Mediterranean",
+            56
+          ],
+          [
+            "Northern Europe",
+            54
+          ],
+          [
+            "Canaries",
+            17
+          ],
+          [
+            "Other / Mixed",
+            3
+          ]
+        ],
+        "departure_ports": [
+          [
+            "Southampton",
+            41
+          ],
+          [
+            "Newcastle upon Tyne",
+            26
+          ],
+          [
+            "Liverpool",
+            21
+          ],
+          [
+            "Piraeus",
+            15
+          ],
+          [
+            "Rosyth",
+            9
+          ],
+          [
+            "Alicante",
+            8
+          ]
+        ],
+        "ships": [
+          [
+            "Balmoral",
+            68
+          ],
+          [
+            "Bolette",
+            35
+          ],
+          [
+            "Borealis",
+            27
+          ]
+        ],
+        "ports_of_call": [
+          [
+            "Gibraltar",
+            30
+          ],
+          [
+            "Santa Cruz de Tenerife",
+            26
+          ],
+          [
+            "Matosinhos",
+            25
+          ],
+          [
+            "Valletta",
+            25
+          ],
+          [
+            "Cartagena",
+            24
+          ],
+          [
+            "Funchal",
+            23
+          ],
+          [
+            "Las Palmas",
+            20
+          ],
+          [
+            "Piraeus",
+            20
+          ],
+          [
+            "Lisbon",
+            19
+          ],
+          [
+            "Cádiz",
+            18
+          ]
+        ],
+        "nights_common": [
+          [
+            9,
+            15
+          ],
+          [
+            10,
+            14
+          ],
+          [
+            14,
+            13
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            7,
+            9
+          ]
+        ],
+        "nights_shortest": 3,
+        "nights_longest": 98,
+        "lgbtq_sailings": [],
+        "safety": {
+          "sailings": 23,
+          "with_itinerary": 130,
+          "countries": [
+            {
+              "name": "Morocco",
+              "sailings": 16,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Morocco",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Egypt",
+              "sailings": 14,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Egypt",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Grenada",
+              "sailings": 3,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Grenada",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Jamaica",
+              "sailings": 1,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Jamaica",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Tunisia",
+              "sailings": 1,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Tunisia",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Saint Vincent and the Grenadines",
+              "sailings": 1,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Saint_Vincent_and_the_Grenadines",
+              "reviewed": "2026-09-30"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "Marella Cruises",
@@ -135,7 +3256,172 @@
       "members": 0,
       "upcoming_sailings": 378,
       "ships": 5,
-      "last_departure": "2028-02-20"
+      "last_departure": "2028-02-20",
+      "facts": {
+        "regions": [
+          [
+            "Mediterranean",
+            145
+          ],
+          [
+            "Canaries",
+            130
+          ],
+          [
+            "Caribbean & Bahamas",
+            101
+          ],
+          [
+            "Other / Mixed",
+            2
+          ]
+        ],
+        "departure_ports": [
+          [
+            "Bridgetown",
+            73
+          ],
+          [
+            "Las Palmas",
+            64
+          ],
+          [
+            "Santa Cruz de Tenerife",
+            64
+          ],
+          [
+            "Palma de Mallorca",
+            55
+          ],
+          [
+            "Malaga",
+            40
+          ],
+          [
+            "La Romana",
+            28
+          ]
+        ],
+        "ships": [
+          [
+            "Marella Explorer",
+            102
+          ],
+          [
+            "Marella Discovery 2",
+            91
+          ],
+          [
+            "Marella Explorer 2",
+            63
+          ],
+          [
+            "Marella Discovery",
+            61
+          ],
+          [
+            "Marella Voyager",
+            61
+          ]
+        ],
+        "ports_of_call": [
+          [
+            "Funchal",
+            148
+          ],
+          [
+            "Arrecife",
+            130
+          ],
+          [
+            "Santa Cruz de La Palma",
+            98
+          ],
+          [
+            "Puerto del Rosario",
+            77
+          ],
+          [
+            "Corfu Town",
+            69
+          ],
+          [
+            "Las Palmas",
+            68
+          ],
+          [
+            "Santa Cruz de Tenerife",
+            65
+          ],
+          [
+            "St. John's",
+            48
+          ],
+          [
+            "Basseterre",
+            46
+          ],
+          [
+            "Philipsburg",
+            45
+          ]
+        ],
+        "nights_common": [
+          [
+            7,
+            358
+          ],
+          [
+            8,
+            5
+          ],
+          [
+            14,
+            4
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "nights_shortest": 4,
+        "nights_longest": 16,
+        "lgbtq_sailings": [],
+        "safety": {
+          "sailings": 76,
+          "with_itinerary": 378,
+          "countries": [
+            {
+              "name": "Morocco",
+              "sailings": 41,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Morocco",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Grenada",
+              "sailings": 34,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Grenada",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Saint Vincent and the Grenadines",
+              "sailings": 9,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Saint_Vincent_and_the_Grenadines",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Tunisia",
+              "sailings": 1,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Tunisia",
+              "reviewed": "2026-08-12"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "Olivia Travel",
@@ -143,7 +3429,291 @@
       "members": 0,
       "upcoming_sailings": 13,
       "ships": 12,
-      "last_departure": "2027-12-30"
+      "last_departure": "2027-12-30",
+      "facts": {
+        "regions": [
+          [
+            "Asia",
+            2
+          ],
+          [
+            "Mediterranean",
+            2
+          ],
+          [
+            "Australia & New Zealand",
+            1
+          ],
+          [
+            "Caribbean & Bahamas",
+            1
+          ],
+          [
+            "Northern Europe",
+            1
+          ]
+        ],
+        "departure_ports": [
+          [
+            "Amsterdam",
+            1
+          ],
+          [
+            "Barcelona",
+            1
+          ],
+          [
+            "Budapest",
+            1
+          ],
+          [
+            "Copenhagen",
+            1
+          ],
+          [
+            "Fort Lauderdale",
+            1
+          ],
+          [
+            "Frankfurt",
+            1
+          ]
+        ],
+        "ships": [
+          [
+            "Star Seeker",
+            2
+          ],
+          [
+            "Avalon Alegria",
+            1
+          ],
+          [
+            "Avalon Envision",
+            1
+          ],
+          [
+            "Avalon Illumination",
+            1
+          ],
+          [
+            "Avalon Panorama",
+            1
+          ],
+          [
+            "Avalon Tapestry II",
+            1
+          ],
+          [
+            "Azamara Onward",
+            1
+          ],
+          [
+            "Azamara Quest",
+            1
+          ],
+          [
+            "Coral Adventurer",
+            1
+          ],
+          [
+            "Eurodam",
+            1
+          ],
+          [
+            "National Geographic Islander II",
+            1
+          ],
+          [
+            "Star Legend",
+            1
+          ]
+        ],
+        "ports_of_call": [
+          [
+            "Athens (Piraeus)",
+            2
+          ],
+          [
+            "Nuremberg",
+            2
+          ],
+          [
+            "Rouen",
+            2
+          ],
+          [
+            "Singapore",
+            2
+          ],
+          [
+            "Agios Nikolaos",
+            1
+          ],
+          [
+            "Akaroa",
+            1
+          ],
+          [
+            "Almeria",
+            1
+          ],
+          [
+            "Arendal",
+            1
+          ],
+          [
+            "Baltra",
+            1
+          ],
+          [
+            "Bamberg",
+            1
+          ]
+        ],
+        "nights_common": [
+          [
+            7,
+            7
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            9,
+            1
+          ]
+        ],
+        "nights_shortest": 6,
+        "nights_longest": 11,
+        "lgbtq_sailings": [
+          {
+            "company": "Olivia Travel",
+            "ship": "Avalon Panorama",
+            "ship_line": "Avalon Waterways",
+            "departs": "2026-12-02",
+            "returns": "2026-12-08",
+            "from": "Frankfurt"
+          },
+          {
+            "company": "Olivia Travel",
+            "ship": "Star Seeker",
+            "ship_line": "Windstar Cruises",
+            "departs": "2026-12-06",
+            "returns": "2026-12-17",
+            "from": "Phuket"
+          },
+          {
+            "company": "Olivia Travel",
+            "ship": "Eurodam",
+            "ship_line": "Holland America Line",
+            "departs": "2027-02-13",
+            "returns": "2027-02-20",
+            "from": "Fort Lauderdale"
+          },
+          {
+            "company": "Olivia Travel",
+            "ship": "Star Seeker",
+            "ship_line": "Windstar Cruises",
+            "departs": "2027-03-31",
+            "returns": "2027-04-10",
+            "from": ""
+          },
+          {
+            "company": "Olivia Travel",
+            "ship": "Avalon Illumination",
+            "ship_line": "Avalon Waterways",
+            "departs": "2027-04-05",
+            "returns": "2027-04-12",
+            "from": "Budapest"
+          },
+          {
+            "company": "Olivia Travel",
+            "ship": "Avalon Envision",
+            "ship_line": "Avalon Waterways",
+            "departs": "2027-04-13",
+            "returns": "2027-04-20",
+            "from": "Amsterdam"
+          },
+          {
+            "company": "Olivia Travel",
+            "ship": "Avalon Alegria",
+            "ship_line": "Avalon Waterways",
+            "departs": "2027-05-12",
+            "returns": "2027-05-19",
+            "from": "Porto"
+          },
+          {
+            "company": "Olivia Travel",
+            "ship": "Star Legend",
+            "ship_line": "Windstar Cruises",
+            "departs": "2027-06-08",
+            "returns": "2027-06-16",
+            "from": "Barcelona"
+          },
+          {
+            "company": "Olivia Travel",
+            "ship": "Avalon Tapestry II",
+            "ship_line": "Avalon Waterways",
+            "departs": "2027-06-29",
+            "returns": "2027-07-06",
+            "from": "Paris"
+          },
+          {
+            "company": "Olivia Travel",
+            "ship": "Azamara Quest",
+            "ship_line": "Azamara",
+            "departs": "2027-07-12",
+            "returns": "2027-07-19",
+            "from": "Copenhagen"
+          },
+          {
+            "company": "Olivia Travel",
+            "ship": "Azamara Onward",
+            "ship_line": "Azamara",
+            "departs": "2027-10-02",
+            "returns": "2027-10-09",
+            "from": "Piraeus"
+          },
+          {
+            "company": "Olivia Travel",
+            "ship": "National Geographic Islander II",
+            "ship_line": "Lindblad Expeditions",
+            "departs": "2027-11-26",
+            "returns": "2027-12-05",
+            "from": "Guayaquil"
+          },
+          {
+            "company": "Olivia Travel",
+            "ship": "Coral Adventurer",
+            "ship_line": "Coral Expeditions",
+            "departs": "2027-12-30",
+            "returns": "2028-01-09",
+            "from": "Wellington"
+          }
+        ],
+        "safety": {
+          "sailings": 1,
+          "with_itinerary": 11,
+          "countries": [
+            {
+              "name": "Malaysia",
+              "sailings": 1,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Malaysia",
+              "reviewed": "2026-08-12"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "VACAYA",
@@ -151,7 +3721,155 @@
       "members": 0,
       "upcoming_sailings": 3,
       "ships": 3,
-      "last_departure": "2027-07-27"
+      "last_departure": "2027-07-27",
+      "facts": {
+        "regions": [
+          [
+            "Caribbean & Bahamas",
+            1
+          ],
+          [
+            "Mediterranean",
+            1
+          ],
+          [
+            "Red Sea & Middle East",
+            1
+          ]
+        ],
+        "departure_ports": [
+          [
+            "Fort Lauderdale",
+            1
+          ],
+          [
+            "Jeddah",
+            1
+          ],
+          [
+            "Trieste",
+            1
+          ]
+        ],
+        "ships": [
+          [
+            "Celebrity Beyond",
+            1
+          ],
+          [
+            "Emerald Kaia",
+            1
+          ],
+          [
+            "Oceania Allura",
+            1
+          ]
+        ],
+        "ports_of_call": [
+          [
+            "Aqaba",
+            1
+          ],
+          [
+            "Catania",
+            1
+          ],
+          [
+            "Corfu",
+            1
+          ],
+          [
+            "Dubrovnik",
+            1
+          ],
+          [
+            "Eilat",
+            1
+          ],
+          [
+            "Kotor",
+            1
+          ],
+          [
+            "La Goulette (Tunis)",
+            1
+          ],
+          [
+            "Palma de Mallorca",
+            1
+          ],
+          [
+            "Philipsburg",
+            1
+          ],
+          [
+            "Puerto Plata",
+            1
+          ]
+        ],
+        "nights_common": [
+          [
+            10,
+            2
+          ],
+          [
+            7,
+            1
+          ]
+        ],
+        "nights_shortest": 7,
+        "nights_longest": 10,
+        "lgbtq_sailings": [
+          {
+            "company": "VACAYA",
+            "ship": "Celebrity Beyond",
+            "ship_line": "Celebrity Cruises",
+            "departs": "2027-02-14",
+            "returns": "2027-02-21",
+            "from": "Fort Lauderdale"
+          },
+          {
+            "company": "VACAYA",
+            "ship": "Emerald Kaia",
+            "ship_line": "Emerald Cruises",
+            "departs": "2027-03-28",
+            "returns": "2027-04-07",
+            "from": "Jeddah"
+          },
+          {
+            "company": "VACAYA",
+            "ship": "Oceania Allura",
+            "ship_line": "Oceania Cruises",
+            "departs": "2027-07-27",
+            "returns": "2027-08-06",
+            "from": "Trieste"
+          }
+        ],
+        "safety": {
+          "sailings": 2,
+          "with_itinerary": 3,
+          "countries": [
+            {
+              "name": "Egypt",
+              "sailings": 1,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Egypt",
+              "reviewed": "2026-08-12"
+            },
+            {
+              "name": "Saudi Arabia",
+              "sailings": 1,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Saudi_Arabia",
+              "reviewed": "2026-09-30"
+            },
+            {
+              "name": "Tunisia",
+              "sailings": 1,
+              "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Tunisia",
+              "reviewed": "2026-08-12"
+            }
+          ]
+        }
+      }
     },
     {
       "name": "Viking River Cruises",
@@ -159,7 +3877,67 @@
       "members": 0,
       "upcoming_sailings": 70,
       "ships": 1,
-      "last_departure": "2028-11-12"
+      "last_departure": "2028-11-12",
+      "facts": {
+        "regions": [
+          [
+            "Other / Mixed",
+            70
+          ]
+        ],
+        "departure_ports": [
+          [
+            "Avignon",
+            36
+          ],
+          [
+            "Lyon",
+            34
+          ]
+        ],
+        "ships": [
+          [
+            "Viking Heimdal",
+            70
+          ]
+        ],
+        "ports_of_call": [
+          [
+            "Lyon",
+            108
+          ],
+          [
+            "Arles",
+            70
+          ],
+          [
+            "Tournon",
+            70
+          ],
+          [
+            "Vienne",
+            70
+          ],
+          [
+            "Viviers",
+            70
+          ],
+          [
+            "Avignon",
+            68
+          ]
+        ],
+        "nights_common": [
+          [
+            7,
+            70
+          ]
+        ],
+        "nights_shortest": 7,
+        "nights_longest": 7,
+        "lgbtq_sailings": [],
+        "safety": null
+      }
     }
   ]
 }
