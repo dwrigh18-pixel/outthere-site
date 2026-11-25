@@ -118,6 +118,12 @@ def fetch() -> list[dict]:
 
 # ------------------------------------------------------- facts about a line
 
+# Itinerary lines that are scenery from the ship, not somewhere you go ashore.
+NOT_A_PORT = re.compile(r"^(cruise in|cruising|scenic)\b|glacier viewing|\bstrait$", re.I)
+# The directory's catch-all region, worded for a reader.
+REGION_LABELS = {"Other / Mixed": "Other regions"}
+
+
 def clean_facts(raw: object) -> dict | None:
     """Keep only well-formed facts. Anything odd is dropped, never published."""
     if not isinstance(raw, dict):
@@ -185,10 +191,10 @@ def clean_facts(raw: object) -> dict | None:
                and 0 < flagged <= with_itinerary and countries)
 
     return {
-        "regions": counted("regions", "name", "sailings", 6),
+        "regions": [(REGION_LABELS.get(n, n), v) for n, v in counted("regions", "name", "sailings", 6)],
         "departure_ports": counted("departure_ports", "name", "sailings", 6),
         "ships": counted("ships", "name", "sailings", 20),
-        "ports_of_call": counted("ports_of_call", "name", "calls", 10),
+        "ports_of_call": [(n, v) for n, v in counted("ports_of_call", "name", "calls", 10) if not NOT_A_PORT.search(n)],
         "nights_common": common[:5],
         "nights_shortest": nights.get("shortest") if isinstance(nights.get("shortest"), int) else None,
         "nights_longest": nights.get("longest") if isinstance(nights.get("longest"), int) else None,
