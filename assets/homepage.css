@@ -60,8 +60,9 @@ h3 { font-size: 1.15rem; }
 .store-button-play { background: var(--coral); color: var(--navy); box-shadow: 0 10px 30px rgba(255,107,114,.25); }
 .store-button-play .icon { fill: currentColor; stroke: none; }
 .store-button-play:hover { background: #FF858B; transform: translateY(-2px); }
-.store-button-soon { background: transparent; border: 1px dashed rgba(169,181,255,.55); color: var(--periwinkle); cursor: default; }
-.store-button-soon .icon { fill: currentColor; stroke: none; }
+.store-button-apple { background: var(--cream); color: var(--navy); }
+.store-button-apple .icon { fill: currentColor; stroke: none; }
+.store-button-apple:hover { background: #fff; transform: translateY(-2px); }
 .store-button-web { background: var(--card); border: 1px solid var(--line); color: var(--cream); }
 .store-button-web:hover { background: #1B2152; transform: translateY(-2px); }
 
