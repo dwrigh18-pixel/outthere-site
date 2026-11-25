@@ -144,7 +144,7 @@ def shell(*, root: str, title: str, description: str, path: str, body: str,
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{root}assets/homepage.css?v=20261125-1">
+  <link rel="stylesheet" href="{root}assets/homepage.css?v=20261125-2">
   <link rel="stylesheet" href="{root}assets/cruise-lines.css?v={CSS_VERSION}">
 </head>
 <body>
@@ -165,6 +165,7 @@ def shell(*, root: str, title: str, description: str, path: str, body: str,
       <div class="nav-actions">
         <a class="text-link nav-signin" href="{WEB_APP}">Sign in</a>
         <a class="button button-small" href="{PLAY}"><span class="cta-wide">Get it on Google Play</span><span class="cta-compact">Google Play</span></a>
+        <a class="button button-small button-apple" href="{APPLE}"><span class="cta-wide">Download on the App Store</span><span class="cta-compact">App Store</span></a>
       </div>
     </nav>
   </header>
