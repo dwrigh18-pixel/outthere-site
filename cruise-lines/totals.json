@@ -1,18 +1,18 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "cruise_lines": [
     {
       "name": "MSC Cruises",
       "is_charter_operator": false,
       "members": 8,
-      "upcoming_sailings": 3961,
+      "upcoming_sailings": 3956,
       "ships": 25,
       "last_departure": "2028-11-10",
       "facts": {
         "regions": [
           [
             "Mediterranean",
-            2129
+            2126
           ],
           [
             "Caribbean & Bahamas",
@@ -20,11 +20,11 @@
           ],
           [
             "Northern Europe",
-            402
+            401
           ],
           [
             "South America",
-            222
+            221
           ],
           [
             "Canaries",
@@ -46,7 +46,7 @@
           ],
           [
             "Barcelona",
-            273
+            272
           ],
           [
             "Genoa",
@@ -80,7 +80,7 @@
           ],
           [
             "MSC Musica",
-            233
+            232
           ],
           [
             "MSC World Europa",
@@ -92,15 +92,15 @@
           ],
           [
             "MSC Sinfonia",
-            194
+            193
           ],
           [
             "MSC Splendida",
-            187
+            186
           ],
           [
             "MSC Preziosa",
-            174
+            173
           ],
           [
             "MSC Magnifica",
@@ -120,7 +120,7 @@
           ],
           [
             "MSC Lirica",
-            130
+            129
           ],
           [
             "MSC Seaside",
@@ -146,15 +146,15 @@
         "ports_of_call": [
           [
             "Marseille",
-            1155
+            1154
           ],
           [
             "Barcelona",
-            1055
+            1054
           ],
           [
             "Genoa",
-            1005
+            1004
           ],
           [
             "Ocean Cay Msc Marine Reserve",
@@ -182,13 +182,13 @@
           ],
           [
             "Livorno",
-            361
+            360
           ]
         ],
         "nights_common": [
           [
             7,
-            2511
+            2510
           ],
           [
             14,
@@ -204,15 +204,15 @@
           ],
           [
             3,
-            154
+            153
           ]
         ],
         "nights_shortest": 1,
         "nights_longest": 132,
         "lgbtq_sailings": [],
         "safety": {
-          "sailings": 556,
-          "with_itinerary": 3867,
+          "sailings": 554,
+          "with_itinerary": 3863,
           "countries": [
             {
               "name": "Tunisia",
@@ -222,7 +222,7 @@
             },
             {
               "name": "Morocco",
-              "sailings": 103,
+              "sailings": 102,
               "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Morocco",
               "reviewed": "2026-09-30"
             },
@@ -240,7 +240,7 @@
             },
             {
               "name": "Egypt",
-              "sailings": 27,
+              "sailings": 26,
               "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Egypt",
               "reviewed": "2026-08-12"
             },
@@ -263,7 +263,7 @@
     {
       "name": "Norwegian Cruise Line",
       "is_charter_operator": false,
-      "members": 6,
+      "members": 7,
       "upcoming_sailings": 2043,
       "ships": 21,
       "last_departure": "2028-10-29",
@@ -679,14 +679,14 @@
       "name": "Carnival Cruise Line",
       "is_charter_operator": false,
       "members": 4,
-      "upcoming_sailings": 1986,
+      "upcoming_sailings": 1984,
       "ships": 27,
       "last_departure": "2028-03-17",
       "facts": {
         "regions": [
           [
             "Caribbean & Bahamas",
-            1627
+            1625
           ],
           [
             "Mexico & Pacific Coast",
@@ -716,11 +716,11 @@
           ],
           [
             "Port Canaveral",
-            374
+            373
           ],
           [
             "Galveston",
-            272
+            271
           ],
           [
             "Long Beach",
@@ -774,11 +774,11 @@
           ],
           [
             "Carnival Freedom",
-            80
+            79
           ],
           [
             "Carnival Breeze",
-            76
+            75
           ],
           [
             "Carnival Valor",
@@ -820,19 +820,19 @@
         "ports_of_call": [
           [
             "Celebration Key™",
-            1020
+            1019
           ],
           [
             "RelaxAway",
-            593
+            592
           ],
           [
             "Cozumel",
-            521
+            520
           ],
           [
             "Nassau",
-            450
+            449
           ],
           [
             "Amber Cove",
@@ -848,7 +848,7 @@
           ],
           [
             "Progreso",
-            140
+            139
           ],
           [
             "Cabo San Lucas",
@@ -866,7 +866,7 @@
           ],
           [
             5,
-            393
+            391
           ],
           [
             7,
@@ -886,7 +886,7 @@
         "lgbtq_sailings": [],
         "safety": {
           "sailings": 113,
-          "with_itinerary": 1986,
+          "with_itinerary": 1984,
           "countries": [
             {
               "name": "Jamaica",
@@ -1550,7 +1550,7 @@
       "name": "Celebrity Cruises",
       "is_charter_operator": false,
       "members": 2,
-      "upcoming_sailings": 507,
+      "upcoming_sailings": 506,
       "ships": 17,
       "last_departure": "2028-02-20",
       "facts": {
@@ -1572,12 +1572,12 @@
             33
           ],
           [
-            "Asia",
+            "Mediterranean",
             12
           ],
           [
-            "Mediterranean",
-            12
+            "Asia",
+            11
           ]
         ],
         "departure_ports": [
@@ -1664,11 +1664,11 @@
             8
           ],
           [
-            "Celebrity Millennium",
-            7
+            "Celebrity Infinity",
+            6
           ],
           [
-            "Celebrity Infinity",
+            "Celebrity Millennium",
             6
           ],
           [
@@ -1754,7 +1754,7 @@
         ],
         "safety": {
           "sailings": 16,
-          "with_itinerary": 506,
+          "with_itinerary": 505,
           "countries": [
             {
               "name": "Grenada",
@@ -2646,7 +2646,7 @@
       "name": "Cunard",
       "is_charter_operator": false,
       "members": 0,
-      "upcoming_sailings": 590,
+      "upcoming_sailings": 588,
       "ships": 4,
       "last_departure": "2029-01-04",
       "facts": {
@@ -2661,7 +2661,7 @@
           ],
           [
             "Caribbean & Bahamas",
-            51
+            49
           ],
           [
             "Canada & New England",
@@ -2698,14 +2698,14 @@
             30
           ],
           [
-            "Miami",
-            29
+            "Hamburg",
+            28
           ]
         ],
         "ships": [
           [
             "Queen Elizabeth",
-            196
+            194
           ],
           [
             "Queen Mary 2",
@@ -2769,7 +2769,7 @@
           ],
           [
             21,
-            61
+            60
           ],
           [
             12,
@@ -2784,8 +2784,8 @@
         "nights_longest": 116,
         "lgbtq_sailings": [],
         "safety": {
-          "sailings": 63,
-          "with_itinerary": 536,
+          "sailings": 61,
+          "with_itinerary": 534,
           "countries": [
             {
               "name": "Malaysia",
@@ -2801,7 +2801,7 @@
             },
             {
               "name": "Jamaica",
-              "sailings": 10,
+              "sailings": 8,
               "url": "https://en.wikipedia.org/wiki/LGBTQ_rights_in_Jamaica",
               "reviewed": "2026-09-30"
             },
@@ -2831,7 +2831,7 @@
       "name": "Disney Cruise Line",
       "is_charter_operator": false,
       "members": 0,
-      "upcoming_sailings": 809,
+      "upcoming_sailings": 808,
       "ships": 8,
       "last_departure": "2028-03-17",
       "facts": {
@@ -2842,7 +2842,7 @@
           ],
           [
             "Asia",
-            116
+            115
           ],
           [
             "Mexico & Pacific Coast",
@@ -2872,7 +2872,7 @@
           ],
           [
             "Singapore",
-            116
+            115
           ],
           [
             "San Diego",
@@ -2894,7 +2894,7 @@
           ],
           [
             "Disney Adventure",
-            116
+            115
           ],
           [
             "Disney Wish",
@@ -2966,7 +2966,7 @@
           ],
           [
             3,
-            199
+            198
           ],
           [
             5,
@@ -3258,7 +3258,7 @@
       "name": "Marella Cruises",
       "is_charter_operator": false,
       "members": 0,
-      "upcoming_sailings": 378,
+      "upcoming_sailings": 377,
       "ships": 5,
       "last_departure": "2028-02-20",
       "facts": {
@@ -3273,7 +3273,7 @@
           ],
           [
             "Caribbean & Bahamas",
-            101
+            100
           ],
           [
             "Other regions",
@@ -3283,7 +3283,7 @@
         "departure_ports": [
           [
             "Bridgetown",
-            73
+            72
           ],
           [
             "Las Palmas",
@@ -3317,7 +3317,7 @@
           ],
           [
             "Marella Explorer 2",
-            63
+            62
           ],
           [
             "Marella Discovery",
@@ -3359,21 +3359,21 @@
           ],
           [
             "St. John's",
-            48
+            47
           ],
           [
             "Basseterre",
-            46
+            45
           ],
           [
             "Philipsburg",
-            45
+            44
           ]
         ],
         "nights_common": [
           [
             7,
-            358
+            357
           ],
           [
             8,
@@ -3397,7 +3397,7 @@
         "lgbtq_sailings": [],
         "safety": {
           "sailings": 76,
-          "with_itinerary": 378,
+          "with_itinerary": 377,
           "countries": [
             {
               "name": "Morocco",
