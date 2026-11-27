@@ -3,6 +3,7 @@
 
 User-agent: *
 Allow: /
+Disallow: /creators/out-there-together-guide-for-creators-and-hosts.pdf
 
 # Named so there is no doubt: AI search and assistant crawlers may read every public page.
 User-agent: GPTBot
@@ -19,5 +20,6 @@ User-agent: Bingbot
 User-agent: DuckAssistBot
 User-agent: MistralAI-User
 Allow: /
+Disallow: /creators/out-there-together-guide-for-creators-and-hosts.pdf
 
 Sitemap: https://outtheretogether.com/sitemap.xml
